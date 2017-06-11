@@ -1,0 +1,238 @@
+﻿Log file open, 06/10/17 13:24:33
+LogInit:Display: Running engine for game: SteamProject
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(1340558187) SRandInit(1340558187).
+LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.227910
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogModuleManager:Warning: No filename provided for module OnlineSubsystemSteam
+LogModuleManager:Warning: ModuleManager: Unable to load module 'OnlineSubsystemSteam' because the file 'C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/Win64/' was not found.
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogInit: Build: ++UE4+Release-4.15-CL-3348071
+LogInit: Engine Version: 4.15.1-3348071+++UE4+Release-4.15
+LogInit: Compatible Engine Version: 4.15.0-3299760+++UE4+Release-4.15
+LogInit: Net CL: 3299760
+LogDevObjectVersion: Number of dev versions registered: 14
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 8
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 14
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 22
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 12
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 3
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogInit: Compiled (64-bit): Mar 15 2017 16:52:47
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.15
+LogInit: Command line:  /Temp/Autosaves/Game/Maps/UEDPCMainMenu -game -PIEVIACONSOLE -ResX=1280 -ResY=720  -Multiprocess -messaging -SessionName="Play in Standalone Game" -windowed 
+LogInit: Base directory: C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.06.10-18.24.37:150][  0]LogInit: Selected Device Profile: [Windows]
+[2017.06.10-18.24.37:150][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.06.10-18.24.37:170][  0]LogInit: Computer: LENOVO-PC
+[2017.06.10-18.24.37:170][  0]LogInit: User: DanielaFe7
+[2017.06.10-18.24.37:170][  0]LogInit: CPU Page size=65536, Cores=4
+[2017.06.10-18.24.37:170][  0]LogInit: High frequency timer resolution =2.435778 MHz
+[2017.06.10-18.24.37:172][  0]LogMemory: Memory total: Physical=11.9GB (12GB approx)
+[2017.06.10-18.24.37:172][  0]LogMemory: Platform Memory Stats for Windows
+[2017.06.10-18.24.37:172][  0]LogMemory: Process Physical Memory: 264.31 MB used, 264.31 MB peak
+[2017.06.10-18.24.37:172][  0]LogMemory: Process Virtual Memory: 262.94 MB used, 262.94 MB peak
+[2017.06.10-18.24.37:172][  0]LogMemory: Physical Memory: 6287.93 MB used,  5912.35 MB free, 12200.27 MB total
+[2017.06.10-18.24.37:172][  0]LogMemory: Virtual Memory: 632.87 MB used,  5912.35 MB free, 134217728.00 MB total
+[2017.06.10-18.24.37:591][  0]LogTextLocalizationManager: No specific translations for ('es-MX') exist, so ('es') translations will be used.
+[2017.06.10-18.24.38:566][  0]LogD3D11RHI: D3D11 adapters:
+[2017.06.10-18.24.38:663][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 860M' (Feature Level 11_0)
+[2017.06.10-18.24.38:663][  0]LogD3D11RHI:       2018/0/6100 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2017.06.10-18.24.38:685][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 4600' (Feature Level 11_0)
+[2017.06.10-18.24.38:685][  0]LogD3D11RHI:       112/0/2048 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2017.06.10-18.24.38:691][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.06.10-18.24.38:691][  0]LogD3D11RHI:       0/0/6100 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.06.10-18.24.38:691][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.06.10-18.24.38:707][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.06.10-18.24.38:707][  0]LogD3D11RHI:     GPU DeviceId: 0x1392 (for the marketing name, search the web for "GPU Device Id")
+[2017.06.10-18.24.38:707][  0]LogWindows: EnumDisplayDevices:
+[2017.06.10-18.24.38:708][  0]LogWindows:    0. 'Intel(R) HD Graphics 4600' (P:1 D:1)
+[2017.06.10-18.24.38:708][  0]LogWindows:    1. 'Intel(R) HD Graphics 4600' (P:0 D:0)
+[2017.06.10-18.24.38:709][  0]LogWindows:    2. 'Intel(R) HD Graphics 4600' (P:0 D:0)
+[2017.06.10-18.24.38:710][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2017.06.10-18.24.38:710][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 860M
+[2017.06.10-18.24.38:710][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2017.06.10-18.24.38:710][  0]LogD3D11RHI:      Driver Date: Unknown
+[2017.06.10-18.24.38:710][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.06.10-18.24.38:763][  0]LogD3D11RHI: Async texture creation enabled
+[2017.06.10-18.24.38:789][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2017.06.10-18.24.38:793][  0]LogShaderCompilers: Guid format shader working directory is -19 characters bigger than the processId version (../../../../../../Users/DanielaFe7/Desktop/SteamProjectOF/SteamProject/Intermediate/Shaders/WorkingDirectory/4740/).
+[2017.06.10-18.24.38:794][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/DanielaFe7/AppData/Local/Temp/UnrealShaderWorkingDir/CA2DBED54DC2E5FAE0F5A99771AB968E/'.
+[2017.06.10-18.24.38:794][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.06.10-18.24.43:956][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.06.10-18.24.44:243][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.06.10-18.24.44:538][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.06.10-18.24.44:783][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.06.10-18.24.44:783][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.06.10-18.24.47:059][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.06.10-18.24.47:237][  0]LogDerivedDataCache: Loaded boot cache 0.18s 51MB C:/Users/DanielaFe7/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.06.10-18.24.47:237][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/DanielaFe7/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc
+[2017.06.10-18.24.47:237][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/DanielaFe7/Desktop/SteamProjectOF/SteamProject/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.06.10-18.24.47:237][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.06.10-18.24.47:238][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/DanielaFe7/Desktop/SteamProjectOF/SteamProject/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.06.10-18.24.47:238][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.06.10-18.24.47:320][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.06.10-18.24.47:335][  0]LogDerivedDataCache: Using Local data cache path C:/Users/DanielaFe7/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.06.10-18.24.47:371][  0]LogSlate: Using Freetype 2.6.0
+[2017.06.10-18.24.47:374][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.06.10-18.24.47:374][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.06.10-18.24.48:648][  0]LogAssetRegistry: FAssetRegistry took 0.0003 seconds to start up
+[2017.06.10-18.24.48:667][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.018246 seconds
+[2017.06.10-18.24.48:738][  0]LogInit: Selected Device Profile: [Windows]
+[2017.06.10-18.24.48:744][  0]LogContentStreaming: Texture pool size is 1000.00 MB
+[2017.06.10-18.24.49:758][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.06.10-18.24.50:000][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.06.10-18.24.50:274][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.06.10-18.24.50:275][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.06.10-18.24.50:275][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.06.10-18.24.52:335][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3299760, ProjectName: steamproject, ProjectVersion: , EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 3119142434
+[2017.06.10-18.24.56:826][  0]LogMoviePlayer: Initializing movie player
+[2017.06.10-18.24.56:989][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.06.10-18.24.58:381][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.06.10-18.24.58:550][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.06.10-18.25.00:057][  0]SourceControl: Información El control de código fuente está desactivado
+[2017.06.10-18.25.00:057][  0]SourceControl: Información El control de código fuente está desactivado
+[2017.06.10-18.25.00:336][  0]SourceControl: Información El control de código fuente está desactivado
+[2017.06.10-18.25.03:820][  0]LogUObjectArray: 34408 objects as part of root set at end of initial load.
+[2017.06.10-18.25.03:820][  0]LogUObjectAllocator: 7639320 out of 0 bytes used by permanent object pool.
+[2017.06.10-18.25.03:820][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.06.10-18.25.04:480][  0]LogEngine: Initializing Engine...
+[2017.06.10-18.25.04:483][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.06.10-18.25.04:898][  0]LogInit: XAudio2 using 'Altavoces (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.06.10-18.25.04:953][  0]LogInit: FAudioDevice initialized.
+[2017.06.10-18.25.04:983][  0]LogInit: Texture streaming: Enabled
+[2017.06.10-18.25.05:034][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.06.10-18.25.08:020][  0]LogInit:Display: Game Engine Initialized.
+[2017.06.10-18.25.08:970][  0]LogInit:Display: Starting Game.
+[2017.06.10-18.25.08:970][  0]LogNet: Browse: /Temp/Autosaves/Game/Maps/UEDPCMainMenu?Name=Player
+[2017.06.10-18.25.08:970][  0]LogLoad: LoadMap: /Temp/Autosaves/Game/Maps/UEDPCMainMenu?Name=Player
+[2017.06.10-18.25.09:082][  0]LogMemory: Platform Memory Stats for Windows
+[2017.06.10-18.25.09:082][  0]LogMemory: Process Physical Memory: 650.59 MB used, 662.89 MB peak
+[2017.06.10-18.25.09:082][  0]LogMemory: Process Virtual Memory: 729.44 MB used, 729.45 MB peak
+[2017.06.10-18.25.09:082][  0]LogMemory: Physical Memory: 6371.02 MB used,  5829.25 MB free, 12200.27 MB total
+[2017.06.10-18.25.09:082][  0]LogMemory: Virtual Memory: 1287.52 MB used,  5829.25 MB free, 134217728.00 MB total
+[2017.06.10-18.25.09:082][  0]LogMemory: 
+[2017.06.10-18.25.09:082][  0]Allocator Stats for TBB: (not implemented)
+[2017.06.10-18.25.09:780][  0]LogAIModule: Creating AISystem for world MainMenu
+[2017.06.10-18.25.10:227][  0]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2017.06.10-18.25.10:233][  0]LogWorld: Bringing World /Temp/Autosaves/Game/Maps/UEDPCMainMenu.MainMenu up for play (max tick rate 0) at 2017.06.10-13.25.10
+[2017.06.10-18.25.10:233][  0]LogWorld: Bringing up level for play took: 0.002048
+[2017.06.10-18.25.10:338][  0]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.10-18.25.10:338][  0]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.10-18.25.10:338][  0]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.06.10-18.25.10:352][  0]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.06.10-18.25.10:352][  0]LogLoad: Took 1.381318 seconds to LoadMap(/Temp/Autosaves/Game/Maps/UEDPCMainMenu)
+[2017.06.10-18.25.11:237][  0]LogRenderer: Reallocating scene render targets to support 1280x720 NumSamples 1 (Frame:2).
+[2017.06.10-18.25.11:237][  0]LogLoad: (Engine Initialization) Total time: 43.58 seconds
+[2017.06.10-18.25.11:237][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 1.09 seconds
+[2017.06.10-18.25.11:237][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2017.06.10-18.25.11:237][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2017.06.10-18.25.11:256][  0]LogOcInput: OculusInput pre-init called
+[2017.06.10-18.25.20:232][551]LogSlate: Took 0.000819 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.06.10-18.25.22:520][693]LogNetVersion: GetLocalNetworkVersion: CL: 3299760, ProjectName: steamproject, ProjectVersion: 1.0.0.0, EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 1176949133
+[2017.06.10-18.25.22:527][693]LogInit: WinSock: I am Lenovo-PC (192.168.56.1:0)
+[2017.06.10-18.25.23:621][693]LogPackageName: SearchForPackageOnDisk took   0.583s to resolve Lobby.umap.
+[2017.06.10-18.25.23:623][693]LogGameMode:Display: Match State Changed from InProgress to LeavingMap
+[2017.06.10-18.25.23:623][693]LogGameState: Match State Changed from InProgress to LeavingMap
+[2017.06.10-18.25.24:189][693]LogPackageName: SearchForPackageOnDisk took   0.564s to resolve Lobby.umap.
+[2017.06.10-18.25.24:189][693]LogNet: Browse: /Game/Maps/Lobby?listen
+[2017.06.10-18.25.24:189][693]LogLoad: LoadMap: /Game/Maps/Lobby?listen
+[2017.06.10-18.25.24:263][693]LogMemory: Platform Memory Stats for Windows
+[2017.06.10-18.25.24:263][693]LogMemory: Process Physical Memory: 682.62 MB used, 731.74 MB peak
+[2017.06.10-18.25.24:263][693]LogMemory: Process Virtual Memory: 878.23 MB used, 989.32 MB peak
+[2017.06.10-18.25.24:263][693]LogMemory: Physical Memory: 6396.20 MB used,  5804.08 MB free, 12200.27 MB total
+[2017.06.10-18.25.24:263][693]LogMemory: Virtual Memory: 1503.78 MB used,  5804.08 MB free, 134217728.00 MB total
+[2017.06.10-18.25.24:263][693]LogMemory: 
+[2017.06.10-18.25.24:263][693]Allocator Stats for TBB: (not implemented)
+[2017.06.10-18.25.26:043][693]LogBlueprint:Warning: [Compiler LobbyPC] Aviso  Set Input Mode Game And UI (Deprecated)  está obsoleto; Use the new version of Set Input Mode Game And UI instead
+[2017.06.10-18.25.26:086][693]LogBlueprint:Warning: [Compiler LobbyPC] Aviso [0058.43] Compile of LobbyPC successful, but with 1 Warning(s) [in 90 ms] (/Game/Blueprints/Lobby/LobbyPC.LobbyPC)
+[2017.06.10-18.25.26:092][693]LogBlueprint:Warning: [Compiler LobbyPC] Aviso [0058.43] Compile of LobbyPC successful, but with 2 Warning(s) [in 5 ms] (/Game/Blueprints/Lobby/LobbyPC.LobbyPC)
+[2017.06.10-18.25.26:092][693]LogBlueprint:Warning: [Compiler LobbyPC] Aviso [0058.43] Compile of LobbyPC successful, but with 3 Warning(s) [in 0 ms] (/Game/Blueprints/Lobby/LobbyPC.LobbyPC)
+[2017.06.10-18.25.26:609][693]LogBlueprint:Warning: [Compiler LobbyPC] Aviso  Set Input Mode Game And UI (Deprecated)  está obsoleto; Use the new version of Set Input Mode Game And UI instead
+[2017.06.10-18.25.26:654][693]LogBlueprint:Warning: [Compiler LobbyPC] Aviso [0059.00] Compile of LobbyPC successful, but with 1 Warning(s) [in 96 ms] (/Game/Blueprints/Lobby/LobbyPC.LobbyPC)
+[2017.06.10-18.25.26:655][693]LogBlueprint:Warning: [Compiler LobbyPC] Aviso [0059.00] Compile of LobbyPC successful, but with 2 Warning(s) [in 0 ms] (/Game/Blueprints/Lobby/LobbyPC.LobbyPC)
+[2017.06.10-18.25.26:665][693]LogBlueprint:Warning: [Compiler LobbyPC] Aviso [0059.01] Compile of LobbyPC successful, but with 3 Warning(s) [in 10 ms] (/Game/Blueprints/Lobby/LobbyPC.LobbyPC)
+[2017.06.10-18.25.27:795][693]LogAIModule: Creating AISystem for world Lobby
+[2017.06.10-18.25.27:796][693]LogLoad: Game class is 'LobbyGM_C'
+[2017.06.10-18.25.27:797][693]LogInit: WinSock: Socket queue 131072 / 131072
+[2017.06.10-18.25.27:798][693]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2017.06.10-18.25.27:798][693]LogNet: GameNetDriver IpNetDriver_0 IpNetDriver listening on port 7777
+[2017.06.10-18.25.27:802][693]LogActorComponent: RegisterComponentWithWorld: (/Game/Maps/Lobby.Lobby:PersistentLevel.WorldSettings_1.StaticMeshComponent0) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.06.10-18.25.27:806][693]LogWorld: Bringing World /Game/Maps/Lobby.Lobby up for play (max tick rate 0) at 2017.06.10-13.25.27
+[2017.06.10-18.25.27:807][693]LogWorld: Bringing up level for play took: 0.004751
+[2017.06.10-18.25.27:844][693]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.10-18.25.27:844][693]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.10-18.25.27:844][693]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.06.10-18.25.27:846][693]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.06.10-18.25.27:846][693]LogLoad: Took 3.657387 seconds to LoadMap(/Game/Maps/Lobby)
+[2017.06.10-18.25.28:012][694]LogNet: UNetDriver::TickDispatch: Very long time between ticks. DeltaTime: 5.49, Realtime: 0.17. IpNetDriver_0
+[2017.06.10-18.25.29:921][806]PIE:Warning: Aviso This widget does not support focus.  If this is a UserWidget, you should set bIsFocusable to true.
+[2017.06.10-18.25.32:563][969]LogGameMode:Display: Match State Changed from InProgress to LeavingMap
+[2017.06.10-18.25.32:563][969]LogGameState: Match State Changed from InProgress to LeavingMap
+[2017.06.10-18.25.32:567][969]LogGameMode: ProcessServerTravel: /Game/Maps/Arena01
+[2017.06.10-18.25.32:567][969]LogWorld: SeamlessTravel to: /Game/Maps/Arena01
+[2017.06.10-18.25.32:714][970]LogAIModule: Creating AISystem for world TravelMap
+[2017.06.10-18.25.32:719][970]LogStats:     SeamlessTravel FlushLevelStreaming  -  0.004 s
+[2017.06.10-18.25.32:720][970]LogWorld: Bringing World /Game/Maps/TravelMap.TravelMap up for play (max tick rate 0) at 2017.06.10-13.25.32
+[2017.06.10-18.25.32:720][970]LogWorld: Bringing up level for play took: 0.001627
+[2017.06.10-18.25.32:721][970]LogWorld: Sending NotifyLoadedWorld for LP: LocalPlayer_0 PC: LobbyPC_C_0
+[2017.06.10-18.25.32:721][970]LogNet:Verbose: NotifyLoadedWorld Begin
+[2017.06.10-18.25.32:721][970]LogNet:VeryVerbose: GetFunctionCallspace Server calling Server function: ServerNotifyLoadedWorld Local
+[2017.06.10-18.25.32:721][970]LogNet:Verbose: NotifyLoadedWorld End
+[2017.06.10-18.25.32:721][970]LogWorld: StartLoadingDestination to: /Game/Maps/Arena01
+[2017.06.10-18.25.33:900][982]LogAIModule: Creating AISystem for world Arena01
+[2017.06.10-18.25.33:901][982]LogLoad: Game class is 'GameplayGM_C'
+[2017.06.10-18.25.33:905][982]LogStats:     SeamlessTravel FlushLevelStreaming  -  0.004 s
+[2017.06.10-18.25.33:912][982]LogWorld: Bringing World /Game/Maps/Arena01.Arena01 up for play (max tick rate 0) at 2017.06.10-13.25.33
+[2017.06.10-18.25.33:913][982]LogWorld: Bringing up level for play took: 0.008319
+[2017.06.10-18.25.33:913][982]LogWorld: Sending NotifyLoadedWorld for LP: LocalPlayer_0 PC: LobbyPC_C_0
+[2017.06.10-18.25.33:913][982]LogNet:Verbose: NotifyLoadedWorld Begin
+[2017.06.10-18.25.33:914][982]LogNet:VeryVerbose: GetFunctionCallspace Server calling Server function: ServerNotifyLoadedWorld Local
+[2017.06.10-18.25.33:914][982]LogNet:Verbose: NotifyLoadedWorld End
+[2017.06.10-18.25.33:914][982]LogWorld: ----SeamlessTravel finished in 1.35 seconds ------
+[2017.06.10-18.25.33:914][982]LogGameMode: >> GameMode::HandleSeamlessTravelPlayer: LobbyPC_C_0 
+[2017.06.10-18.25.33:916][982]LogGameMode: << GameMode::HandleSeamlessTravelPlayer: GameplayPC_C_0
+[2017.06.10-18.25.33:916][982]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.10-18.25.33:916][982]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.10-18.25.33:916][982]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.06.10-18.25.33:927][982]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.06.10-18.26.44:798][340]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.06.10-18.26.44:807][340]LogOnline:Warning: OSS: No game present to leave for session (Game)
+[2017.06.10-18.26.44:808][340]LogEngine: All Windows Closed
+[2017.06.10-18.26.44:808][340]LogWindows: FPlatformMisc::RequestExit(0)
+[2017.06.10-18.26.44:809][341]LogMoviePlayer: Shutting down movie player
+[2017.06.10-18.26.45:532][341]LogNet: World NetDriver shutdown IpNetDriver_0 [GameNetDriver]
+[2017.06.10-18.26.45:532][341]LogNet: DestroyNamedNetDriver IpNetDriver_0 [GameNetDriver]
+[2017.06.10-18.26.45:532][341]LogExit: GameNetDriver IpNetDriver_0 shut down
+[2017.06.10-18.26.45:539][341]LogExit: Preparing to exit.
+[2017.06.10-18.26.46:875][341]LogExit: Game engine shut down
+[2017.06.10-18.26.46:949][341]LogWindows: Windows GetLastError: La operación se completó correctamente. (0)
