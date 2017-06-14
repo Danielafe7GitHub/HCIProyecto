@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FGenericCrashContext>
+<RuntimeProperties>
+<CrashVersion>3</CrashVersion>
+<CrashGUID>UE4CC-Windows-1804866B4C005EEC523ECBB44B8A0CA5_0000</CrashGUID>
+<ProcessId>4740</ProcessId>
+<IsInternalBuild>false</IsInternalBuild>
+<IsPerforceBuild>false</IsPerforceBuild>
+<IsSourceDistribution>false</IsSourceDistribution>
+<IsEnsure>false</IsEnsure>
+<IsAssert>true</IsAssert>
+<CrashType>Assert</CrashType>
+<SecondsSinceStart>137</SecondsSinceStart>
+<GameName>UE4-SteamProject</GameName>
+<ExecutableName>UE4Editor</ExecutableName>
+<BuildConfiguration>Development</BuildConfiguration>
+<GameSessionID></GameSessionID>
+<PlatformName>Windows</PlatformName>
+<PlatformNameIni>Windows</PlatformNameIni>
+<EngineMode>Game</EngineMode>
+<EngineModeEx>Unset</EngineModeEx>
+<DeploymentName></DeploymentName>
+<EngineVersion>4.15.1-3348071+++UE4+Release-4.15</EngineVersion>
+<CommandLine>&quot;../../../../../../Users/DanielaFe7/Desktop/SteamProjectOF/SteamProject/SteamProject.uproject&quot; /Temp/Autosaves/Game/Maps/UEDPCMainMenu -game -PIEVIACONSOLE -ResX=1280 -ResY=720  -Multiprocess -messaging -SessionName=&quot;Play in Standalone Game&quot; -windowed </CommandLine>
+<LanguageLCID>2058</LanguageLCID>
+<AppDefaultLocale>es_MX</AppDefaultLocale>
+<BuildVersion>++UE4+Release-4.15-CL-3348071</BuildVersion>
+<IsUE4Release>true</IsUE4Release>
+<UserName></UserName>
+<BaseDir>C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/Win64/</BaseDir>
+<RootDir>C:/Program Files/Epic Games/UE_4.15/</RootDir>
+<MachineId>FB76E534444C152B8374238034457C48</MachineId>
+<LoginId>fb76e534444c152b8374238034457c48</LoginId>
+<EpicAccountId>3d3411e0c24a4b6b9f8f21f92f47ffe7</EpicAccountId>
+<CallStack></CallStack>
+<SourceContext></SourceContext>
+<UserDescription></UserDescription>
+<UserActivityHint></UserActivityHint>
+<ErrorMessage>Assertion failed: NumRefs &gt; 0 [File:D:\Build\++UE4+Release-4.15+Compile\Sync\Engine\Source\Runtime\Engine\Private\Materials\MaterialShader.cpp] [Line: 1931] &nl;&nl;</ErrorMessage>
+<CrashDumpMode>0</CrashDumpMode>
+<CrashReporterMessage></CrashReporterMessage>
+<Misc.NumberOfCores>4</Misc.NumberOfCores>
+<Misc.NumberOfCoresIncludingHyperthreads>8</Misc.NumberOfCoresIncludingHyperthreads>
+<Misc.Is64bitOperatingSystem>1</Misc.Is64bitOperatingSystem>
+<Misc.CPUVendor>GenuineIntel</Misc.CPUVendor>
+<Misc.CPUBrand>Intel(R) Core(TM) i7-4710HQ CPU @ 2.50GHz</Misc.CPUBrand>
+<Misc.PrimaryGPUBrand>Intel(R) HD Graphics 4600</Misc.PrimaryGPUBrand>
+<Misc.OSVersionMajor>Windows 10</Misc.OSVersionMajor>
+<Misc.OSVersionMinor></Misc.OSVersionMinor>
+<MemoryStats.TotalPhysical>12792913920</MemoryStats.TotalPhysical>
+<MemoryStats.TotalVirtual>140737488224256</MemoryStats.TotalVirtual>
+<MemoryStats.PageSize>65536</MemoryStats.PageSize>
+<MemoryStats.TotalPhysicalGB>12</MemoryStats.TotalPhysicalGB>
+<MemoryStats.AvailablePhysical>6047178752</MemoryStats.AvailablePhysical>
+<MemoryStats.AvailableVirtual>140735718739968</MemoryStats.AvailableVirtual>
+<MemoryStats.UsedPhysical>867037184</MemoryStats.UsedPhysical>
+<MemoryStats.PeakUsedPhysical>923697152</MemoryStats.PeakUsedPhysical>
+<MemoryStats.UsedVirtual>1107275776</MemoryStats.UsedVirtual>
+<MemoryStats.PeakUsedVirtual>1177886720</MemoryStats.PeakUsedVirtual>
+<MemoryStats.bIsOOM>0</MemoryStats.bIsOOM>
+<MemoryStats.OOMAllocationSize>0</MemoryStats.OOMAllocationSize>
+<MemoryStats.OOMAllocationAlignment>0</MemoryStats.OOMAllocationAlignment>
+</RuntimeProperties>
+<PlatformProperties>
+<PlatformIsRunningWindows>1</PlatformIsRunningWindows>
+<PlatformCallbackResult>0</PlatformCallbackResult>
+</PlatformProperties>
+</FGenericCrashContext>
