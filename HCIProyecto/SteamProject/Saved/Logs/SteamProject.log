@@ -1,9 +1,9 @@
-﻿Log file open, 06/13/17 18:38:49
+﻿Log file open, 06/15/17 12:29:49
 LogInit:Display: Running engine for game: SteamProject
 LogPlatformFile: Not using cached read wrapper
-LogInit:Display: RandInit(889824809) SRandInit(889824809).
+LogInit:Display: RandInit(176502952) SRandInit(176502952).
 LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
-LogStats: Stats thread started at 0.176747
+LogStats: Stats thread started at 0.087061
 LogInit: Using libcurl 7.47.1
 LogInit:  - built for x86_64-pc-win32
 LogInit:  - supports SSL with OpenSSL/1.0.2g
@@ -23,8 +23,8 @@ LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured
 LogModuleManager:Warning: No filename provided for module OnlineSubsystemSteam
 LogModuleManager:Warning: ModuleManager: Unable to load module 'OnlineSubsystemSteam' because the file 'C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/Win64/' was not found.
 LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
-LogInit: Build: ++UE4+Release-4.15-CL-3348071
-LogInit: Engine Version: 4.15.1-3348071+++UE4+Release-4.15
+LogInit: Build: ++UE4+Release-4.15-CL-3450819
+LogInit: Engine Version: 4.15.3-3450819+++UE4+Release-4.15
 LogInit: Compatible Engine Version: 4.15.0-3299760+++UE4+Release-4.15
 LogInit: Net CL: 3299760
 LogDevObjectVersion: Number of dev versions registered: 14
@@ -42,690 +42,946 @@ LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 12
 LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 3
 LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
 LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
-LogInit: Compiled (64-bit): Mar 15 2017 16:52:47
+LogInit: Compiled (64-bit): May 21 2017 11:02:34
 LogInit: Compiled with Visual C++: 19.00.23026.00
 LogInit: Build Configuration: Development
 LogInit: Branch Name: ++UE4+Release-4.15
-LogInit: Command line:  
+LogInit: Command line:  /Temp/Autosaves/Game/Maps/UEDPCMainMenu -game -PIEVIACONSOLE -ResX=1280 -ResY=720  -Multiprocess -messaging -SessionName="Play in Standalone Game" -windowed 
 LogInit: Base directory: C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/Win64/
 LogInit: Installed Engine Build: 1
 LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
 LogInit: Object subsystem initialized
-[2017.06.13-23.38.51:265][  0]LogInit: Selected Device Profile: [Windows]
-[2017.06.13-23.38.51:265][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2017.06.13-23.38.51:313][  0]LogInit: Computer: LENOVO-PC
-[2017.06.13-23.38.51:313][  0]LogInit: User: DanielaFe7
-[2017.06.13-23.38.51:313][  0]LogInit: CPU Page size=65536, Cores=4
-[2017.06.13-23.38.51:313][  0]LogInit: High frequency timer resolution =2.435775 MHz
-[2017.06.13-23.38.51:313][  0]LogMemory: Memory total: Physical=11.9GB (12GB approx)
-[2017.06.13-23.38.51:313][  0]LogMemory: Platform Memory Stats for Windows
-[2017.06.13-23.38.51:313][  0]LogMemory: Process Physical Memory: 265.07 MB used, 265.07 MB peak
-[2017.06.13-23.38.51:313][  0]LogMemory: Process Virtual Memory: 262.90 MB used, 262.90 MB peak
-[2017.06.13-23.38.51:313][  0]LogMemory: Physical Memory: 4608.38 MB used,  7591.90 MB free, 12200.27 MB total
-[2017.06.13-23.38.51:313][  0]LogMemory: Virtual Memory: 632.87 MB used,  7591.90 MB free, 134217728.00 MB total
-[2017.06.13-23.38.52:682][  0]LogInit: Overriding culture en with editor configuration.
-[2017.06.13-23.39.02:500][  0]LogD3D11RHI: D3D11 adapters:
-[2017.06.13-23.39.03:309][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 860M' (Feature Level 11_0)
-[2017.06.13-23.39.03:309][  0]LogD3D11RHI:       2018/0/6100 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
-[2017.06.13-23.39.03:316][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 4600' (Feature Level 11_0)
-[2017.06.13-23.39.03:316][  0]LogD3D11RHI:       112/0/2048 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
-[2017.06.13-23.39.03:317][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2017.06.13-23.39.03:317][  0]LogD3D11RHI:       0/0/6100 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2017.06.13-23.39.03:317][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2017.06.13-23.39.03:322][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2017.06.13-23.39.03:322][  0]LogD3D11RHI:     GPU DeviceId: 0x1392 (for the marketing name, search the web for "GPU Device Id")
-[2017.06.13-23.39.03:322][  0]LogWindows: EnumDisplayDevices:
-[2017.06.13-23.39.03:323][  0]LogWindows:    0. 'Intel(R) HD Graphics 4600' (P:1 D:1)
-[2017.06.13-23.39.03:323][  0]LogWindows:    1. 'Intel(R) HD Graphics 4600' (P:0 D:0)
-[2017.06.13-23.39.03:323][  0]LogWindows:    2. 'Intel(R) HD Graphics 4600' (P:0 D:0)
-[2017.06.13-23.39.03:323][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
-[2017.06.13-23.39.03:323][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 860M
-[2017.06.13-23.39.03:323][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
-[2017.06.13-23.39.03:323][  0]LogD3D11RHI:      Driver Date: Unknown
-[2017.06.13-23.39.03:323][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
-[2017.06.13-23.39.03:339][  0]LogD3D11RHI: Async texture creation enabled
-[2017.06.13-23.39.03:351][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
-[2017.06.13-23.39.03:352][  0]LogShaderCompilers: Guid format shader working directory is -21 characters bigger than the processId version (../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Intermediate/Shaders/WorkingDirectory/12320/).
-[2017.06.13-23.39.03:352][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/DanielaFe7/AppData/Local/Temp/UnrealShaderWorkingDir/75E040B043806A871ABE24BBF1215A42/'.
-[2017.06.13-23.39.03:352][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
-[2017.06.13-23.39.07:657][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
-[2017.06.13-23.39.07:773][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
-[2017.06.13-23.39.07:855][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
-[2017.06.13-23.39.07:953][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
-[2017.06.13-23.39.08:132][  0]LogTemp:Display: Loaded TP MacTargetPlatform
-[2017.06.13-23.39.08:242][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
-[2017.06.13-23.39.08:322][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
-[2017.06.13-23.39.08:422][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
-[2017.06.13-23.39.08:511][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
-[2017.06.13-23.39.08:632][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
-[2017.06.13-23.39.08:737][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
-[2017.06.13-23.39.08:816][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
-[2017.06.13-23.39.08:902][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
-[2017.06.13-23.39.08:989][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
-[2017.06.13-23.39.09:070][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
-[2017.06.13-23.39.09:325][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
-[2017.06.13-23.39.09:325][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
-[2017.06.13-23.39.09:450][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
-[2017.06.13-23.39.09:635][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
-[2017.06.13-23.39.09:711][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
-[2017.06.13-23.39.09:809][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
-[2017.06.13-23.39.09:887][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
-[2017.06.13-23.39.09:963][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
-[2017.06.13-23.39.10:073][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
-[2017.06.13-23.39.10:073][  0]LogTargetPlatformManager:Display: Building Assets For Windows
-[2017.06.13-23.39.11:317][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
-[2017.06.13-23.39.11:966][  0]LogDerivedDataCache: Loaded boot cache 0.65s 50MB C:/Users/DanielaFe7/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
-[2017.06.13-23.39.11:966][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/DanielaFe7/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc
-[2017.06.13-23.39.11:966][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2017.06.13-23.39.11:966][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2017.06.13-23.39.11:966][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2017.06.13-23.39.11:966][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2017.06.13-23.39.12:034][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2017.06.13-23.39.12:073][  0]LogDerivedDataCache: Using Local data cache path C:/Users/DanielaFe7/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2017.06.13-23.39.12:083][  0]LogSlate: Using Freetype 2.6.0
-[2017.06.13-23.39.12:105][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2017.06.13-23.39.12:105][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2017.06.13-23.39.12:418][  0]LogInit: Selected Device Profile: [Windows]
-[2017.06.13-23.39.12:419][  0]LogContentStreaming: Texture pool size is 0.00 MB
-[2017.06.13-23.39.13:110][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
-[2017.06.13-23.39.13:244][  0]LogSimplygon: Simplygon DLL not present - disabling.
-[2017.06.13-23.39.13:404][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
-[2017.06.13-23.39.13:404][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
-[2017.06.13-23.39.13:404][  0]LogMeshUtilities: No automatic mesh merging module available
-[2017.06.13-23.39.14:215][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3299760, ProjectName: steamproject, ProjectVersion: , EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 3119142434
-[2017.06.13-23.39.14:341][  0]LogAssetRegistry: FAssetRegistry took 0.0216 seconds to start up
-[2017.06.13-23.39.14:406][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 1 prioritized culture(s) in 0.037088 seconds
-[2017.06.13-23.39.14:411][  0]LogUObjectArray: 32493 objects as part of root set at end of initial load.
-[2017.06.13-23.39.14:411][  0]LogUObjectAllocator: 7077024 out of 0 bytes used by permanent object pool.
-[2017.06.13-23.39.14:411][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2017.06.13-23.39.49:202][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2017.06.13-23.39.49:414][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2017.06.13-23.39.52:690][  0]LogMaterial: Uniform references updated for custom material expression Custom.
-[2017.06.13-23.39.54:990][  0]SourceControl: Info Source control is disabled
-[2017.06.13-23.39.56:515][  0]SourceControl: Info Source control is disabled
-[2017.06.13-23.39.56:912][  0]SourceControl: Info Source control is disabled
-[2017.06.13-23.39.57:248][  0]SourceControl: Info Source control is disabled
-[2017.06.13-23.40.06:611][  0]LogEngine: Initializing Engine...
-[2017.06.13-23.40.06:614][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2017.06.13-23.40.07:863][  0]LogAIModule: Creating AISystem for world Untitled
-[2017.06.13-23.40.07:910][  0]LogInit: XAudio2 using 'Altavoces (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2017.06.13-23.40.07:975][  0]LogInit: FAudioDevice initialized.
-[2017.06.13-23.40.08:045][  0]LogDerivedDataCache: Saved boot cache 0.07s 50MB C:/Users/DanielaFe7/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
-[2017.06.13-23.40.08:055][  0]LogInit: Texture streaming: Enabled
-[2017.06.13-23.40.08:696][  0]LogEngineSessionManager: EngineSessionManager initialized
-[2017.06.13-23.40.09:934][  0]LogInit: Transaction tracking system initialized
-[2017.06.13-23.40.13:847][  0]BlueprintLog: New page: Editor Load
-[2017.06.13-23.40.26:473][  0]LocalizationService: Info Localization service is disabled
-[2017.06.13-23.40.36:260][  0]LogConsoleResponse:Display: 
-[2017.06.13-23.40.42:076][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2017.06.13-23.40.42:076][  0]LogCook:Display: Mobile HDR setting 1
-[2017.06.13-23.40.43:128][  0]LogFileCache: Scanning file cache for directory 'C:/Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Content/' took 0.07s
-[2017.06.13-23.41.01:461][  0]SourceControl: Info Source control is disabled
-[2017.06.13-23.41.01:461][  0]Cmd: MAP LOAD FILE="../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Content/Maps/MainMenu.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2017.06.13-23.41.01:500][  0]LightingResults: New page: Lighting Build
-[2017.06.13-23.41.01:761][  0]MapCheck: New page: Map Check
-[2017.06.13-23.41.01:761][  0]LightingResults: New page: Lighting Build
-[2017.06.13-23.41.06:593][  0]LogAIModule: Creating AISystem for world MainMenu
-[2017.06.13-23.41.06:678][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2017.06.13-23.41.06:679][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2017.06.13-23.41.07:024][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 344.719ms to complete.
-[2017.06.13-23.41.07:024][  0]LogFileHelpers: Loading map 'MainMenu' took 5.563
-[2017.06.13-23.41.14:502][  0]LogCollectionManager: Loaded 0 collections in 0.009103 seconds
-[2017.06.13-23.41.14:881][  0]LogFileCache: Scanning file cache for directory 'C:/Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Saved/Collections/' took 0.01s
-[2017.06.13-23.41.14:881][  0]LogFileCache: Scanning file cache for directory 'C:/Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Content/Developers/DanielaFe7/Collections/' took 0.01s
-[2017.06.13-23.41.14:881][  0]LogFileCache: Scanning file cache for directory 'C:/Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Content/Collections/' took 0.01s
-[2017.06.13-23.41.14:881][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000005 seconds
-[2017.06.13-23.41.14:916][  0]LogContentBrowser: Native class hierarchy populated in 0.0346 seconds. Added 2245 classes and 453 folders.
-[2017.06.13-23.41.14:945][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2017.06.13-23.41.14:945][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2017.06.13-23.41.15:267][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0019 seconds. Added 0 classes and 0 folders.
-[2017.06.13-23.41.16:975][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0020 seconds. Added 0 classes and 0 folders.
-[2017.06.13-23.41.17:298][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0019 seconds. Added 1 classes and 2 folders.
-[2017.06.13-23.41.17:565][  0]LogCrashTracker: Crashtracker disabled due to settings.
-[2017.06.13-23.41.17:588][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
-[2017.06.13-23.41.17:925][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0021 seconds. Added 1 classes and 2 folders.
-[2017.06.13-23.41.17:926][  0]LogLoad: (Engine Initialization) Total time: 154.44 seconds
-[2017.06.13-23.41.17:926][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 1.86 seconds
-[2017.06.13-23.41.17:926][  0]LogExternalProfiler: Found external profiler: VSPerf
-[2017.06.13-23.41.17:926][  0]LogExternalProfiler: Using external profiler: VSPerf
-[2017.06.13-23.41.17:945][  0]LogOcInput: OculusInput pre-init called
-[2017.06.13-23.41.17:986][  0]LogContentStreaming: Texture pool size now 400 MB
-[2017.06.13-23.41.18:000][  0]LogSlate: Took 0.009895 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2017.06.13-23.41.18:019][  0]LogSlate: Took 0.005995 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
-[2017.06.13-23.41.18:048][  0]LogSlate: Took 0.008508 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
-[2017.06.13-23.41.18:541][  0]LogSlate: Took 0.002525 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
-[2017.06.13-23.41.18:723][  2]LogRenderer: Reallocating scene render targets to support 956x248 NumSamples 1 (Frame:2).
-[2017.06.13-23.41.19:361][  6]LogAssetRegistry: Asset discovery search completed in 125.0420 seconds
-[2017.06.13-23.41.19:361][  6]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000015 seconds (found 0 objects)
-[2017.06.13-23.41.19:361][  6]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000062 seconds (updated 0 objects)
-[2017.06.13-23.41.24:151][141]LogRenderer: Reallocating scene render targets to support 964x256 NumSamples 1 (Frame:136).
-[2017.06.13-23.42.00:062][ 47]LogSlate: Took 0.000713 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
-[2017.06.13-23.45.43:688][419]LogSlate: Took 0.000944 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2017.06.13-23.45.44:986][419]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0035 seconds. Added 112 classes and 0 folders.
-[2017.06.13-23.45.48:650][420]LogRenderer: Reallocating scene render targets to support 964x300 NumSamples 1 (Frame:1252).
-[2017.06.13-23.45.52:772][464]LogRenderer: Reallocating scene render targets to support 964x660 NumSamples 1 (Frame:1341).
-[2017.06.13-23.46.03:113][598]LogSlate: Took 0.131494 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
-[2017.06.13-23.46.11:703][731]LogSlate: Took 0.098803 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
-[2017.06.13-23.51.09:516][847]LogSlate: Took 0.001238 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
-[2017.06.13-23.51.18:855][874]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/MainMenu' took 0.144
-[2017.06.13-23.51.18:863][874]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/ThirdPersonBP/enemigo] ([1] browsable assets)...
-[2017.06.13-23.51.18:863][874]OBJ SavePackage: Finished generating thumbnails for package [/Game/ThirdPersonBP/enemigo]
-[2017.06.13-23.51.18:904][874]LogSavePackage: Save=34.43ms
-[2017.06.13-23.51.18:904][874]LogSavePackage: Moving '../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Saved/enemigo_Auto1D3BF491E44FCCAD471236CA16F5D84B4.tmp' to '../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Saved/Autosaves/Game/ThirdPersonBP/enemigo_Auto1.uasset'
-[2017.06.13-23.51.18:914][874]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Saved/Autosaves/Game/ThirdPersonBP/enemigo_Auto1.uasset
-[2017.06.13-23.51.18:914][874]LogFileHelpers: Auto-saving content packages took 0.057
-[2017.06.13-23.54.35:650][ 89]LogEditorTransaction: Undo Move Node
-[2017.06.13-23.57.12:140][764]BlueprintLog: New page: Compile enemigo
-[2017.06.13-23.57.14:407][786]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonBP/enemigo" FILE="../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Content/ThirdPersonBP/enemigo.uasset" SILENT=true
-[2017.06.13-23.57.14:479][786]LogSavePackage: Save=67.11ms
-[2017.06.13-23.57.14:479][786]LogSavePackage: Moving '../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Saved/enemigo3E6AB00445416EC4B29D91816F28DC88.tmp' to '../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Content/ThirdPersonBP/enemigo.uasset'
-[2017.06.13-23.57.14:496][786]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Content/ThirdPersonBP/enemigo.uasset
-[2017.06.13-23.58.23:458][275]LogMetaData: Removing '/Game/ThirdPersonBP/enemigo_AI.enemigo_AI:UserConstructionScript.K2Node_FunctionEntry_0' ref from Metadata '/Game/ThirdPersonBP/enemigo.PackageMetaData'
-[2017.06.13-23.58.23:458][275]LogMetaData: Removing '/Game/ThirdPersonBP/enemigo_AI.SKEL_enemigo_AI_C' ref from Metadata '/Game/ThirdPersonBP/enemigo.PackageMetaData'
-[2017.06.13-23.58.23:458][275]LogMetaData: Removing '/Game/ThirdPersonBP/enemigo_AI.enemigo_AI_C' ref from Metadata '/Game/ThirdPersonBP/enemigo.PackageMetaData'
-[2017.06.13-23.58.23:458][275]LogMetaData: Removing '/Game/ThirdPersonBP/enemigo_AI.enemigo_AI:EventGraph.K2Node_Event_0' ref from Metadata '/Game/ThirdPersonBP/enemigo.PackageMetaData'
-[2017.06.13-23.58.23:458][275]LogMetaData: Removing '/Game/ThirdPersonBP/enemigo_AI.enemigo_AI:EventGraph.K2Node_Event_1' ref from Metadata '/Game/ThirdPersonBP/enemigo.PackageMetaData'
-[2017.06.13-23.58.23:512][275]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonBP/enemigo_AI" FILE="../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Content/ThirdPersonBP/enemigo_AI.uasset" SILENT=true
-[2017.06.13-23.58.23:567][275]LogSavePackage: Save=48.70ms
-[2017.06.13-23.58.23:567][275]LogSavePackage: Moving '../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Saved/enemigo_AIC1DB7E8941BC2601C179BF91B497F002.tmp' to '../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Content/ThirdPersonBP/enemigo_AI.uasset'
-[2017.06.13-23.58.23:585][275]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Content/ThirdPersonBP/enemigo_AI.uasset
-[2017.06.13-23.58.51:642][707]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
-[2017.06.13-23.58.57:114][778]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
-[2017.06.13-23.59.07:806][914]LogAnimation:Warning: AnimBP ThirdPerson_AnimBP_C is incompatible with skeleton SK_Mannequin_Skeleton, removing AnimBP from actor.
-[2017.06.13-23.59.07:806][914]LogAnimation:Warning: AnimBP ThirdPerson_AnimBP_C is incompatible with skeleton SK_Mannequin_Skeleton, removing AnimBP from actor.
-[2017.06.13-23.59.17:992][ 52]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
-[2017.06.14-00.00.07:958][ 15]BlueprintLog: New page: Compile enemigo
-[2017.06.14-00.00.12:386][ 62]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonBP/enemigo" FILE="../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Content/ThirdPersonBP/enemigo.uasset" SILENT=true
-[2017.06.14-00.00.12:483][ 62]LogSavePackage: Save=87.98ms
-[2017.06.14-00.00.12:483][ 62]LogSavePackage: Moving '../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Saved/enemigo84BDC41D49997B0C6E41088A1015CD07.tmp' to '../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Content/ThirdPersonBP/enemigo.uasset'
-[2017.06.14-00.00.12:501][ 62]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Content/ThirdPersonBP/enemigo.uasset
-[2017.06.14-00.00.29:137][387]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
-[2017.06.14-00.00.35:263][479]BlueprintLog: New page: Compile enemigo
-[2017.06.14-00.00.38:213][497]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonBP/enemigo" FILE="../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Content/ThirdPersonBP/enemigo.uasset" SILENT=true
-[2017.06.14-00.00.38:390][497]LogSavePackage: Save=110.96ms
-[2017.06.14-00.00.38:390][497]LogSavePackage: Moving '../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Saved/enemigoB15741F6428C0386CCC24C9872689ED9.tmp' to '../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Content/ThirdPersonBP/enemigo.uasset'
-[2017.06.14-00.00.38:407][497]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Content/ThirdPersonBP/enemigo.uasset
-[2017.06.14-00.01.06:165][703]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonBP/enemigo" FILE="../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Content/ThirdPersonBP/enemigo.uasset" SILENT=true
-[2017.06.14-00.01.06:294][703]LogSavePackage: Save=75.81ms
-[2017.06.14-00.01.06:294][703]LogSavePackage: Moving '../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Saved/enemigo69E4A4A64E8A5F9F215E82BB7E53CF58.tmp' to '../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Content/ThirdPersonBP/enemigo.uasset'
-[2017.06.14-00.01.06:303][703]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Content/ThirdPersonBP/enemigo.uasset
-[2017.06.14-00.01.10:752][776]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
-[2017.06.14-00.01.17:448][960]LogEditorViewport: Clicking Background
-[2017.06.14-00.01.17:466][960]LogEditorViewport: Clicking Background
-[2017.06.14-00.01.26:580][168]LogLinker:Warning: Can't find file '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst'
-[2017.06.14-00.01.26:581][168]LogLinker:Warning: Can't find file for asset '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst' while loading ../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Content/ThirdPersonBP/Objects/SM_Mushroom_A.uasset.
-[2017.06.14-00.01.26:581][168]LoadErrors:Error: Error /Game/ThirdPersonBP/Objects/SM_Mushroom_A : Can't find file for asset. /Game/Assets/Environment/Materials/M_Mushroom_A_Inst
-[2017.06.14-00.01.26:581][168]LogLinker:Warning: Can't find file '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst'
-[2017.06.14-00.01.26:582][168]LogLinker:Warning: Can't find file for asset '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst' while loading ../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Content/ThirdPersonBP/Objects/SM_Mushroom_A.uasset.
-[2017.06.14-00.01.26:658][168]LogLinker:Warning: Can't find file '/Game/Assets/Environment/Materials/M_Stone_Path_Inst'
-[2017.06.14-00.01.26:658][168]LogLinker:Warning: Can't find file for asset '/Game/Assets/Environment/Materials/M_Stone_Path_Inst' while loading ../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Content/ThirdPersonBP/Objects/SM_Stone_Path_B.uasset.
-[2017.06.14-00.01.26:659][168]LoadErrors:Error: Error /Game/ThirdPersonBP/Objects/SM_Stone_Path_B : Can't find file for asset. /Game/Assets/Environment/Materials/M_Stone_Path_Inst
-[2017.06.14-00.01.26:659][168]LogLinker:Warning: Can't find file '/Game/Assets/Environment/Materials/M_Stone_Path_Inst'
-[2017.06.14-00.01.26:659][168]LogLinker:Warning: Can't find file for asset '/Game/Assets/Environment/Materials/M_Stone_Path_Inst' while loading ../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Content/ThirdPersonBP/Objects/SM_Stone_Path_B.uasset.
-[2017.06.14-00.01.27:529][168]LogLinker:Warning: Can't find file '/Game/Assets/Environment/Materials/M_Stone_Path_Inst'
-[2017.06.14-00.01.27:529][168]LoadErrors: Info Failed to load /Game/Assets/Environment/Materials/M_Stone_Path_Inst.M_Stone_Path_Inst Referenced by SM_Stone_Path_B
-[2017.06.14-00.01.27:530][168]LogLinker:Warning: Can't find file for asset '/Game/Assets/Environment/Materials/M_Stone_Path_Inst' while loading NULL.
-[2017.06.14-00.01.27:531][168]LogLinker:Warning: Can't find file '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst'
-[2017.06.14-00.01.27:531][168]LoadErrors: Info Failed to load /Game/Assets/Environment/Materials/M_Mushroom_A_Inst.M_Mushroom_A_Inst Referenced by SM_Mushroom_A
-[2017.06.14-00.01.27:531][168]LogLinker:Warning: Can't find file for asset '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst' while loading NULL.
-[2017.06.14-00.01.31:647][274]LogLinker:Warning: Can't find file '/Game/ThirdPersonBP/Character/ThirdPersonAnimBlueprint'
-[2017.06.14-00.01.31:648][274]LogLinker:Warning: Can't find file '/Game/ThirdPersonBP/Character/ThirdPersonAnimBlueprint'
-[2017.06.14-00.01.31:649][274]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/ThirdPersonBP/Character/ThirdPersonAnimBlueprint.ThirdPersonAnimBlueprint'
-[2017.06.14-00.01.32:285][304]LogLinker:Warning: Can't find file '/Game/ThirdPersonBP/Character/ThirdPersonSkelMesh'
-[2017.06.14-00.01.32:286][304]LogLinker:Warning: Can't find file '/Game/ThirdPersonBP/Character/ThirdPersonSkelMesh'
-[2017.06.14-00.01.32:287][304]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/ThirdPersonBP/Character/ThirdPersonSkelMesh.ThirdPersonSkelMesh'
-[2017.06.14-00.01.32:919][333]LogLinker:Warning: Can't find file '/Game/ThirdPersonBP/Character/ThirdPersonSkeleton'
-[2017.06.14-00.01.32:920][333]LogLinker:Warning: Can't find file '/Game/ThirdPersonBP/Character/ThirdPersonSkeleton'
-[2017.06.14-00.01.32:921][333]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/ThirdPersonBP/Character/ThirdPersonSkeleton.ThirdPersonSkeleton'
-[2017.06.14-00.01.33:662][356]LogLinker:Warning: Can't find file '/Game/ThirdPersonBP/Animations/ThirdPersonIdle'
-[2017.06.14-00.01.33:664][356]LogLinker:Warning: Can't find file '/Game/ThirdPersonBP/Animations/ThirdPersonIdle'
-[2017.06.14-00.01.33:664][356]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/ThirdPersonBP/Animations/ThirdPersonIdle.ThirdPersonIdle'
-[2017.06.14-00.01.34:852][384]LogLinker:Warning: Can't find file '/Game/ThirdPersonBP/Meshes/CubeMesh'
-[2017.06.14-00.01.34:853][384]LogLinker:Warning: Can't find file '/Game/ThirdPersonBP/Meshes/CubeMesh'
-[2017.06.14-00.01.34:853][384]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/ThirdPersonBP/Meshes/CubeMesh.CubeMesh'
-[2017.06.14-00.01.59:522][799]LogBlueprint:Warning: [Compiler LobbyPC] Warning  Set Input Mode Game And UI (Deprecated)  is deprecated; Use the new version of Set Input Mode Game And UI instead
-[2017.06.14-00.01.59:579][799]LogBlueprint:Warning: [Compiler LobbyPC] Warning [1396.09] Compile of LobbyPC successful, but with 1 Warning(s) [in 232 ms] (/Game/Blueprints/Lobby/LobbyPC.LobbyPC)
-[2017.06.14-00.01.59:592][799]LogBlueprint:Warning: [Compiler LobbyPC] Warning [1396.11] Compile of LobbyPC successful, but with 2 Warning(s) [in 11 ms] (/Game/Blueprints/Lobby/LobbyPC.LobbyPC)
-[2017.06.14-00.01.59:592][799]LogBlueprint:Warning: [Compiler LobbyPC] Warning [1396.11] Compile of LobbyPC successful, but with 3 Warning(s) [in 0 ms] (/Game/Blueprints/Lobby/LobbyPC.LobbyPC)
-[2017.06.14-00.02.00:161][799]LogBlueprint:Warning: [Compiler LobbyPC] Warning  Set Input Mode Game And UI (Deprecated)  is deprecated; Use the new version of Set Input Mode Game And UI instead
-[2017.06.14-00.02.00:210][799]LogBlueprint:Warning: [Compiler LobbyPC] Warning [1396.72] Compile of LobbyPC successful, but with 1 Warning(s) [in 213 ms] (/Game/Blueprints/Lobby/LobbyPC.LobbyPC)
-[2017.06.14-00.02.00:210][799]LogBlueprint:Warning: [Compiler LobbyPC] Warning [1396.72] Compile of LobbyPC successful, but with 2 Warning(s) [in 0 ms] (/Game/Blueprints/Lobby/LobbyPC.LobbyPC)
-[2017.06.14-00.02.00:222][799]LogBlueprint:Warning: [Compiler LobbyPC] Warning [1396.74] Compile of LobbyPC successful, but with 3 Warning(s) [in 11 ms] (/Game/Blueprints/Lobby/LobbyPC.LobbyPC)
-[2017.06.14-00.02.09:773][799]LogAIModule: Creating AISystem for world Arena01
-[2017.06.14-00.02.10:089][799]Cmd: MAP LOAD FILE="../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Content/Maps/Arena01.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2017.06.14-00.02.10:091][799]LightingResults: New page: Lighting Build
-[2017.06.14-00.02.10:098][799]LoadErrors: New page: Loading map: Arena01.umap
-[2017.06.14-00.02.10:109][799]MapCheck: New page: Map Check
-[2017.06.14-00.02.10:109][799]LightingResults: New page: Lighting Build
-[2017.06.14-00.02.10:236][799]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2017.06.14-00.02.10:382][799]Cmd: MAP CHECKDEP NOCLEARLOG
-[2017.06.14-00.02.11:109][799]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 726.928ms to complete.
-[2017.06.14-00.02.11:111][799]LogFileHelpers: Loading map 'Arena01' took 1.035
-[2017.06.14-00.02.50:854][794]LogEditorViewport: Clicking on Actor (LMB): TextRenderActor (TemplateLabel)
-[2017.06.14-00.02.53:053][856]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
-[2017.06.14-00.02.55:111][903]LogEditorViewport: Clicking on Actor (LMB): enemigo_C (enemigo)
-[2017.06.14-00.03.20:318][637]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
-[2017.06.14-00.03.25:454][773]LogEditorViewport: Clicking on Actor (LMB): enemigo_C (enemigo)
-[2017.06.14-00.03.34:452][986]LogActor:Warning: VREditorButton /Engine/Transient.World_16:PersistentLevel.VREditorButton_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2017.06.14-00.03.52:679][464]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
-[2017.06.14-00.03.54:542][514]LogEditorViewport: Clicking on Actor (LMB): NavMeshBoundsVolume (NavMeshBoundsVolume)
-[2017.06.14-00.04.36:501][766]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
-[2017.06.14-00.04.40:826][890]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (SkySphereBlueprint)
-[2017.06.14-00.04.41:926][919]LogEditorViewport: Clicking on Actor (LMB): NavMeshBoundsVolume (NavMeshBoundsVolume)
-[2017.06.14-00.04.51:718][204]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
-[2017.06.14-00.04.55:614][311]LogEditorViewport: Clicking on Actor (LMB): TextRenderActor (TemplateLabel)
-[2017.06.14-00.04.56:944][347]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
-[2017.06.14-00.04.58:391][384]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
-[2017.06.14-00.04.59:441][415]LogEditorViewport: Clicking on Actor (LMB): enemigo_C (enemigo)
-[2017.06.14-00.05.01:656][471]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
-[2017.06.14-00.05.02:422][488]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
-[2017.06.14-00.05.04:004][535]Cmd: TRANSACTION UNDO
-[2017.06.14-00.05.04:004][535]LogEditorTransaction: Undo Clicking on Actors
-[2017.06.14-00.05.05:121][551]Cmd: TRANSACTION UNDO
-[2017.06.14-00.05.05:122][551]LogEditorTransaction: Undo Clicking on Actors
-[2017.06.14-00.05.06:799][573]Cmd: TRANSACTION UNDO
-[2017.06.14-00.05.06:800][573]LogEditorTransaction: Undo Clicking on Actors
-[2017.06.14-00.05.07:699][585]Cmd: TRANSACTION UNDO
-[2017.06.14-00.05.07:699][585]LogEditorTransaction: Undo Clicking on Actors
-[2017.06.14-00.05.14:310][736]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (SkySphereBlueprint)
-[2017.06.14-00.05.16:208][789]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
-[2017.06.14-00.05.20:187][902]Cmd: TRANSACTION UNDO
-[2017.06.14-00.05.20:187][902]LogEditorTransaction: Undo Move Actors
-[2017.06.14-00.05.23:039][938]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
-[2017.06.14-00.05.24:156][953]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
-[2017.06.14-00.05.25:261][981]LogEditorViewport: Clicking on Actor (LMB): enemigo_C (enemigo)
-[2017.06.14-00.05.30:160][118]Cmd: TRANSACTION UNDO
-[2017.06.14-00.05.30:160][118]LogEditorTransaction: Undo Move Actors
-[2017.06.14-00.05.33:221][202]LogEditorViewport: Clicking on Actor (LMB): NavMeshBoundsVolume (NavMeshBoundsVolume)
-[2017.06.14-00.06.19:826][496]LogTemp: Repeting last play command: Standalone Game
-[2017.06.14-00.06.22:395][496]LogSavePackage: Save=1607.36ms
-[2017.06.14-00.06.22:395][496]LogSavePackage: Moving '../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Saved/UEDPCArena016F39CB434C11260CE245D79A0EFB3329.tmp' to '../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Saved/Autosaves/Game/Maps/UEDPCArena01.umap'
-[2017.06.14-00.06.22:408][496]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Saved/Autosaves/Game/Maps/UEDPCArena01.umap
-[2017.06.14-00.06.22:445][496]LogEditorTransaction: Undo Spawn Play From Here Start
-[2017.06.14-00.06.30:831][694]LogTemp: Repeting last play command: Standalone Game
-[2017.06.14-00.06.33:052][694]LogSavePackage: Save=1286.61ms
-[2017.06.14-00.06.33:052][694]LogSavePackage: Moving '../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Saved/UEDPCArena01D1203F474031604719C963BFB3A6317E.tmp' to '../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Saved/Autosaves/Game/Maps/UEDPCArena01.umap'
-[2017.06.14-00.06.33:082][694]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Saved/Autosaves/Game/Maps/UEDPCArena01.umap
-[2017.06.14-00.06.33:134][694]LogEditorTransaction: Undo Spawn Play From Here Start
-[2017.06.14-00.06.37:110][790]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Arena01" FILE="../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Content/Maps/Arena01.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
-[2017.06.14-00.06.38:812][790]LogSavePackage: Save=1561.62ms
-[2017.06.14-00.06.38:812][790]LogSavePackage: Moving '../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Saved/Arena01A5565C5F4668560EA5412FA6C9B559D2.tmp' to '../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Content/Maps/Arena01.umap'
-[2017.06.14-00.06.38:833][790]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Content/Maps/Arena01.umap
-[2017.06.14-00.06.44:050][901]LogTemp: Repeting last play command: Standalone Game
-[2017.06.14-00.06.45:709][901]LogSavePackage: Save=933.00ms
-[2017.06.14-00.06.45:709][901]LogSavePackage: Moving '../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Saved/UEDPCArena0178C5DD504C0D24FA7C5DBB981F515290.tmp' to '../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Saved/Autosaves/Game/Maps/UEDPCArena01.umap'
-[2017.06.14-00.06.45:719][901]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Saved/Autosaves/Game/Maps/UEDPCArena01.umap
-[2017.06.14-00.06.45:736][901]LogEditorTransaction: Undo Spawn Play From Here Start
-[2017.06.14-00.07.02:117][249]LogTemp: Repeting last play command: Standalone Game
-[2017.06.14-00.07.04:463][249]LogSavePackage: Save=1289.97ms
-[2017.06.14-00.07.04:463][249]LogSavePackage: Moving '../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Saved/UEDPCArena0164E7DAA9446A7E9E967D348B308CE26A.tmp' to '../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Saved/Autosaves/Game/Maps/UEDPCArena01.umap'
-[2017.06.14-00.07.04:480][249]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Saved/Autosaves/Game/Maps/UEDPCArena01.umap
-[2017.06.14-00.07.04:498][249]LogEditorTransaction: Undo Spawn Play From Here Start
-[2017.06.14-00.07.29:287][942]LogEditorViewport: Clicking on Actor (LMB): PostProcessVolume (PostProcessVolume)
-[2017.06.14-00.07.33:433][ 29]LogTemp: Repeting last play command: Standalone Game
-[2017.06.14-00.07.35:739][ 29]LogSavePackage: Save=1321.53ms
-[2017.06.14-00.07.35:739][ 29]LogSavePackage: Moving '../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Saved/UEDPCArena0195C03CF046B04DF87E1C28BD060CF314.tmp' to '../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Saved/Autosaves/Game/Maps/UEDPCArena01.umap'
-[2017.06.14-00.07.35:767][ 29]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Saved/Autosaves/Game/Maps/UEDPCArena01.umap
-[2017.06.14-00.07.35:816][ 29]LogEditorTransaction: Undo Spawn Play From Here Start
-[2017.06.14-00.07.43:510][262]LogTemp: Repeting last play command: Standalone Game
-[2017.06.14-00.07.45:742][262]LogSavePackage: Save=1291.14ms
-[2017.06.14-00.07.45:742][262]LogSavePackage: Moving '../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Saved/UEDPCArena01DCDFDF844D9B31B14C74EDA3A569C0F0.tmp' to '../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Saved/Autosaves/Game/Maps/UEDPCArena01.umap'
-[2017.06.14-00.07.45:759][262]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Saved/Autosaves/Game/Maps/UEDPCArena01.umap
-[2017.06.14-00.07.45:808][262]LogEditorTransaction: Undo Spawn Play From Here Start
-[2017.06.14-00.07.51:282][425]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
-[2017.06.14-00.07.51:584][425]LogEditorViewport: Clicking on Component (LMB): StaticMeshComponent (StaticMeshComponent0)
-[2017.06.14-00.07.53:163][465]LogEditorViewport: Clicking on Actor (LMB): enemigo_C (enemigo)
-[2017.06.14-00.12.33:043][711]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonBP/enemigo" FILE="../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Content/ThirdPersonBP/enemigo.uasset" SILENT=true
-[2017.06.14-00.12.33:202][711]LogSavePackage: Save=104.58ms
-[2017.06.14-00.12.33:202][711]LogSavePackage: Moving '../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Saved/enemigoBA709DC14D2F04408250DFB720BDA80A.tmp' to '../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Content/ThirdPersonBP/enemigo.uasset'
-[2017.06.14-00.12.33:219][711]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Content/ThirdPersonBP/enemigo.uasset
-[2017.06.14-00.12.34:207][729]BlueprintLog: New page: Compile enemigo
-[2017.06.14-00.12.36:736][730]BlueprintLog: New page: Compile enemigo
-[2017.06.14-00.12.40:565][789]LogTemp: Repeting last play command: Standalone Game
-[2017.06.14-00.12.42:909][789]LogSavePackage: Save=1341.91ms
-[2017.06.14-00.12.42:909][789]LogSavePackage: Moving '../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Saved/UEDPCArena0134CB829149D3D562F0B2DAA1F8241E24.tmp' to '../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Saved/Autosaves/Game/Maps/UEDPCArena01.umap'
-[2017.06.14-00.12.42:926][789]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Saved/Autosaves/Game/Maps/UEDPCArena01.umap
-[2017.06.14-00.12.42:943][789]LogEditorTransaction: Undo Spawn Play From Here Start
-[2017.06.14-00.14.56:420][167]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Arena01" FILE="../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Content/Maps/Arena01.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
-[2017.06.14-00.14.57:969][167]LogSavePackage: Save=1420.88ms
-[2017.06.14-00.14.57:970][167]LogSavePackage: Moving '../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Saved/Arena012452093E43D8FB251C2D3B82494847FB.tmp' to '../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Content/Maps/Arena01.umap'
-[2017.06.14-00.14.57:997][167]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Content/Maps/Arena01.umap
-[2017.06.14-00.15.11:146][536]LogTemp: Repeting last play command: Standalone Game
-[2017.06.14-00.15.13:341][536]LogSavePackage: Save=1276.51ms
-[2017.06.14-00.15.13:348][536]LogSavePackage: Moving '../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Saved/UEDPCArena014BF32CA4493E0BB3F056AAA84079740E.tmp' to '../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Saved/Autosaves/Game/Maps/UEDPCArena01.umap'
-[2017.06.14-00.15.13:361][536]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Saved/Autosaves/Game/Maps/UEDPCArena01.umap
-[2017.06.14-00.15.13:396][536]LogEditorTransaction: Undo Spawn Play From Here Start
-[2017.06.14-00.16.14:296][821]LogLinker:Warning: Can't find file '/Game/M_Orzelek_Assets/Assets/Free/CastleTower/T_CastleTower'
-[2017.06.14-00.16.14:296][821]LogLinker:Warning: Can't find file for asset '/Game/M_Orzelek_Assets/Assets/Free/CastleTower/T_CastleTower' while loading ../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Content/ThirdPersonBP/Objects/CastleTower/UE4/M_Orzelek_Assets/Assets/Free/CastleTower/M_CastleTower.uasset.
-[2017.06.14-00.16.14:296][821]LoadErrors:Error: Error /Game/ThirdPersonBP/Objects/CastleTower/UE4/M_Orzelek_Assets/Assets/Free/CastleTower/M_CastleTower : Can't find file for asset. /Game/M_Orzelek_Assets/Assets/Free/CastleTower/T_CastleTower
-[2017.06.14-00.16.14:297][821]LogLinker:Warning: Can't find file '/Game/M_Orzelek_Assets/Assets/Free/CastleTower/T_CastleTower_Mask'
-[2017.06.14-00.16.14:297][821]LogLinker:Warning: Can't find file for asset '/Game/M_Orzelek_Assets/Assets/Free/CastleTower/T_CastleTower_Mask' while loading ../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Content/ThirdPersonBP/Objects/CastleTower/UE4/M_Orzelek_Assets/Assets/Free/CastleTower/M_CastleTower.uasset.
-[2017.06.14-00.16.14:297][821]LoadErrors:Error: Error /Game/ThirdPersonBP/Objects/CastleTower/UE4/M_Orzelek_Assets/Assets/Free/CastleTower/M_CastleTower : Can't find file for asset. /Game/M_Orzelek_Assets/Assets/Free/CastleTower/T_CastleTower_Mask
-[2017.06.14-00.16.14:298][821]LogLinker:Warning: Can't find file '/Game/M_Orzelek_Assets/Assets/Free/CastleTower/T_CastleTower_Norm'
-[2017.06.14-00.16.14:299][821]LogLinker:Warning: Can't find file for asset '/Game/M_Orzelek_Assets/Assets/Free/CastleTower/T_CastleTower_Norm' while loading ../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Content/ThirdPersonBP/Objects/CastleTower/UE4/M_Orzelek_Assets/Assets/Free/CastleTower/M_CastleTower.uasset.
-[2017.06.14-00.16.14:299][821]LoadErrors:Error: Error /Game/ThirdPersonBP/Objects/CastleTower/UE4/M_Orzelek_Assets/Assets/Free/CastleTower/M_CastleTower : Can't find file for asset. /Game/M_Orzelek_Assets/Assets/Free/CastleTower/T_CastleTower_Norm
-[2017.06.14-00.16.14:300][821]LogLinker:Warning: Can't find file '/Game/M_Orzelek_Assets/Assets/Free/CastleTower/T_CastleTower'
-[2017.06.14-00.16.14:301][821]LogLinker:Warning: Can't find file for asset '/Game/M_Orzelek_Assets/Assets/Free/CastleTower/T_CastleTower' while loading ../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Content/ThirdPersonBP/Objects/CastleTower/UE4/M_Orzelek_Assets/Assets/Free/CastleTower/M_CastleTower.uasset.
-[2017.06.14-00.16.14:301][821]LogLinker:Warning: Can't find file '/Game/M_Orzelek_Assets/Assets/Free/CastleTower/T_CastleTower_Mask'
-[2017.06.14-00.16.14:302][821]LogLinker:Warning: Can't find file for asset '/Game/M_Orzelek_Assets/Assets/Free/CastleTower/T_CastleTower_Mask' while loading ../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Content/ThirdPersonBP/Objects/CastleTower/UE4/M_Orzelek_Assets/Assets/Free/CastleTower/M_CastleTower.uasset.
-[2017.06.14-00.16.14:303][821]LogLinker:Warning: Can't find file '/Game/M_Orzelek_Assets/Assets/Free/CastleTower/T_CastleTower_Norm'
-[2017.06.14-00.16.14:303][821]LogLinker:Warning: Can't find file for asset '/Game/M_Orzelek_Assets/Assets/Free/CastleTower/T_CastleTower_Norm' while loading ../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Content/ThirdPersonBP/Objects/CastleTower/UE4/M_Orzelek_Assets/Assets/Free/CastleTower/M_CastleTower.uasset.
-[2017.06.14-00.16.14:335][821]LogLinker:Warning: Can't find file '/Game/M_Orzelek_Assets/Assets/Free/WoodenTable/M_WoodenTable'
-[2017.06.14-00.16.14:336][821]LogLinker:Warning: Can't find file for asset '/Game/M_Orzelek_Assets/Assets/Free/WoodenTable/M_WoodenTable' while loading ../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Content/ThirdPersonBP/Objects/014_WoodenTable/WoodenTable/UE4/M_Orzelek_Assets/Assets/Free/WoodenTable/SM_TableWooden.uasset.
-[2017.06.14-00.16.14:336][821]LoadErrors:Error: Error /Game/ThirdPersonBP/Objects/014_WoodenTable/WoodenTable/UE4/M_Orzelek_Assets/Assets/Free/WoodenTable/SM_TableWooden : Can't find file for asset. /Game/M_Orzelek_Assets/Assets/Free/WoodenTable/M_WoodenTable
-[2017.06.14-00.16.14:337][821]LogLinker:Warning: Can't find file '/Game/M_Orzelek_Assets/Assets/Free/WoodenTable/M_WoodenTable'
-[2017.06.14-00.16.14:338][821]LogLinker:Warning: Can't find file for asset '/Game/M_Orzelek_Assets/Assets/Free/WoodenTable/M_WoodenTable' while loading ../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Content/ThirdPersonBP/Objects/014_WoodenTable/WoodenTable/UE4/M_Orzelek_Assets/Assets/Free/WoodenTable/SM_TableWooden.uasset.
-[2017.06.14-00.16.14:354][821]LogLinker:Warning: Can't find file '/Game/M_Orzelek_Assets/Assets/Free/CastleTower/M_CastleTower'
-[2017.06.14-00.16.14:354][821]LogLinker:Warning: Can't find file for asset '/Game/M_Orzelek_Assets/Assets/Free/CastleTower/M_CastleTower' while loading ../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Content/ThirdPersonBP/Objects/CastleTower/UE4/M_Orzelek_Assets/Assets/Free/CastleTower/SM_CastleTower_S1.uasset.
-[2017.06.14-00.16.14:354][821]LoadErrors:Error: Error /Game/ThirdPersonBP/Objects/CastleTower/UE4/M_Orzelek_Assets/Assets/Free/CastleTower/SM_CastleTower_S1 : Can't find file for asset. /Game/M_Orzelek_Assets/Assets/Free/CastleTower/M_CastleTower
-[2017.06.14-00.16.14:355][821]LogLinker:Warning: Can't find file '/Game/M_Orzelek_Assets/Assets/Free/CastleTower/M_CastleTower'
-[2017.06.14-00.16.14:355][821]LogLinker:Warning: Can't find file for asset '/Game/M_Orzelek_Assets/Assets/Free/CastleTower/M_CastleTower' while loading ../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Content/ThirdPersonBP/Objects/CastleTower/UE4/M_Orzelek_Assets/Assets/Free/CastleTower/SM_CastleTower_S1.uasset.
-[2017.06.14-00.16.14:390][821]LogLinker:Warning: Can't find file '/Game/M_Orzelek_Assets/Assets/Free/WoodenTable/M_WoodenTable'
-[2017.06.14-00.16.14:390][821]LoadErrors: Info Failed to load /Game/M_Orzelek_Assets/Assets/Free/WoodenTable/M_WoodenTable.M_WoodenTable Referenced by SM_TableWooden
-[2017.06.14-00.16.14:390][821]LogLinker:Warning: Can't find file for asset '/Game/M_Orzelek_Assets/Assets/Free/WoodenTable/M_WoodenTable' while loading NULL.
-[2017.06.14-00.16.14:408][821]LogLinker:Warning: Can't find file '/Game/M_Orzelek_Assets/Assets/Free/CastleTower/M_CastleTower'
-[2017.06.14-00.16.14:408][821]LoadErrors: Info Failed to load /Game/M_Orzelek_Assets/Assets/Free/CastleTower/M_CastleTower.M_CastleTower Referenced by SM_CastleTower_S1
-[2017.06.14-00.16.14:409][821]LogLinker:Warning: Can't find file for asset '/Game/M_Orzelek_Assets/Assets/Free/CastleTower/M_CastleTower' while loading NULL.
-[2017.06.14-00.16.14:410][821]LogLinker:Warning: Can't find file '/Game/M_Orzelek_Assets/Assets/Free/CastleTower/T_CastleTower'
-[2017.06.14-00.16.14:410][821]LoadErrors: Info Failed to load /Game/M_Orzelek_Assets/Assets/Free/CastleTower/T_CastleTower.T_CastleTower Referenced by MaterialExpressionTextureSample_0
-[2017.06.14-00.16.14:411][821]LogLinker:Warning: Can't find file for asset '/Game/M_Orzelek_Assets/Assets/Free/CastleTower/T_CastleTower' while loading NULL.
-[2017.06.14-00.16.14:411][821]LogLinker:Warning: Can't find file '/Game/M_Orzelek_Assets/Assets/Free/CastleTower/T_CastleTower_Mask'
-[2017.06.14-00.16.14:412][821]LoadErrors: Info Failed to load /Game/M_Orzelek_Assets/Assets/Free/CastleTower/T_CastleTower_Mask.T_CastleTower_Mask Referenced by MaterialExpressionTextureSample_1
-[2017.06.14-00.16.14:412][821]LogLinker:Warning: Can't find file for asset '/Game/M_Orzelek_Assets/Assets/Free/CastleTower/T_CastleTower_Mask' while loading NULL.
-[2017.06.14-00.16.14:413][821]LogLinker:Warning: Can't find file '/Game/M_Orzelek_Assets/Assets/Free/CastleTower/T_CastleTower_Norm'
-[2017.06.14-00.16.14:413][821]LoadErrors: Info Failed to load /Game/M_Orzelek_Assets/Assets/Free/CastleTower/T_CastleTower_Norm.T_CastleTower_Norm Referenced by MaterialExpressionTextureSample_2
-[2017.06.14-00.16.14:413][821]LogLinker:Warning: Can't find file for asset '/Game/M_Orzelek_Assets/Assets/Free/CastleTower/T_CastleTower_Norm' while loading NULL.
-[2017.06.14-00.16.15:006][821]LogMaterial: Missing cached shader map for material M_CastleTower, compiling. 
-[2017.06.14-00.16.15:032][821]LogMaterial:Warning: Failed to compile Material /Game/ThirdPersonBP/Objects/CastleTower/UE4/M_Orzelek_Assets/Assets/Free/CastleTower/M_CastleTower.M_CastleTower for platform PCD3D_SM5, Default Material will be used in game.
-[2017.06.14-00.16.15:032][821]LogMaterial:Warning: 	(Node TextureSample) TextureSample> Missing input texture
-[2017.06.14-00.16.15:037][821]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
-[2017.06.14-00.16.15:148][821]Cmd: MAP LOAD FILE="../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2017.06.14-00.16.15:148][821]LightingResults: New page: Lighting Build
-[2017.06.14-00.16.15:154][821]LoadErrors: New page: Loading map: ThirdPersonExampleMap.umap
-[2017.06.14-00.16.15:161][821]MapCheck: New page: Map Check
-[2017.06.14-00.16.15:161][821]LightingResults: New page: Lighting Build
-[2017.06.14-00.16.15:264][821]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2017.06.14-00.16.15:393][821]Cmd: MAP CHECKDEP NOCLEARLOG
-[2017.06.14-00.16.16:136][821]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 742.594ms to complete.
-[2017.06.14-00.16.16:139][821]LogFileHelpers: Loading map 'ThirdPersonExampleMap' took 0.994
-[2017.06.14-00.16.56:137][ 57]LogTemp: Repeting last play command: Standalone Game
-[2017.06.14-00.16.57:832][ 57]LogSavePackage: Save=710.64ms
-[2017.06.14-00.16.57:832][ 57]LogSavePackage: Moving '../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Saved/UEDPCThirdPersonExampleMap24C31C3F45AB110A3783719AABEF9026.tmp' to '../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Saved/Autosaves/Game/ThirdPersonBP/Maps/UEDPCThirdPersonExampleMap.umap'
-[2017.06.14-00.16.57:843][ 57]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Saved/Autosaves/Game/ThirdPersonBP/Maps/UEDPCThirdPersonExampleMap.umap
-[2017.06.14-00.16.58:984][ 57]LogSavePackage: Save=924.85ms
-[2017.06.14-00.16.58:984][ 57]LogSavePackage: Moving '../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Saved/ThirdPersonExampleMap_BuiltData805FF02341A438104EDB948CA12A104B.tmp' to '../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap_BuiltData.uasset'
-[2017.06.14-00.16.58:997][ 57]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap_BuiltData.uasset
-[2017.06.14-00.16.59:019][ 57]LogEditorTransaction: Undo Spawn Play From Here Start
-[2017.06.14-00.19.28:820][894]Cmd: QUIT_EDITOR
-[2017.06.14-00.19.29:058][894]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
-[2017.06.14-00.19.29:170][894]LogExit: Preparing to exit.
-[2017.06.14-00.19.30:100][894]LogDirectoryWatcher: A directory notification for 'C:/Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Content/' was aborted.
-[2017.06.14-00.19.30:520][894]LogExit: Editor shut down
-[2017.06.14-00.19.30:524][894]LogExit: Transaction tracking system shut down
-[2017.06.14-00.19.31:086][894]LogObj: Freed 0b from 0 cluster array pools.
-[2017.06.14-00.19.31:088][894]LogExit: Object subsystem successfully closed.
-[2017.06.14-00.19.31:143][894]LogD3D11RHI: Shutdown
-[2017.06.14-00.19.31:143][894]LogD3D11RHI: CleanupD3DDevice
-[2017.06.14-00.19.31:653][894]LogD3D11RHI: ~FD3D11DynamicRHI
-[2017.06.14-00.19.31:837][894]LogModuleManager: Shutting down and abandoning module BlueprintGraph (503)
-[2017.06.14-00.19.31:837][894]LogModuleManager: Shutting down and abandoning module BlueprintProfiler (501)
-[2017.06.14-00.19.31:838][894]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (499)
-[2017.06.14-00.19.31:838][894]LogModuleManager: Shutting down and abandoning module CrashTracker (497)
-[2017.06.14-00.19.31:838][894]LogModuleManager: Shutting down and abandoning module SceneOutliner (495)
-[2017.06.14-00.19.31:838][894]LogModuleManager: Shutting down and abandoning module AddContentDialog (493)
-[2017.06.14-00.19.31:838][894]LogDirectoryWatcher: A directory notification for 'C:/Program Files/Epic Games/UE_4.15/FeaturePacks/' was aborted.
-[2017.06.14-00.19.31:849][894]LogModuleManager: Shutting down and abandoning module WidgetCarousel (492)
-[2017.06.14-00.19.31:849][894]LogModuleManager: Shutting down and abandoning module EditorWidgets (489)
-[2017.06.14-00.19.31:849][894]LogModuleManager: Shutting down and abandoning module CollectionManager (487)
-[2017.06.14-00.19.31:849][894]LogDirectoryWatcher: A directory notification for 'C:/Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Content/Collections/' was aborted.
-[2017.06.14-00.19.31:849][894]LogDirectoryWatcher: A directory notification for 'C:/Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Content/Developers/DanielaFe7/Collections/' was aborted.
-[2017.06.14-00.19.31:850][894]LogDirectoryWatcher: A directory notification for 'C:/Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Saved/Collections/' was aborted.
-[2017.06.14-00.19.31:850][894]LogModuleManager: Shutting down and abandoning module StatsViewer (485)
-[2017.06.14-00.19.31:850][894]LogModuleManager: Shutting down and abandoning module FoliageEdit (483)
-[2017.06.14-00.19.31:850][894]LogModuleManager: Shutting down and abandoning module LandscapeEditor (481)
-[2017.06.14-00.19.31:851][894]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (479)
-[2017.06.14-00.19.31:851][894]LogModuleManager: Shutting down and abandoning module ActorPickerMode (477)
-[2017.06.14-00.19.31:851][894]LogModuleManager: Shutting down and abandoning module GeometryMode (475)
-[2017.06.14-00.19.31:851][894]LogModuleManager: Shutting down and abandoning module TextureAlignMode (473)
-[2017.06.14-00.19.31:851][894]LogModuleManager: Shutting down and abandoning module BspMode (471)
-[2017.06.14-00.19.31:851][894]LogModuleManager: Shutting down and abandoning module HardwareSurvey (469)
-[2017.06.14-00.19.31:851][894]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (467)
-[2017.06.14-00.19.31:851][894]LogModuleManager: Shutting down and abandoning module AutomationWorker (465)
-[2017.06.14-00.19.31:851][894]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (463)
-[2017.06.14-00.19.31:852][894]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (461)
-[2017.06.14-00.19.31:852][894]LogModuleManager: Shutting down and abandoning module PlacementMode (460)
-[2017.06.14-00.19.31:853][894]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (457)
-[2017.06.14-00.19.31:853][894]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (455)
-[2017.06.14-00.19.31:854][894]LogModuleManager: Shutting down and abandoning module MfMediaFactory (453)
-[2017.06.14-00.19.31:854][894]LogModuleManager: Shutting down and abandoning module MfMediaEditor (451)
-[2017.06.14-00.19.31:854][894]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (449)
-[2017.06.14-00.19.31:854][894]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (447)
-[2017.06.14-00.19.31:854][894]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (445)
-[2017.06.14-00.19.31:854][894]LogModuleManager: Shutting down and abandoning module Media (444)
-[2017.06.14-00.19.31:854][894]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (441)
-[2017.06.14-00.19.31:854][894]LogModuleManager: Shutting down and abandoning module CharacterAI (439)
-[2017.06.14-00.19.31:854][894]LogModuleManager: Shutting down and abandoning module AudioCapture (437)
-[2017.06.14-00.19.31:854][894]LogModuleManager: Shutting down and abandoning module SequenceRecorder (436)
-[2017.06.14-00.19.31:865][894]LogModuleManager: Shutting down and abandoning module SmartSnapping (433)
-[2017.06.14-00.19.31:865][894]LogModuleManager: Shutting down and abandoning module SessionServices (431)
-[2017.06.14-00.19.31:866][894]LogModuleManager: Shutting down and abandoning module ViewportSnapping (429)
-[2017.06.14-00.19.31:866][894]LogModuleManager: Shutting down and abandoning module ViewportInteraction (427)
-[2017.06.14-00.19.31:866][894]LogModuleManager: Shutting down and abandoning module LogVisualizer (425)
-[2017.06.14-00.19.31:866][894]LogModuleManager: Shutting down and abandoning module IntroTutorials (423)
-[2017.06.14-00.19.31:866][894]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (422)
-[2017.06.14-00.19.31:866][894]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (419)
-[2017.06.14-00.19.31:866][894]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (417)
-[2017.06.14-00.19.31:867][894]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (415)
-[2017.06.14-00.19.31:867][894]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (413)
-[2017.06.14-00.19.31:867][894]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (412)
-[2017.06.14-00.19.32:199][894]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (409)
-[2017.06.14-00.19.32:199][894]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (407)
-[2017.06.14-00.19.32:199][894]LogModuleManager: Shutting down and abandoning module InputBindingEditor (405)
-[2017.06.14-00.19.32:200][894]LogModuleManager: Shutting down and abandoning module NiagaraEditor (403)
-[2017.06.14-00.19.32:350][894]LogModuleManager: Shutting down and abandoning module MergeActors (401)
-[2017.06.14-00.19.32:350][894]LogModuleManager: Shutting down and abandoning module SizeMap (399)
-[2017.06.14-00.19.32:350][894]LogModuleManager: Shutting down and abandoning module TreeMap (397)
-[2017.06.14-00.19.32:350][894]LogModuleManager: Shutting down and abandoning module ReferenceViewer (395)
-[2017.06.14-00.19.32:351][894]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (393)
-[2017.06.14-00.19.32:351][894]LogModuleManager: Shutting down and abandoning module LocalizationService (392)
-[2017.06.14-00.19.32:351][894]LogModuleManager: Shutting down and abandoning module HardwareTargeting (389)
-[2017.06.14-00.19.32:351][894]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (387)
-[2017.06.14-00.19.32:351][894]LogModuleManager: Shutting down and abandoning module UndoHistory (385)
-[2017.06.14-00.19.32:351][894]LogModuleManager: Shutting down and abandoning module UserFeedback (383)
-[2017.06.14-00.19.32:351][894]LogModuleManager: Shutting down and abandoning module XmlParser (381)
-[2017.06.14-00.19.32:351][894]LogModuleManager: Shutting down and abandoning module Blutility (379)
-[2017.06.14-00.19.32:351][894]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (377)
-[2017.06.14-00.19.32:351][894]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (376)
-[2017.06.14-00.19.32:352][894]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (373)
-[2017.06.14-00.19.32:353][894]LogModuleManager: Shutting down and abandoning module SettingsEditor (371)
-[2017.06.14-00.19.32:353][894]LogModuleManager: Shutting down and abandoning module ProjectLauncher (369)
-[2017.06.14-00.19.32:353][894]LogModuleManager: Shutting down and abandoning module SessionFrontend (367)
-[2017.06.14-00.19.32:353][894]LogModuleManager: Shutting down and abandoning module ProfilerClient (365)
-[2017.06.14-00.19.32:353][894]LogModuleManager: Shutting down and abandoning module DeviceManager (363)
-[2017.06.14-00.19.32:353][894]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (362)
-[2017.06.14-00.19.32:397][894]LogModuleManager: Shutting down and abandoning module AutomationController (359)
-[2017.06.14-00.19.32:397][894]LogModuleManager: Shutting down and abandoning module AutomationWindow (357)
-[2017.06.14-00.19.32:397][894]LogModuleManager: Shutting down and abandoning module Layers (355)
-[2017.06.14-00.19.32:397][894]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (353)
-[2017.06.14-00.19.32:397][894]LogModuleManager: Shutting down and abandoning module DetailCustomizations (351)
-[2017.06.14-00.19.32:421][894]LogModuleManager: Shutting down and abandoning module PackagesDialog (349)
-[2017.06.14-00.19.32:421][894]LogModuleManager: Shutting down and abandoning module Persona (347)
-[2017.06.14-00.19.32:436][894]LogModuleManager: Shutting down and abandoning module AnimGraph (346)
-[2017.06.14-00.19.32:436][894]LogModuleManager: Shutting down and abandoning module Kismet (343)
-[2017.06.14-00.19.32:464][894]LogModuleManager: Shutting down and abandoning module GraphEditor (341)
-[2017.06.14-00.19.32:464][894]LogModuleManager: Shutting down and abandoning module ClassViewer (339)
-[2017.06.14-00.19.32:471][894]LogModuleManager: Shutting down and abandoning module Toolbox (337)
-[2017.06.14-00.19.32:471][894]LogModuleManager: Shutting down and abandoning module ModuleUI (335)
-[2017.06.14-00.19.32:471][894]LogModuleManager: Shutting down and abandoning module MovieSceneTools (333)
-[2017.06.14-00.19.32:471][894]LogModuleManager: Shutting down and abandoning module OutputLog (331)
-[2017.06.14-00.19.32:471][894]LogModuleManager: Shutting down and abandoning module GammaUI (329)
-[2017.06.14-00.19.32:471][894]LogModuleManager: Shutting down and abandoning module Documentation (327)
-[2017.06.14-00.19.32:472][894]LogModuleManager: Shutting down and abandoning module Niagara (325)
-[2017.06.14-00.19.32:472][894]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (323)
-[2017.06.14-00.19.32:472][894]LogModuleManager: Shutting down and abandoning module AnalyticsET (321)
-[2017.06.14-00.19.32:472][894]LogModuleManager: Shutting down and abandoning module PortalServices (319)
-[2017.06.14-00.19.32:472][894]LogModuleManager: Shutting down and abandoning module PortalRpc (317)
-[2017.06.14-00.19.32:472][894]LogModuleManager: Shutting down and abandoning module MessagingRpc (315)
-[2017.06.14-00.19.32:472][894]LogModuleManager: Shutting down and abandoning module AIModule (313)
-[2017.06.14-00.19.32:472][894]LogModuleManager: Shutting down and abandoning module GameplayDebugger (312)
-[2017.06.14-00.19.32:473][894]LogModuleManager: Shutting down and abandoning module AITestSuite (310)
-[2017.06.14-00.19.32:473][894]LogModuleManager: Shutting down and abandoning module ProfilerService (307)
-[2017.06.14-00.19.32:708][894]LogModuleManager: Shutting down and abandoning module TaskGraph (305)
-[2017.06.14-00.19.32:709][894]LogModuleManager: Shutting down and abandoning module SteamVRController (303)
-[2017.06.14-00.19.32:709][894]LogModuleManager: Shutting down and abandoning module SteamVR (301)
-[2017.06.14-00.19.32:709][894]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (299)
-[2017.06.14-00.19.32:709][894]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (297)
-[2017.06.14-00.19.32:709][894]LogModuleManager: Shutting down and abandoning module OculusLibrary (295)
-[2017.06.14-00.19.32:709][894]LogModuleManager: Shutting down and abandoning module OculusInput (293)
-[2017.06.14-00.19.32:709][894]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (291)
-[2017.06.14-00.19.32:709][894]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (289)
-[2017.06.14-00.19.32:709][894]LogModuleManager: Shutting down and abandoning module CableComponent (287)
-[2017.06.14-00.19.32:709][894]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (285)
-[2017.06.14-00.19.32:709][894]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (283)
-[2017.06.14-00.19.32:771][894]LogModuleManager: Shutting down and abandoning module HTML5Networking (281)
-[2017.06.14-00.19.32:771][894]LogModuleManager: Shutting down and abandoning module AlembicImporter (279)
-[2017.06.14-00.19.32:771][894]LogModuleManager: Shutting down and abandoning module AlembicLibrary (278)
-[2017.06.14-00.19.32:771][894]LogModuleManager: Shutting down and abandoning module GeometryCache (277)
-[2017.06.14-00.19.32:771][894]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (276)
-[2017.06.14-00.19.32:771][894]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (271)
-[2017.06.14-00.19.32:771][894]LogModuleManager: Shutting down and abandoning module SuperSearch (270)
-[2017.06.14-00.19.32:771][894]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (267)
-[2017.06.14-00.19.32:771][894]LogModuleManager: Shutting down and abandoning module PluginBrowser (265)
-[2017.06.14-00.19.32:771][894]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (263)
-[2017.06.14-00.19.32:771][894]LogModuleManager: Shutting down and abandoning module EpicSurvey (261)
-[2017.06.14-00.19.32:771][894]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (259)
-[2017.06.14-00.19.32:772][894]LogModuleManager: Shutting down and abandoning module DesktopPlatform (258)
-[2017.06.14-00.19.32:772][894]LogModuleManager: Shutting down and abandoning module UObjectPlugin (255)
-[2017.06.14-00.19.32:772][894]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (253)
-[2017.06.14-00.19.32:772][894]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (251)
-[2017.06.14-00.19.32:772][894]LogModuleManager: Shutting down and abandoning module GitSourceControl (249)
-[2017.06.14-00.19.32:772][894]LogModuleManager: Shutting down and abandoning module SourceControl (248)
-[2017.06.14-00.19.32:772][894]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (245)
-[2017.06.14-00.19.32:772][894]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (243)
-[2017.06.14-00.19.32:772][894]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (241)
-[2017.06.14-00.19.32:772][894]LogModuleManager: Shutting down and abandoning module Paper2DEditor (239)
-[2017.06.14-00.19.32:772][894]LogModuleManager: Shutting down and abandoning module MeshPaint (238)
-[2017.06.14-00.19.32:772][894]LogModuleManager: Shutting down and abandoning module LevelEditor (236)
-[2017.06.14-00.19.32:789][894]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (235)
-[2017.06.14-00.19.32:789][894]LogModuleManager: Shutting down and abandoning module MainFrame (233)
-[2017.06.14-00.19.32:789][894]LogModuleManager: Shutting down and abandoning module HotReload (232)
-[2017.06.14-00.19.32:791][894]LogModuleManager: Shutting down and abandoning module ContentBrowser (228)
-[2017.06.14-00.19.32:794][894]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (225)
-[2017.06.14-00.19.32:794][894]LogModuleManager: Shutting down and abandoning module PhysXVehicles (223)
-[2017.06.14-00.19.32:794][894]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (221)
-[2017.06.14-00.19.32:794][894]LogModuleManager: Shutting down and abandoning module UdpMessaging (219)
-[2017.06.14-00.19.32:894][894]LogModuleManager: Shutting down and abandoning module TcpMessaging (217)
-[2017.06.14-00.19.32:995][894]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (215)
-[2017.06.14-00.19.32:995][894]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (213)
-[2017.06.14-00.19.32:995][894]LogModuleManager: Shutting down and abandoning module FacialAnimation (211)
-[2017.06.14-00.19.32:995][894]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (209)
-[2017.06.14-00.19.32:995][894]LogModuleManager: Shutting down and abandoning module Paper2D (207)
-[2017.06.14-00.19.32:995][894]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (205)
-[2017.06.14-00.19.32:995][894]LogModuleManager: Shutting down and abandoning module WmfMedia (203)
-[2017.06.14-00.19.32:996][894]LogModuleManager: Shutting down and abandoning module MfMedia (201)
-[2017.06.14-00.19.32:996][894]LogModuleManager: Shutting down and abandoning module MediaAssets (199)
-[2017.06.14-00.19.32:996][894]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (197)
-[2017.06.14-00.19.32:997][894]LogModuleManager: Shutting down and abandoning module VREditor (195)
-[2017.06.14-00.19.32:997][894]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (193)
-[2017.06.14-00.19.32:997][894]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (191)
-[2017.06.14-00.19.32:997][894]LogModuleManager: Shutting down and abandoning module FunctionalTesting (189)
-[2017.06.14-00.19.32:997][894]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (187)
-[2017.06.14-00.19.32:997][894]LogModuleManager: Shutting down and abandoning module UMG (185)
-[2017.06.14-00.19.32:997][894]LogModuleManager: Shutting down and abandoning module UMGEditor (184)
-[2017.06.14-00.19.32:997][894]LogModuleManager: Shutting down and abandoning module Sequencer (183)
-[2017.06.14-00.19.33:053][894]LogModuleManager: Shutting down and abandoning module AssetTools (181)
-[2017.06.14-00.19.33:053][894]LogModuleManager: Shutting down and abandoning module MessageLog (180)
-[2017.06.14-00.19.33:053][894]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (179)
-[2017.06.14-00.19.33:053][894]LogModuleManager: Shutting down and abandoning module SlateReflector (173)
-[2017.06.14-00.19.33:053][894]LogModuleManager: Shutting down and abandoning module Slate (171)
-[2017.06.14-00.19.33:053][894]LogModuleManager: Shutting down and abandoning module EditorStyle (169)
-[2017.06.14-00.19.33:068][894]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (167)
-[2017.06.14-00.19.33:068][894]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (165)
-[2017.06.14-00.19.33:068][894]LogModuleManager: Shutting down and abandoning module XAudio2 (163)
-[2017.06.14-00.19.33:068][894]LogModuleManager: Shutting down and abandoning module Networking (161)
-[2017.06.14-00.19.33:068][894]LogModuleManager: Shutting down and abandoning module Core (159)
-[2017.06.14-00.19.33:068][894]LogModuleManager: Shutting down and abandoning module AssetRegistry (157)
-[2017.06.14-00.19.33:316][894]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
-[2017.06.14-00.19.33:316][894]LogDirectoryWatcher: A directory notification for '../../../../../../Users/DanielaFe7/Desktop/HCI/HCIProyecto/SteamProject/Content/' was aborted.
-[2017.06.14-00.19.33:316][894]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
-[2017.06.14-00.19.33:317][894]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (156)
-[2017.06.14-00.19.33:330][894]LogModuleManager: Shutting down and abandoning module KismetCompiler (153)
-[2017.06.14-00.19.33:330][894]LogModuleManager: Shutting down and abandoning module PhysXFormats (151)
-[2017.06.14-00.19.33:330][894]LogModuleManager: Shutting down and abandoning module MeshUtilities (149)
-[2017.06.14-00.19.33:330][894]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (148)
-[2017.06.14-00.19.33:330][894]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (146)
-[2017.06.14-00.19.33:331][894]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (144)
-[2017.06.14-00.19.33:331][894]LogModuleManager: Shutting down and abandoning module PropertyEditor (142)
-[2017.06.14-00.19.33:331][894]LogModuleManager: Shutting down and abandoning module DerivedDataCache (139)
-[2017.06.14-00.19.33:351][894]LogDerivedDataCache: Shutdown
-[2017.06.14-00.19.33:351][894]LogModuleManager: Shutting down and abandoning module TargetPlatform (137)
-[2017.06.14-00.19.33:352][894]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (136)
-[2017.06.14-00.19.33:352][894]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (134)
-[2017.06.14-00.19.33:352][894]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (132)
-[2017.06.14-00.19.33:352][894]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (130)
-[2017.06.14-00.19.33:352][894]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (128)
-[2017.06.14-00.19.33:352][894]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (126)
-[2017.06.14-00.19.33:352][894]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (124)
-[2017.06.14-00.19.33:352][894]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (122)
-[2017.06.14-00.19.33:353][894]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (120)
-[2017.06.14-00.19.33:353][894]LogModuleManager: Shutting down and abandoning module ImageWrapper (119)
-[2017.06.14-00.19.33:353][894]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (116)
-[2017.06.14-00.19.33:353][894]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (114)
-[2017.06.14-00.19.33:353][894]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (112)
-[2017.06.14-00.19.33:353][894]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (110)
-[2017.06.14-00.19.33:353][894]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (108)
-[2017.06.14-00.19.33:354][894]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (106)
-[2017.06.14-00.19.33:354][894]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (104)
-[2017.06.14-00.19.33:354][894]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (102)
-[2017.06.14-00.19.33:354][894]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (100)
-[2017.06.14-00.19.33:354][894]LogModuleManager: Shutting down and abandoning module Messaging (98)
-[2017.06.14-00.19.33:354][894]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (96)
-[2017.06.14-00.19.33:354][894]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (94)
-[2017.06.14-00.19.33:354][894]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (92)
-[2017.06.14-00.19.33:354][894]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (90)
-[2017.06.14-00.19.33:354][894]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (88)
-[2017.06.14-00.19.33:355][894]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (86)
-[2017.06.14-00.19.33:355][894]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (84)
-[2017.06.14-00.19.33:355][894]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (82)
-[2017.06.14-00.19.33:355][894]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (80)
-[2017.06.14-00.19.33:355][894]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (78)
-[2017.06.14-00.19.33:355][894]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (76)
-[2017.06.14-00.19.33:355][894]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (74)
-[2017.06.14-00.19.33:355][894]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (72)
-[2017.06.14-00.19.33:355][894]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (70)
-[2017.06.14-00.19.33:355][894]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (68)
-[2017.06.14-00.19.33:356][894]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (66)
-[2017.06.14-00.19.33:356][894]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (64)
-[2017.06.14-00.19.33:356][894]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (62)
-[2017.06.14-00.19.33:356][894]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (60)
-[2017.06.14-00.19.33:356][894]LogModuleManager: Shutting down and abandoning module InputCore (57)
-[2017.06.14-00.19.33:356][894]LogModuleManager: Shutting down and abandoning module Settings (55)
-[2017.06.14-00.19.33:356][894]LogModuleManager: Shutting down and abandoning module OculusRift (53)
-[2017.06.14-00.19.33:356][894]LogModuleManager: Shutting down and abandoning module GearVR (51)
-[2017.06.14-00.19.33:356][894]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (49)
-[2017.06.14-00.19.33:356][894]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (47)
-[2017.06.14-00.19.33:356][894]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (43)
-[2017.06.14-00.19.33:356][894]LogOnline:Display: OSS: FOnlineSubsystemNull::Shutdown()
-[2017.06.14-00.19.33:359][894]LogOnline:Display: Unloading online subsystem: NULL
-[2017.06.14-00.19.33:359][894]LogModuleManager: Shutting down and abandoning module XMPP (37)
-[2017.06.14-00.19.33:359][894]LogModuleManager: Shutting down and abandoning module HTTP (35)
-[2017.06.14-00.19.33:359][894]LogHttp:Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
-[2017.06.14-00.19.33:359][894]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B1BA6FF91-4100-9FAF-7068-1BAA1E2A8CB2%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.15.1-3348071%2B%2B%2BUE4%2BRelease-4.15&UserID=fb76e534444c152b8374238034457c48%7C3d3411e0c24a4b6b9f8f21f92f47ffe7%7C3c38bd25-c098-4988-99fa-20d6f744e93b&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
-[2017.06.14-00.19.33:376][894]LogModuleManager: Shutting down and abandoning module SSL (34)
-[2017.06.14-00.19.33:385][894]LogModuleManager: Shutting down and abandoning module AudioEditor (30)
-[2017.06.14-00.19.33:385][894]LogModuleManager: Shutting down and abandoning module TextureCompressor (28)
-[2017.06.14-00.19.33:386][894]LogModuleManager: Shutting down and abandoning module ShaderCore (26)
-[2017.06.14-00.19.33:386][894]LogModuleManager: Shutting down and abandoning module Landscape (24)
-[2017.06.14-00.19.33:386][894]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (22)
-[2017.06.14-00.19.33:410][894]LogModuleManager: Shutting down and abandoning module OpenGLDrv (20)
-[2017.06.14-00.19.33:410][894]LogModuleManager: Shutting down and abandoning module D3D11RHI (18)
-[2017.06.14-00.19.33:410][894]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (16)
-[2017.06.14-00.19.33:410][894]LogModuleManager: Shutting down and abandoning module Renderer (14)
-[2017.06.14-00.19.33:410][894]LogModuleManager: Shutting down and abandoning module Engine (12)
-[2017.06.14-00.19.33:410][894]LogModuleManager: Shutting down and abandoning module CoreUObject (10)
-[2017.06.14-00.19.33:410][894]LogModuleManager: Shutting down and abandoning module NetworkFile (8)
-[2017.06.14-00.19.33:411][894]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
-[2017.06.14-00.19.33:411][894]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
-[2017.06.14-00.19.33:411][894]LogModuleManager: Shutting down and abandoning module PakFile (2)
-[2017.06.14-00.19.33:417][894]LogExit: Exiting.
-[2017.06.14-00.19.33:435][894]Log file closed, 06/13/17 19:19:33
+[2017.06.15-17.29.51:239][  0]LogInit: Selected Device Profile: [Windows]
+[2017.06.15-17.29.51:239][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.06.15-17.29.51:243][  0]LogInit: Computer: LAPTOP-RAOCS8F3
+[2017.06.15-17.29.51:243][  0]LogInit: User: koru
+[2017.06.15-17.29.51:243][  0]LogInit: CPU Page size=65536, Cores=4
+[2017.06.15-17.29.51:243][  0]LogInit: High frequency timer resolution =2.531246 MHz
+[2017.06.15-17.29.51:243][  0]LogMemory: Memory total: Physical=15.8GB (16GB approx)
+[2017.06.15-17.29.51:243][  0]LogMemory: Platform Memory Stats for Windows
+[2017.06.15-17.29.51:243][  0]LogMemory: Process Physical Memory: 264.49 MB used, 264.49 MB peak
+[2017.06.15-17.29.51:243][  0]LogMemory: Process Virtual Memory: 262.78 MB used, 262.78 MB peak
+[2017.06.15-17.29.51:243][  0]LogMemory: Physical Memory: 7008.86 MB used,  9202.92 MB free, 16211.78 MB total
+[2017.06.15-17.29.51:243][  0]LogMemory: Virtual Memory: 647.25 MB used,  9202.92 MB free, 134217728.00 MB total
+[2017.06.15-17.29.51:343][  0]LogTextLocalizationManager: No specific translations for ('es-PE') exist, so ('es') translations will be used.
+[2017.06.15-17.29.51:599][  0]LogD3D11RHI: D3D11 adapters:
+[2017.06.15-17.29.52:188][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 960M' (Feature Level 11_0)
+[2017.06.15-17.29.52:188][  0]LogD3D11RHI:       4064/0/8105 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2017.06.15-17.29.52:196][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 530' (Feature Level 11_0)
+[2017.06.15-17.29.52:196][  0]LogD3D11RHI:       128/0/8105 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2017.06.15-17.29.52:197][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.06.15-17.29.52:197][  0]LogD3D11RHI:       0/0/8105 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.06.15-17.29.52:197][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.06.15-17.29.52:201][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.06.15-17.29.52:201][  0]LogD3D11RHI:     GPU DeviceId: 0x139b (for the marketing name, search the web for "GPU Device Id")
+[2017.06.15-17.29.52:201][  0]LogWindows: EnumDisplayDevices:
+[2017.06.15-17.29.52:202][  0]LogWindows:    0. 'Intel(R) HD Graphics 530' (P:1 D:1)
+[2017.06.15-17.29.52:202][  0]LogWindows:    1. 'Intel(R) HD Graphics 530' (P:0 D:0)
+[2017.06.15-17.29.52:202][  0]LogWindows:    2. 'Intel(R) HD Graphics 530' (P:0 D:0)
+[2017.06.15-17.29.52:202][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2017.06.15-17.29.52:202][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 960M
+[2017.06.15-17.29.52:202][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2017.06.15-17.29.52:202][  0]LogD3D11RHI:      Driver Date: Unknown
+[2017.06.15-17.29.52:202][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.06.15-17.29.52:744][  0]LogD3D11RHI: Async texture creation enabled
+[2017.06.15-17.29.52:805][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2017.06.15-17.29.52:806][  0]LogShaderCompilers: Guid format shader working directory is -20 characters bigger than the processId version (../../../../../../Users/koru/Desktop/IHC/HCIProyecto/SteamProject/Intermediate/Shaders/WorkingDirectory/6988/).
+[2017.06.15-17.29.52:807][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/koru/AppData/Local/Temp/UnrealShaderWorkingDir/EB0BFD6846CBB9B91BF54E8AB8848396/'.
+[2017.06.15-17.29.52:807][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.06.15-17.29.53:919][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.06.15-17.29.53:971][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.06.15-17.29.54:025][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.06.15-17.29.54:068][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.06.15-17.29.54:068][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.06.15-17.29.54:481][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.06.15-17.29.54:531][  0]LogDerivedDataCache: Loaded boot cache 0.05s 50MB C:/Users/koru/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.06.15-17.29.54:531][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/koru/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc
+[2017.06.15-17.29.54:531][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/koru/Desktop/IHC/HCIProyecto/SteamProject/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.06.15-17.29.54:531][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.06.15-17.29.54:531][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/koru/Desktop/IHC/HCIProyecto/SteamProject/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.06.15-17.29.54:531][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.06.15-17.29.54:550][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.06.15-17.29.54:562][  0]LogDerivedDataCache: Using Local data cache path C:/Users/koru/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.06.15-17.29.54:572][  0]LogSlate: Using Freetype 2.6.0
+[2017.06.15-17.29.54:573][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.06.15-17.29.54:573][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.06.15-17.29.54:837][  0]LogAssetRegistry: FAssetRegistry took 0.0001 seconds to start up
+[2017.06.15-17.29.54:843][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.005783 seconds
+[2017.06.15-17.29.54:860][  0]LogInit: Selected Device Profile: [Windows]
+[2017.06.15-17.29.54:862][  0]LogContentStreaming: Texture pool size is 1000.00 MB
+[2017.06.15-17.29.55:067][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.06.15-17.29.55:110][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.06.15-17.29.55:155][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.06.15-17.29.55:155][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.06.15-17.29.55:155][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.06.15-17.29.55:623][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3299760, ProjectName: steamproject, ProjectVersion: , EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 3119142434
+[2017.06.15-17.29.56:415][  0]LogMoviePlayer: Initializing movie player
+[2017.06.15-17.29.56:501][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.06.15-17.29.56:501][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.06.15-17.29.56:797][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.06.15-17.29.56:837][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.06.15-17.29.57:116][  0]SourceControl: Información El control de código fuente está desactivado
+[2017.06.15-17.29.57:116][  0]SourceControl: Información El control de código fuente está desactivado
+[2017.06.15-17.29.57:160][  0]SourceControl: Información El control de código fuente está desactivado
+[2017.06.15-17.29.57:740][  0]LogUObjectArray: 34408 objects as part of root set at end of initial load.
+[2017.06.15-17.29.57:740][  0]LogUObjectAllocator: 7639320 out of 0 bytes used by permanent object pool.
+[2017.06.15-17.29.57:740][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.06.15-17.29.57:837][  0]LogEngine: Initializing Engine...
+[2017.06.15-17.29.57:838][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.06.15-17.29.57:941][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.06.15-17.29.57:941][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.06.15-17.29.57:947][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.06.15-17.29.57:957][  0]LogInit: FAudioDevice initialized.
+[2017.06.15-17.29.57:974][  0]LogInit: Texture streaming: Enabled
+[2017.06.15-17.29.57:986][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.06.15-17.29.58:628][  0]LogInit:Display: Game Engine Initialized.
+[2017.06.15-17.29.58:792][  0]LogInit:Display: Starting Game.
+[2017.06.15-17.29.58:792][  0]LogNet: Browse: /Temp/Autosaves/Game/Maps/UEDPCMainMenu?Name=Player
+[2017.06.15-17.29.58:792][  0]LogLoad: LoadMap: /Temp/Autosaves/Game/Maps/UEDPCMainMenu?Name=Player
+[2017.06.15-17.29.58:821][  0]LogMemory: Platform Memory Stats for Windows
+[2017.06.15-17.29.58:821][  0]LogMemory: Process Physical Memory: 669.50 MB used, 682.83 MB peak
+[2017.06.15-17.29.58:821][  0]LogMemory: Process Virtual Memory: 817.93 MB used, 817.94 MB peak
+[2017.06.15-17.29.58:821][  0]LogMemory: Physical Memory: 7371.90 MB used,  8839.88 MB free, 16211.78 MB total
+[2017.06.15-17.29.58:821][  0]LogMemory: Virtual Memory: 1403.77 MB used,  8839.88 MB free, 134217728.00 MB total
+[2017.06.15-17.29.58:821][  0]LogMemory: 
+[2017.06.15-17.29.58:821][  0]Allocator Stats for TBB: (not implemented)
+[2017.06.15-17.29.58:948][  0]LogAIModule: Creating AISystem for world MainMenu
+[2017.06.15-17.29.59:090][  0]LogLinker:Warning: No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst'
+[2017.06.15-17.29.59:090][  0]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Mushroom_A_Inst.M_Mushroom_A_Inst Referenciado por SM_Mushroom_A
+[2017.06.15-17.29.59:090][  0]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst': No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst'
+[2017.06.15-17.29.59:090][  0]LogLinker:Warning: No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst' mientras carga NULL.
+[2017.06.15-17.29.59:090][  0]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Mushroom_A_Inst.M_Mushroom_A_Inst Referenciado por SM_Mushroom_A
+[2017.06.15-17.29.59:090][  0]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst': No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst' mientras carga NULL.
+[2017.06.15-17.29.59:106][  0]LogLinker:Warning: No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst'
+[2017.06.15-17.29.59:106][  0]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Stone_Path_Inst.M_Stone_Path_Inst Referenciado por SM_Stone_Path_B
+[2017.06.15-17.29.59:106][  0]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Stone_Path_Inst': No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst'
+[2017.06.15-17.29.59:106][  0]LogLinker:Warning: No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst' mientras carga NULL.
+[2017.06.15-17.29.59:106][  0]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Stone_Path_Inst.M_Stone_Path_Inst Referenciado por SM_Stone_Path_B
+[2017.06.15-17.29.59:106][  0]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Stone_Path_Inst': No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst' mientras carga NULL.
+[2017.06.15-17.29.59:177][  0]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2017.06.15-17.29.59:179][  0]LogWorld: Bringing World /Temp/Autosaves/Game/Maps/UEDPCMainMenu.MainMenu up for play (max tick rate 0) at 2017.06.15-12.29.59
+[2017.06.15-17.29.59:179][  0]LogWorld: Bringing up level for play took: 0.000561
+[2017.06.15-17.29.59:200][  0]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.15-17.29.59:200][  0]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.15-17.29.59:200][  0]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.06.15-17.29.59:204][  0]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.06.15-17.29.59:204][  0]LogLoad: Took 0.413189 seconds to LoadMap(/Temp/Autosaves/Game/Maps/UEDPCMainMenu)
+[2017.06.15-17.29.59:407][  0]LogRenderer: Reallocating scene render targets to support 1280x720 NumSamples 1 (Frame:2).
+[2017.06.15-17.29.59:407][  0]LogLoad: (Engine Initialization) Total time: 10.44 seconds
+[2017.06.15-17.29.59:407][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.32 seconds
+[2017.06.15-17.29.59:407][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2017.06.15-17.29.59:407][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2017.06.15-17.29.59:424][  0]LogOcInput: OculusInput pre-init called
+[2017.06.15-17.30.01:380][118]LogLevel:Warning: WARNING: The map '/Game/ThirdPersonBP/Maps/ThirdPersonExample' does not exist.
+[2017.06.15-17.30.01:380][118]LogGameMode:Display: Match State Changed from InProgress to LeavingMap
+[2017.06.15-17.30.01:380][118]LogGameState: Match State Changed from InProgress to LeavingMap
+[2017.06.15-17.30.01:380][118]LogNet: Browse: /Game/ThirdPersonBP/Maps/ThirdPersonExample
+[2017.06.15-17.30.01:380][118]LogLoad: LoadMap: /Game/ThirdPersonBP/Maps/ThirdPersonExample
+[2017.06.15-17.30.01:407][118]LogMemory: Platform Memory Stats for Windows
+[2017.06.15-17.30.01:407][118]LogMemory: Process Physical Memory: 748.67 MB used, 753.01 MB peak
+[2017.06.15-17.30.01:407][118]LogMemory: Process Virtual Memory: 1068.05 MB used, 1075.89 MB peak
+[2017.06.15-17.30.01:407][118]LogMemory: Physical Memory: 7441.84 MB used,  8769.94 MB free, 16211.78 MB total
+[2017.06.15-17.30.01:407][118]LogMemory: Virtual Memory: 1694.06 MB used,  8769.94 MB free, 134217728.00 MB total
+[2017.06.15-17.30.01:407][118]LogMemory: 
+[2017.06.15-17.30.01:407][118]Allocator Stats for TBB: (not implemented)
+[2017.06.15-17.30.01:407][118]LogLinker:Warning: No puede encontrar el archivo '/Game/ThirdPersonBP/Maps/ThirdPersonExample'
+[2017.06.15-17.30.01:407][118]LogUObjectGlobals:Warning: Error al cargar '/Game/ThirdPersonBP/Maps/ThirdPersonExample': No puede encontrar el archivo '/Game/ThirdPersonBP/Maps/ThirdPersonExample'
+[2017.06.15-17.30.01:407][118]LogNet: Browse: /Game/Maps/MainMenu?Name=Player
+[2017.06.15-17.30.01:407][118]LogLoad: LoadMap: /Game/Maps/MainMenu?Name=Player
+[2017.06.15-17.30.01:423][118]LogMemory: Platform Memory Stats for Windows
+[2017.06.15-17.30.01:423][118]LogMemory: Process Physical Memory: 748.67 MB used, 753.01 MB peak
+[2017.06.15-17.30.01:423][118]LogMemory: Process Virtual Memory: 1068.05 MB used, 1075.89 MB peak
+[2017.06.15-17.30.01:423][118]LogMemory: Physical Memory: 7441.84 MB used,  8769.94 MB free, 16211.78 MB total
+[2017.06.15-17.30.01:423][118]LogMemory: Virtual Memory: 1694.06 MB used,  8769.94 MB free, 134217728.00 MB total
+[2017.06.15-17.30.01:423][118]LogMemory: 
+[2017.06.15-17.30.01:423][118]Allocator Stats for TBB: (not implemented)
+[2017.06.15-17.30.01:431][118]LogAIModule: Creating AISystem for world MainMenu
+[2017.06.15-17.30.01:583][118]LogLinker:Warning: No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst'
+[2017.06.15-17.30.01:583][118]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Stone_Path_Inst.M_Stone_Path_Inst Referenciado por SM_Stone_Path_B
+[2017.06.15-17.30.01:583][118]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Stone_Path_Inst': No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst'
+[2017.06.15-17.30.01:583][118]LogLinker:Warning: No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst' mientras carga NULL.
+[2017.06.15-17.30.01:583][118]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Stone_Path_Inst.M_Stone_Path_Inst Referenciado por SM_Stone_Path_B
+[2017.06.15-17.30.01:583][118]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Stone_Path_Inst': No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst' mientras carga NULL.
+[2017.06.15-17.30.01:585][118]LogLinker:Warning: No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst'
+[2017.06.15-17.30.01:585][118]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Mushroom_A_Inst.M_Mushroom_A_Inst Referenciado por SM_Mushroom_A
+[2017.06.15-17.30.01:586][118]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst': No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst'
+[2017.06.15-17.30.01:586][118]LogLinker:Warning: No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst' mientras carga NULL.
+[2017.06.15-17.30.01:586][118]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Mushroom_A_Inst.M_Mushroom_A_Inst Referenciado por SM_Mushroom_A
+[2017.06.15-17.30.01:586][118]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst': No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst' mientras carga NULL.
+[2017.06.15-17.30.01:665][118]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2017.06.15-17.30.01:667][118]LogWorld: Bringing World /Game/Maps/MainMenu.MainMenu up for play (max tick rate 0) at 2017.06.15-12.30.01
+[2017.06.15-17.30.01:667][118]LogWorld: Bringing up level for play took: 0.000597
+[2017.06.15-17.30.01:667][118]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2017.06.15-17.30.01:668][118]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.15-17.30.01:668][118]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.15-17.30.01:668][118]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.06.15-17.30.01:670][118]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.06.15-17.30.01:670][118]LogLoad: Took 0.262155 seconds to LoadMap(/Game/Maps/MainMenu)
+[2017.06.15-17.30.01:670][118]LogNet:Warning: Travel Failure: [ClientTravelFailure]: Failed to load package '/Game/ThirdPersonBP/Maps/ThirdPersonExample'
+[2017.06.15-17.30.01:670][118]LogNet: TravelFailure: ClientTravelFailure, Reason for Failure: 'Failed to load package '/Game/ThirdPersonBP/Maps/ThirdPersonExample''
+[2017.06.15-17.30.01:671][118]LogGameMode:Display: Match State Changed from InProgress to Aborted
+[2017.06.15-17.30.01:671][118]LogGameState: Match State Changed from InProgress to Aborted
+[2017.06.15-17.30.01:675][119]LogGameMode:Display: Match State Changed from Aborted to LeavingMap
+[2017.06.15-17.30.01:675][119]LogGameState: Match State Changed from Aborted to LeavingMap
+[2017.06.15-17.30.01:675][119]LogNet: Browse: /Game/Maps/MainMenu?closed
+[2017.06.15-17.30.01:675][119]LogNet: Failed; returning to Entry
+[2017.06.15-17.30.01:675][119]LogLoad: LoadMap: /Game/Maps/MainMenu?closed
+[2017.06.15-17.30.01:785][119]LogMemory: Platform Memory Stats for Windows
+[2017.06.15-17.30.01:785][119]LogMemory: Process Physical Memory: 781.50 MB used, 781.51 MB peak
+[2017.06.15-17.30.01:785][119]LogMemory: Process Virtual Memory: 1086.97 MB used, 1086.97 MB peak
+[2017.06.15-17.30.01:785][119]LogMemory: Physical Memory: 7472.11 MB used,  8739.67 MB free, 16211.78 MB total
+[2017.06.15-17.30.01:785][119]LogMemory: Virtual Memory: 1712.38 MB used,  8739.67 MB free, 134217728.00 MB total
+[2017.06.15-17.30.01:785][119]LogMemory: 
+[2017.06.15-17.30.01:785][119]Allocator Stats for TBB: (not implemented)
+[2017.06.15-17.30.01:794][119]LogAIModule: Creating AISystem for world MainMenu
+[2017.06.15-17.30.01:946][119]LogLinker:Warning: No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst'
+[2017.06.15-17.30.01:946][119]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Mushroom_A_Inst.M_Mushroom_A_Inst Referenciado por SM_Mushroom_A
+[2017.06.15-17.30.01:946][119]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst': No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst'
+[2017.06.15-17.30.01:946][119]LogLinker:Warning: No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst' mientras carga NULL.
+[2017.06.15-17.30.01:946][119]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Mushroom_A_Inst.M_Mushroom_A_Inst Referenciado por SM_Mushroom_A
+[2017.06.15-17.30.01:946][119]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst': No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst' mientras carga NULL.
+[2017.06.15-17.30.01:962][119]LogLinker:Warning: No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst'
+[2017.06.15-17.30.01:962][119]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Stone_Path_Inst.M_Stone_Path_Inst Referenciado por SM_Stone_Path_B
+[2017.06.15-17.30.01:962][119]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Stone_Path_Inst': No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst'
+[2017.06.15-17.30.01:962][119]LogLinker:Warning: No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst' mientras carga NULL.
+[2017.06.15-17.30.01:962][119]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Stone_Path_Inst.M_Stone_Path_Inst Referenciado por SM_Stone_Path_B
+[2017.06.15-17.30.01:962][119]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Stone_Path_Inst': No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst' mientras carga NULL.
+[2017.06.15-17.30.02:028][119]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2017.06.15-17.30.02:030][119]LogWorld: Bringing World /Game/Maps/MainMenu.MainMenu up for play (max tick rate 0) at 2017.06.15-12.30.02
+[2017.06.15-17.30.02:030][119]LogWorld: Bringing up level for play took: 0.000460
+[2017.06.15-17.30.02:031][119]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2017.06.15-17.30.02:031][119]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.15-17.30.02:031][119]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.15-17.30.02:031][119]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.06.15-17.30.02:033][119]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.06.15-17.30.02:033][119]LogLoad: Took 0.358152 seconds to LoadMap(/Game/Maps/MainMenu)
+[2017.06.15-17.30.03:266][188]LogLevel:Warning: WARNING: The map '/Game/ThirdPersonBP/Maps/ThirdPersonExample' does not exist.
+[2017.06.15-17.30.03:267][188]LogGameMode:Display: Match State Changed from InProgress to LeavingMap
+[2017.06.15-17.30.03:267][188]LogGameState: Match State Changed from InProgress to LeavingMap
+[2017.06.15-17.30.03:267][188]LogNet: Browse: /Game/ThirdPersonBP/Maps/ThirdPersonExample
+[2017.06.15-17.30.03:267][188]LogLoad: LoadMap: /Game/ThirdPersonBP/Maps/ThirdPersonExample
+[2017.06.15-17.30.03:290][188]LogMemory: Platform Memory Stats for Windows
+[2017.06.15-17.30.03:290][188]LogMemory: Process Physical Memory: 792.41 MB used, 799.26 MB peak
+[2017.06.15-17.30.03:290][188]LogMemory: Process Virtual Memory: 1079.78 MB used, 1103.10 MB peak
+[2017.06.15-17.30.03:290][188]LogMemory: Physical Memory: 7481.52 MB used,  8730.26 MB free, 16211.78 MB total
+[2017.06.15-17.30.03:290][188]LogMemory: Virtual Memory: 1702.81 MB used,  8730.26 MB free, 134217728.00 MB total
+[2017.06.15-17.30.03:290][188]LogMemory: 
+[2017.06.15-17.30.03:290][188]Allocator Stats for TBB: (not implemented)
+[2017.06.15-17.30.03:290][188]LogLinker:Warning: No puede encontrar el archivo '/Game/ThirdPersonBP/Maps/ThirdPersonExample'
+[2017.06.15-17.30.03:291][188]LogUObjectGlobals:Warning: Error al cargar '/Game/ThirdPersonBP/Maps/ThirdPersonExample': No puede encontrar el archivo '/Game/ThirdPersonBP/Maps/ThirdPersonExample'
+[2017.06.15-17.30.03:291][188]LogNet: Browse: /Game/Maps/MainMenu?Name=Player
+[2017.06.15-17.30.03:291][188]LogLoad: LoadMap: /Game/Maps/MainMenu?Name=Player
+[2017.06.15-17.30.03:306][188]LogMemory: Platform Memory Stats for Windows
+[2017.06.15-17.30.03:306][188]LogMemory: Process Physical Memory: 792.41 MB used, 799.26 MB peak
+[2017.06.15-17.30.03:306][188]LogMemory: Process Virtual Memory: 1079.78 MB used, 1103.10 MB peak
+[2017.06.15-17.30.03:306][188]LogMemory: Physical Memory: 7481.52 MB used,  8730.26 MB free, 16211.78 MB total
+[2017.06.15-17.30.03:306][188]LogMemory: Virtual Memory: 1702.81 MB used,  8730.26 MB free, 134217728.00 MB total
+[2017.06.15-17.30.03:306][188]LogMemory: 
+[2017.06.15-17.30.03:306][188]Allocator Stats for TBB: (not implemented)
+[2017.06.15-17.30.03:315][188]LogAIModule: Creating AISystem for world MainMenu
+[2017.06.15-17.30.03:475][188]LogLinker:Warning: No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst'
+[2017.06.15-17.30.03:475][188]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Mushroom_A_Inst.M_Mushroom_A_Inst Referenciado por SM_Mushroom_A
+[2017.06.15-17.30.03:475][188]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst': No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst'
+[2017.06.15-17.30.03:475][188]LogLinker:Warning: No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst' mientras carga NULL.
+[2017.06.15-17.30.03:475][188]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Mushroom_A_Inst.M_Mushroom_A_Inst Referenciado por SM_Mushroom_A
+[2017.06.15-17.30.03:475][188]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst': No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst' mientras carga NULL.
+[2017.06.15-17.30.03:476][188]LogLinker:Warning: No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst'
+[2017.06.15-17.30.03:476][188]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Stone_Path_Inst.M_Stone_Path_Inst Referenciado por SM_Stone_Path_B
+[2017.06.15-17.30.03:476][188]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Stone_Path_Inst': No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst'
+[2017.06.15-17.30.03:476][188]LogLinker:Warning: No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst' mientras carga NULL.
+[2017.06.15-17.30.03:476][188]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Stone_Path_Inst.M_Stone_Path_Inst Referenciado por SM_Stone_Path_B
+[2017.06.15-17.30.03:476][188]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Stone_Path_Inst': No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst' mientras carga NULL.
+[2017.06.15-17.30.03:545][188]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2017.06.15-17.30.03:547][188]LogWorld: Bringing World /Game/Maps/MainMenu.MainMenu up for play (max tick rate 0) at 2017.06.15-12.30.03
+[2017.06.15-17.30.03:548][188]LogWorld: Bringing up level for play took: 0.000498
+[2017.06.15-17.30.03:548][188]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2017.06.15-17.30.03:548][188]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.15-17.30.03:548][188]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.15-17.30.03:548][188]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.06.15-17.30.03:550][188]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.06.15-17.30.03:551][188]LogLoad: Took 0.259695 seconds to LoadMap(/Game/Maps/MainMenu)
+[2017.06.15-17.30.03:551][188]LogNet:Warning: Travel Failure: [ClientTravelFailure]: Failed to load package '/Game/ThirdPersonBP/Maps/ThirdPersonExample'
+[2017.06.15-17.30.03:551][188]LogNet: TravelFailure: ClientTravelFailure, Reason for Failure: 'Failed to load package '/Game/ThirdPersonBP/Maps/ThirdPersonExample''
+[2017.06.15-17.30.03:551][188]LogGameMode:Display: Match State Changed from InProgress to Aborted
+[2017.06.15-17.30.03:551][188]LogGameState: Match State Changed from InProgress to Aborted
+[2017.06.15-17.30.03:553][189]LogGameMode:Display: Match State Changed from Aborted to LeavingMap
+[2017.06.15-17.30.03:553][189]LogGameState: Match State Changed from Aborted to LeavingMap
+[2017.06.15-17.30.03:553][189]LogNet: Browse: /Game/Maps/MainMenu?closed
+[2017.06.15-17.30.03:553][189]LogNet: Failed; returning to Entry
+[2017.06.15-17.30.03:553][189]LogLoad: LoadMap: /Game/Maps/MainMenu?closed
+[2017.06.15-17.30.03:672][189]LogMemory: Platform Memory Stats for Windows
+[2017.06.15-17.30.03:672][189]LogMemory: Process Physical Memory: 816.56 MB used, 816.57 MB peak
+[2017.06.15-17.30.03:672][189]LogMemory: Process Virtual Memory: 1084.54 MB used, 1103.10 MB peak
+[2017.06.15-17.30.03:672][189]LogMemory: Physical Memory: 7507.62 MB used,  8704.16 MB free, 16211.78 MB total
+[2017.06.15-17.30.03:672][189]LogMemory: Virtual Memory: 1707.38 MB used,  8704.16 MB free, 134217728.00 MB total
+[2017.06.15-17.30.03:672][189]LogMemory: 
+[2017.06.15-17.30.03:672][189]Allocator Stats for TBB: (not implemented)
+[2017.06.15-17.30.03:681][189]LogAIModule: Creating AISystem for world MainMenu
+[2017.06.15-17.30.03:828][189]LogLinker:Warning: No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst'
+[2017.06.15-17.30.03:829][189]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Stone_Path_Inst.M_Stone_Path_Inst Referenciado por SM_Stone_Path_B
+[2017.06.15-17.30.03:829][189]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Stone_Path_Inst': No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst'
+[2017.06.15-17.30.03:829][189]LogLinker:Warning: No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst' mientras carga NULL.
+[2017.06.15-17.30.03:829][189]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Stone_Path_Inst.M_Stone_Path_Inst Referenciado por SM_Stone_Path_B
+[2017.06.15-17.30.03:829][189]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Stone_Path_Inst': No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst' mientras carga NULL.
+[2017.06.15-17.30.03:831][189]LogLinker:Warning: No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst'
+[2017.06.15-17.30.03:831][189]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Mushroom_A_Inst.M_Mushroom_A_Inst Referenciado por SM_Mushroom_A
+[2017.06.15-17.30.03:831][189]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst': No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst'
+[2017.06.15-17.30.03:831][189]LogLinker:Warning: No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst' mientras carga NULL.
+[2017.06.15-17.30.03:831][189]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Mushroom_A_Inst.M_Mushroom_A_Inst Referenciado por SM_Mushroom_A
+[2017.06.15-17.30.03:831][189]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst': No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst' mientras carga NULL.
+[2017.06.15-17.30.03:910][189]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2017.06.15-17.30.03:913][189]LogWorld: Bringing World /Game/Maps/MainMenu.MainMenu up for play (max tick rate 0) at 2017.06.15-12.30.03
+[2017.06.15-17.30.03:913][189]LogWorld: Bringing up level for play took: 0.000731
+[2017.06.15-17.30.03:914][189]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2017.06.15-17.30.03:914][189]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.15-17.30.03:914][189]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.15-17.30.03:914][189]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.06.15-17.30.03:916][189]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.06.15-17.30.03:916][189]LogLoad: Took 0.363158 seconds to LoadMap(/Game/Maps/MainMenu)
+[2017.06.15-17.30.04:572][224]LogLevel:Warning: WARNING: The map '/Game/ThirdPersonBP/Maps/ThirdPersonExample' does not exist.
+[2017.06.15-17.30.04:573][224]LogGameMode:Display: Match State Changed from InProgress to LeavingMap
+[2017.06.15-17.30.04:573][224]LogGameState: Match State Changed from InProgress to LeavingMap
+[2017.06.15-17.30.04:573][224]LogNet: Browse: /Game/ThirdPersonBP/Maps/ThirdPersonExample
+[2017.06.15-17.30.04:573][224]LogLoad: LoadMap: /Game/ThirdPersonBP/Maps/ThirdPersonExample
+[2017.06.15-17.30.04:599][224]LogMemory: Platform Memory Stats for Windows
+[2017.06.15-17.30.04:599][224]LogMemory: Process Physical Memory: 820.00 MB used, 820.00 MB peak
+[2017.06.15-17.30.04:599][224]LogMemory: Process Virtual Memory: 1084.54 MB used, 1103.10 MB peak
+[2017.06.15-17.30.04:599][224]LogMemory: Physical Memory: 7511.80 MB used,  8699.98 MB free, 16211.78 MB total
+[2017.06.15-17.30.04:599][224]LogMemory: Virtual Memory: 1707.38 MB used,  8699.98 MB free, 134217728.00 MB total
+[2017.06.15-17.30.04:599][224]LogMemory: 
+[2017.06.15-17.30.04:599][224]Allocator Stats for TBB: (not implemented)
+[2017.06.15-17.30.04:599][224]LogLinker:Warning: No puede encontrar el archivo '/Game/ThirdPersonBP/Maps/ThirdPersonExample'
+[2017.06.15-17.30.04:599][224]LogUObjectGlobals:Warning: Error al cargar '/Game/ThirdPersonBP/Maps/ThirdPersonExample': No puede encontrar el archivo '/Game/ThirdPersonBP/Maps/ThirdPersonExample'
+[2017.06.15-17.30.04:599][224]LogNet: Browse: /Game/Maps/MainMenu?Name=Player
+[2017.06.15-17.30.04:599][224]LogLoad: LoadMap: /Game/Maps/MainMenu?Name=Player
+[2017.06.15-17.30.04:613][224]LogMemory: Platform Memory Stats for Windows
+[2017.06.15-17.30.04:613][224]LogMemory: Process Physical Memory: 820.00 MB used, 820.00 MB peak
+[2017.06.15-17.30.04:613][224]LogMemory: Process Virtual Memory: 1084.54 MB used, 1103.10 MB peak
+[2017.06.15-17.30.04:613][224]LogMemory: Physical Memory: 7511.80 MB used,  8699.98 MB free, 16211.78 MB total
+[2017.06.15-17.30.04:613][224]LogMemory: Virtual Memory: 1707.38 MB used,  8699.98 MB free, 134217728.00 MB total
+[2017.06.15-17.30.04:613][224]LogMemory: 
+[2017.06.15-17.30.04:613][224]Allocator Stats for TBB: (not implemented)
+[2017.06.15-17.30.04:622][224]LogAIModule: Creating AISystem for world MainMenu
+[2017.06.15-17.30.04:780][224]LogLinker:Warning: No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst'
+[2017.06.15-17.30.04:780][224]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Mushroom_A_Inst.M_Mushroom_A_Inst Referenciado por SM_Mushroom_A
+[2017.06.15-17.30.04:780][224]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst': No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst'
+[2017.06.15-17.30.04:780][224]LogLinker:Warning: No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst' mientras carga NULL.
+[2017.06.15-17.30.04:781][224]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Mushroom_A_Inst.M_Mushroom_A_Inst Referenciado por SM_Mushroom_A
+[2017.06.15-17.30.04:781][224]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst': No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst' mientras carga NULL.
+[2017.06.15-17.30.04:782][224]LogLinker:Warning: No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst'
+[2017.06.15-17.30.04:782][224]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Stone_Path_Inst.M_Stone_Path_Inst Referenciado por SM_Stone_Path_B
+[2017.06.15-17.30.04:783][224]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Stone_Path_Inst': No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst'
+[2017.06.15-17.30.04:783][224]LogLinker:Warning: No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst' mientras carga NULL.
+[2017.06.15-17.30.04:783][224]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Stone_Path_Inst.M_Stone_Path_Inst Referenciado por SM_Stone_Path_B
+[2017.06.15-17.30.04:783][224]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Stone_Path_Inst': No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst' mientras carga NULL.
+[2017.06.15-17.30.04:849][224]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2017.06.15-17.30.04:851][224]LogWorld: Bringing World /Game/Maps/MainMenu.MainMenu up for play (max tick rate 0) at 2017.06.15-12.30.04
+[2017.06.15-17.30.04:852][224]LogWorld: Bringing up level for play took: 0.000488
+[2017.06.15-17.30.04:852][224]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2017.06.15-17.30.04:852][224]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.15-17.30.04:852][224]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.15-17.30.04:852][224]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.06.15-17.30.04:854][224]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.06.15-17.30.04:854][224]LogLoad: Took 0.254826 seconds to LoadMap(/Game/Maps/MainMenu)
+[2017.06.15-17.30.04:854][224]LogNet:Warning: Travel Failure: [ClientTravelFailure]: Failed to load package '/Game/ThirdPersonBP/Maps/ThirdPersonExample'
+[2017.06.15-17.30.04:854][224]LogNet: TravelFailure: ClientTravelFailure, Reason for Failure: 'Failed to load package '/Game/ThirdPersonBP/Maps/ThirdPersonExample''
+[2017.06.15-17.30.04:855][224]LogGameMode:Display: Match State Changed from InProgress to Aborted
+[2017.06.15-17.30.04:855][224]LogGameState: Match State Changed from InProgress to Aborted
+[2017.06.15-17.30.04:857][225]LogGameMode:Display: Match State Changed from Aborted to LeavingMap
+[2017.06.15-17.30.04:857][225]LogGameState: Match State Changed from Aborted to LeavingMap
+[2017.06.15-17.30.04:857][225]LogNet: Browse: /Game/Maps/MainMenu?closed
+[2017.06.15-17.30.04:857][225]LogNet: Failed; returning to Entry
+[2017.06.15-17.30.04:857][225]LogLoad: LoadMap: /Game/Maps/MainMenu?closed
+[2017.06.15-17.30.04:972][225]LogMemory: Platform Memory Stats for Windows
+[2017.06.15-17.30.04:972][225]LogMemory: Process Physical Memory: 822.58 MB used, 822.59 MB peak
+[2017.06.15-17.30.04:972][225]LogMemory: Process Virtual Memory: 1089.18 MB used, 1103.10 MB peak
+[2017.06.15-17.30.04:972][225]LogMemory: Physical Memory: 7495.50 MB used,  8716.29 MB free, 16211.78 MB total
+[2017.06.15-17.30.04:972][225]LogMemory: Virtual Memory: 1711.44 MB used,  8716.29 MB free, 134217728.00 MB total
+[2017.06.15-17.30.04:972][225]LogMemory: 
+[2017.06.15-17.30.04:972][225]Allocator Stats for TBB: (not implemented)
+[2017.06.15-17.30.04:981][225]LogAIModule: Creating AISystem for world MainMenu
+[2017.06.15-17.30.05:131][225]LogLinker:Warning: No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst'
+[2017.06.15-17.30.05:132][225]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Mushroom_A_Inst.M_Mushroom_A_Inst Referenciado por SM_Mushroom_A
+[2017.06.15-17.30.05:132][225]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst': No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst'
+[2017.06.15-17.30.05:132][225]LogLinker:Warning: No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst' mientras carga NULL.
+[2017.06.15-17.30.05:132][225]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Mushroom_A_Inst.M_Mushroom_A_Inst Referenciado por SM_Mushroom_A
+[2017.06.15-17.30.05:132][225]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst': No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst' mientras carga NULL.
+[2017.06.15-17.30.05:142][225]LogLinker:Warning: No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst'
+[2017.06.15-17.30.05:142][225]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Stone_Path_Inst.M_Stone_Path_Inst Referenciado por SM_Stone_Path_B
+[2017.06.15-17.30.05:142][225]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Stone_Path_Inst': No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst'
+[2017.06.15-17.30.05:142][225]LogLinker:Warning: No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst' mientras carga NULL.
+[2017.06.15-17.30.05:142][225]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Stone_Path_Inst.M_Stone_Path_Inst Referenciado por SM_Stone_Path_B
+[2017.06.15-17.30.05:143][225]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Stone_Path_Inst': No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst' mientras carga NULL.
+[2017.06.15-17.30.05:208][225]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2017.06.15-17.30.05:211][225]LogWorld: Bringing World /Game/Maps/MainMenu.MainMenu up for play (max tick rate 0) at 2017.06.15-12.30.05
+[2017.06.15-17.30.05:211][225]LogWorld: Bringing up level for play took: 0.001091
+[2017.06.15-17.30.05:211][225]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2017.06.15-17.30.05:211][225]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.15-17.30.05:211][225]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.15-17.30.05:211][225]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.06.15-17.30.05:214][225]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.06.15-17.30.05:214][225]LogLoad: Took 0.356647 seconds to LoadMap(/Game/Maps/MainMenu)
+[2017.06.15-17.30.05:823][255]LogLevel:Warning: WARNING: The map '/Game/ThirdPersonBP/Maps/ThirdPersonExample' does not exist.
+[2017.06.15-17.30.05:824][255]LogGameMode:Display: Match State Changed from InProgress to LeavingMap
+[2017.06.15-17.30.05:824][255]LogGameState: Match State Changed from InProgress to LeavingMap
+[2017.06.15-17.30.05:824][255]LogNet: Browse: /Game/ThirdPersonBP/Maps/ThirdPersonExample
+[2017.06.15-17.30.05:847][255]LogLoad: LoadMap: /Game/ThirdPersonBP/Maps/ThirdPersonExample
+[2017.06.15-17.30.05:869][255]LogMemory: Platform Memory Stats for Windows
+[2017.06.15-17.30.05:869][255]LogMemory: Process Physical Memory: 821.70 MB used, 824.16 MB peak
+[2017.06.15-17.30.05:869][255]LogMemory: Process Virtual Memory: 1077.75 MB used, 1103.10 MB peak
+[2017.06.15-17.30.05:869][255]LogMemory: Physical Memory: 7492.29 MB used,  8719.49 MB free, 16211.78 MB total
+[2017.06.15-17.30.05:869][255]LogMemory: Virtual Memory: 1711.44 MB used,  8719.49 MB free, 134217728.00 MB total
+[2017.06.15-17.30.05:869][255]LogMemory: 
+[2017.06.15-17.30.05:869][255]Allocator Stats for TBB: (not implemented)
+[2017.06.15-17.30.05:869][255]LogLinker:Warning: No puede encontrar el archivo '/Game/ThirdPersonBP/Maps/ThirdPersonExample'
+[2017.06.15-17.30.05:869][255]LogUObjectGlobals:Warning: Error al cargar '/Game/ThirdPersonBP/Maps/ThirdPersonExample': No puede encontrar el archivo '/Game/ThirdPersonBP/Maps/ThirdPersonExample'
+[2017.06.15-17.30.05:869][255]LogNet: Browse: /Game/Maps/MainMenu?Name=Player
+[2017.06.15-17.30.05:869][255]LogLoad: LoadMap: /Game/Maps/MainMenu?Name=Player
+[2017.06.15-17.30.05:886][255]LogMemory: Platform Memory Stats for Windows
+[2017.06.15-17.30.05:886][255]LogMemory: Process Physical Memory: 821.70 MB used, 824.16 MB peak
+[2017.06.15-17.30.05:886][255]LogMemory: Process Virtual Memory: 1077.75 MB used, 1103.10 MB peak
+[2017.06.15-17.30.05:886][255]LogMemory: Physical Memory: 7492.28 MB used,  8719.50 MB free, 16211.78 MB total
+[2017.06.15-17.30.05:886][255]LogMemory: Virtual Memory: 1711.44 MB used,  8719.50 MB free, 134217728.00 MB total
+[2017.06.15-17.30.05:886][255]LogMemory: 
+[2017.06.15-17.30.05:886][255]Allocator Stats for TBB: (not implemented)
+[2017.06.15-17.30.05:896][255]LogAIModule: Creating AISystem for world MainMenu
+[2017.06.15-17.30.06:046][255]LogLinker:Warning: No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst'
+[2017.06.15-17.30.06:046][255]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Stone_Path_Inst.M_Stone_Path_Inst Referenciado por SM_Stone_Path_B
+[2017.06.15-17.30.06:046][255]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Stone_Path_Inst': No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst'
+[2017.06.15-17.30.06:046][255]LogLinker:Warning: No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst' mientras carga NULL.
+[2017.06.15-17.30.06:046][255]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Stone_Path_Inst.M_Stone_Path_Inst Referenciado por SM_Stone_Path_B
+[2017.06.15-17.30.06:046][255]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Stone_Path_Inst': No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst' mientras carga NULL.
+[2017.06.15-17.30.06:047][255]LogLinker:Warning: No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst'
+[2017.06.15-17.30.06:047][255]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Mushroom_A_Inst.M_Mushroom_A_Inst Referenciado por SM_Mushroom_A
+[2017.06.15-17.30.06:047][255]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst': No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst'
+[2017.06.15-17.30.06:047][255]LogLinker:Warning: No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst' mientras carga NULL.
+[2017.06.15-17.30.06:047][255]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Mushroom_A_Inst.M_Mushroom_A_Inst Referenciado por SM_Mushroom_A
+[2017.06.15-17.30.06:047][255]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst': No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst' mientras carga NULL.
+[2017.06.15-17.30.06:124][255]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2017.06.15-17.30.06:127][255]LogWorld: Bringing World /Game/Maps/MainMenu.MainMenu up for play (max tick rate 0) at 2017.06.15-12.30.06
+[2017.06.15-17.30.06:127][255]LogWorld: Bringing up level for play took: 0.000558
+[2017.06.15-17.30.06:127][255]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2017.06.15-17.30.06:127][255]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.15-17.30.06:127][255]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.15-17.30.06:127][255]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.06.15-17.30.06:129][255]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.06.15-17.30.06:129][255]LogLoad: Took 0.259907 seconds to LoadMap(/Game/Maps/MainMenu)
+[2017.06.15-17.30.06:129][255]LogNet:Warning: Travel Failure: [ClientTravelFailure]: Failed to load package '/Game/ThirdPersonBP/Maps/ThirdPersonExample'
+[2017.06.15-17.30.06:129][255]LogNet: TravelFailure: ClientTravelFailure, Reason for Failure: 'Failed to load package '/Game/ThirdPersonBP/Maps/ThirdPersonExample''
+[2017.06.15-17.30.06:130][255]LogGameMode:Display: Match State Changed from InProgress to Aborted
+[2017.06.15-17.30.06:130][255]LogGameState: Match State Changed from InProgress to Aborted
+[2017.06.15-17.30.06:132][256]LogGameMode:Display: Match State Changed from Aborted to LeavingMap
+[2017.06.15-17.30.06:132][256]LogGameState: Match State Changed from Aborted to LeavingMap
+[2017.06.15-17.30.06:132][256]LogNet: Browse: /Game/Maps/MainMenu?closed
+[2017.06.15-17.30.06:132][256]LogNet: Failed; returning to Entry
+[2017.06.15-17.30.06:132][256]LogLoad: LoadMap: /Game/Maps/MainMenu?closed
+[2017.06.15-17.30.06:249][256]LogMemory: Platform Memory Stats for Windows
+[2017.06.15-17.30.06:249][256]LogMemory: Process Physical Memory: 824.64 MB used, 824.64 MB peak
+[2017.06.15-17.30.06:249][256]LogMemory: Process Virtual Memory: 1080.73 MB used, 1103.10 MB peak
+[2017.06.15-17.30.06:249][256]LogMemory: Physical Memory: 7495.23 MB used,  8716.55 MB free, 16211.78 MB total
+[2017.06.15-17.30.06:249][256]LogMemory: Virtual Memory: 1713.81 MB used,  8716.55 MB free, 134217728.00 MB total
+[2017.06.15-17.30.06:249][256]LogMemory: 
+[2017.06.15-17.30.06:249][256]Allocator Stats for TBB: (not implemented)
+[2017.06.15-17.30.06:258][256]LogAIModule: Creating AISystem for world MainMenu
+[2017.06.15-17.30.06:410][256]LogLinker:Warning: No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst'
+[2017.06.15-17.30.06:410][256]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Stone_Path_Inst.M_Stone_Path_Inst Referenciado por SM_Stone_Path_B
+[2017.06.15-17.30.06:410][256]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Stone_Path_Inst': No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst'
+[2017.06.15-17.30.06:410][256]LogLinker:Warning: No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst' mientras carga NULL.
+[2017.06.15-17.30.06:410][256]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Stone_Path_Inst.M_Stone_Path_Inst Referenciado por SM_Stone_Path_B
+[2017.06.15-17.30.06:410][256]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Stone_Path_Inst': No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst' mientras carga NULL.
+[2017.06.15-17.30.06:411][256]LogLinker:Warning: No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst'
+[2017.06.15-17.30.06:411][256]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Mushroom_A_Inst.M_Mushroom_A_Inst Referenciado por SM_Mushroom_A
+[2017.06.15-17.30.06:411][256]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst': No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst'
+[2017.06.15-17.30.06:411][256]LogLinker:Warning: No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst' mientras carga NULL.
+[2017.06.15-17.30.06:411][256]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Mushroom_A_Inst.M_Mushroom_A_Inst Referenciado por SM_Mushroom_A
+[2017.06.15-17.30.06:411][256]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst': No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst' mientras carga NULL.
+[2017.06.15-17.30.06:488][256]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2017.06.15-17.30.06:491][256]LogWorld: Bringing World /Game/Maps/MainMenu.MainMenu up for play (max tick rate 0) at 2017.06.15-12.30.06
+[2017.06.15-17.30.06:491][256]LogWorld: Bringing up level for play took: 0.000553
+[2017.06.15-17.30.06:491][256]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2017.06.15-17.30.06:491][256]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.15-17.30.06:491][256]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.15-17.30.06:491][256]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.06.15-17.30.06:493][256]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.06.15-17.30.06:494][256]LogLoad: Took 0.361528 seconds to LoadMap(/Game/Maps/MainMenu)
+[2017.06.15-17.30.07:067][281]LogLevel:Warning: WARNING: The map '/Game/ThirdPersonBP/Maps/ThirdPersonExample' does not exist.
+[2017.06.15-17.30.07:068][281]LogGameMode:Display: Match State Changed from InProgress to LeavingMap
+[2017.06.15-17.30.07:068][281]LogGameState: Match State Changed from InProgress to LeavingMap
+[2017.06.15-17.30.07:068][281]LogNet: Browse: /Game/ThirdPersonBP/Maps/ThirdPersonExample
+[2017.06.15-17.30.07:068][281]LogLoad: LoadMap: /Game/ThirdPersonBP/Maps/ThirdPersonExample
+[2017.06.15-17.30.07:090][281]LogMemory: Platform Memory Stats for Windows
+[2017.06.15-17.30.07:090][281]LogMemory: Process Physical Memory: 827.81 MB used, 827.82 MB peak
+[2017.06.15-17.30.07:090][281]LogMemory: Process Virtual Memory: 1076.93 MB used, 1103.10 MB peak
+[2017.06.15-17.30.07:090][281]LogMemory: Physical Memory: 7492.48 MB used,  8719.30 MB free, 16211.78 MB total
+[2017.06.15-17.30.07:090][281]LogMemory: Virtual Memory: 1713.81 MB used,  8719.30 MB free, 134217728.00 MB total
+[2017.06.15-17.30.07:090][281]LogMemory: 
+[2017.06.15-17.30.07:090][281]Allocator Stats for TBB: (not implemented)
+[2017.06.15-17.30.07:090][281]LogLinker:Warning: No puede encontrar el archivo '/Game/ThirdPersonBP/Maps/ThirdPersonExample'
+[2017.06.15-17.30.07:090][281]LogUObjectGlobals:Warning: Error al cargar '/Game/ThirdPersonBP/Maps/ThirdPersonExample': No puede encontrar el archivo '/Game/ThirdPersonBP/Maps/ThirdPersonExample'
+[2017.06.15-17.30.07:090][281]LogNet: Browse: /Game/Maps/MainMenu?Name=Player
+[2017.06.15-17.30.07:090][281]LogLoad: LoadMap: /Game/Maps/MainMenu?Name=Player
+[2017.06.15-17.30.07:105][281]LogMemory: Platform Memory Stats for Windows
+[2017.06.15-17.30.07:105][281]LogMemory: Process Physical Memory: 827.81 MB used, 827.82 MB peak
+[2017.06.15-17.30.07:105][281]LogMemory: Process Virtual Memory: 1076.93 MB used, 1103.10 MB peak
+[2017.06.15-17.30.07:105][281]LogMemory: Physical Memory: 7492.48 MB used,  8719.30 MB free, 16211.78 MB total
+[2017.06.15-17.30.07:105][281]LogMemory: Virtual Memory: 1713.81 MB used,  8719.30 MB free, 134217728.00 MB total
+[2017.06.15-17.30.07:105][281]LogMemory: 
+[2017.06.15-17.30.07:105][281]Allocator Stats for TBB: (not implemented)
+[2017.06.15-17.30.07:114][281]LogAIModule: Creating AISystem for world MainMenu
+[2017.06.15-17.30.07:279][281]LogLinker:Warning: No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst'
+[2017.06.15-17.30.07:279][281]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Mushroom_A_Inst.M_Mushroom_A_Inst Referenciado por SM_Mushroom_A
+[2017.06.15-17.30.07:279][281]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst': No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst'
+[2017.06.15-17.30.07:279][281]LogLinker:Warning: No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst' mientras carga NULL.
+[2017.06.15-17.30.07:280][281]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Mushroom_A_Inst.M_Mushroom_A_Inst Referenciado por SM_Mushroom_A
+[2017.06.15-17.30.07:280][281]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst': No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst' mientras carga NULL.
+[2017.06.15-17.30.07:282][281]LogLinker:Warning: No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst'
+[2017.06.15-17.30.07:282][281]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Stone_Path_Inst.M_Stone_Path_Inst Referenciado por SM_Stone_Path_B
+[2017.06.15-17.30.07:282][281]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Stone_Path_Inst': No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst'
+[2017.06.15-17.30.07:282][281]LogLinker:Warning: No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst' mientras carga NULL.
+[2017.06.15-17.30.07:282][281]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Stone_Path_Inst.M_Stone_Path_Inst Referenciado por SM_Stone_Path_B
+[2017.06.15-17.30.07:282][281]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Stone_Path_Inst': No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst' mientras carga NULL.
+[2017.06.15-17.30.07:355][281]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2017.06.15-17.30.07:358][281]LogWorld: Bringing World /Game/Maps/MainMenu.MainMenu up for play (max tick rate 0) at 2017.06.15-12.30.07
+[2017.06.15-17.30.07:358][281]LogWorld: Bringing up level for play took: 0.000831
+[2017.06.15-17.30.07:359][281]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2017.06.15-17.30.07:359][281]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.15-17.30.07:359][281]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.15-17.30.07:359][281]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.06.15-17.30.07:361][281]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.06.15-17.30.07:361][281]LogLoad: Took 0.270783 seconds to LoadMap(/Game/Maps/MainMenu)
+[2017.06.15-17.30.07:361][281]LogNet:Warning: Travel Failure: [ClientTravelFailure]: Failed to load package '/Game/ThirdPersonBP/Maps/ThirdPersonExample'
+[2017.06.15-17.30.07:361][281]LogNet: TravelFailure: ClientTravelFailure, Reason for Failure: 'Failed to load package '/Game/ThirdPersonBP/Maps/ThirdPersonExample''
+[2017.06.15-17.30.07:362][281]LogGameMode:Display: Match State Changed from InProgress to Aborted
+[2017.06.15-17.30.07:362][281]LogGameState: Match State Changed from InProgress to Aborted
+[2017.06.15-17.30.07:365][282]LogGameMode:Display: Match State Changed from Aborted to LeavingMap
+[2017.06.15-17.30.07:365][282]LogGameState: Match State Changed from Aborted to LeavingMap
+[2017.06.15-17.30.07:365][282]LogNet: Browse: /Game/Maps/MainMenu?closed
+[2017.06.15-17.30.07:365][282]LogNet: Failed; returning to Entry
+[2017.06.15-17.30.07:365][282]LogLoad: LoadMap: /Game/Maps/MainMenu?closed
+[2017.06.15-17.30.07:488][282]LogMemory: Platform Memory Stats for Windows
+[2017.06.15-17.30.07:488][282]LogMemory: Process Physical Memory: 828.08 MB used, 828.09 MB peak
+[2017.06.15-17.30.07:488][282]LogMemory: Process Virtual Memory: 1077.20 MB used, 1103.10 MB peak
+[2017.06.15-17.30.07:488][282]LogMemory: Physical Memory: 7513.40 MB used,  8698.38 MB free, 16211.78 MB total
+[2017.06.15-17.30.07:488][282]LogMemory: Virtual Memory: 1713.81 MB used,  8698.38 MB free, 134217728.00 MB total
+[2017.06.15-17.30.07:488][282]LogMemory: 
+[2017.06.15-17.30.07:488][282]Allocator Stats for TBB: (not implemented)
+[2017.06.15-17.30.07:498][282]LogAIModule: Creating AISystem for world MainMenu
+[2017.06.15-17.30.07:654][282]LogLinker:Warning: No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst'
+[2017.06.15-17.30.07:654][282]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Stone_Path_Inst.M_Stone_Path_Inst Referenciado por SM_Stone_Path_B
+[2017.06.15-17.30.07:654][282]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Stone_Path_Inst': No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst'
+[2017.06.15-17.30.07:654][282]LogLinker:Warning: No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst' mientras carga NULL.
+[2017.06.15-17.30.07:654][282]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Stone_Path_Inst.M_Stone_Path_Inst Referenciado por SM_Stone_Path_B
+[2017.06.15-17.30.07:654][282]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Stone_Path_Inst': No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst' mientras carga NULL.
+[2017.06.15-17.30.07:658][282]LogLinker:Warning: No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst'
+[2017.06.15-17.30.07:658][282]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Mushroom_A_Inst.M_Mushroom_A_Inst Referenciado por SM_Mushroom_A
+[2017.06.15-17.30.07:658][282]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst': No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst'
+[2017.06.15-17.30.07:658][282]LogLinker:Warning: No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst' mientras carga NULL.
+[2017.06.15-17.30.07:658][282]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Mushroom_A_Inst.M_Mushroom_A_Inst Referenciado por SM_Mushroom_A
+[2017.06.15-17.30.07:658][282]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst': No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst' mientras carga NULL.
+[2017.06.15-17.30.07:731][282]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2017.06.15-17.30.07:733][282]LogWorld: Bringing World /Game/Maps/MainMenu.MainMenu up for play (max tick rate 0) at 2017.06.15-12.30.07
+[2017.06.15-17.30.07:733][282]LogWorld: Bringing up level for play took: 0.000501
+[2017.06.15-17.30.07:733][282]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2017.06.15-17.30.07:733][282]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.15-17.30.07:733][282]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.15-17.30.07:734][282]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.06.15-17.30.07:736][282]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.06.15-17.30.07:736][282]LogLoad: Took 0.371411 seconds to LoadMap(/Game/Maps/MainMenu)
+[2017.06.15-17.30.19:198][985]LogLevel:Warning: WARNING: The map '/Game/ThirdPersonBP/Maps/ThirdPersonExample' does not exist.
+[2017.06.15-17.30.19:199][985]LogGameMode:Display: Match State Changed from InProgress to LeavingMap
+[2017.06.15-17.30.19:199][985]LogGameState: Match State Changed from InProgress to LeavingMap
+[2017.06.15-17.30.19:199][985]LogNet: Browse: /Game/ThirdPersonBP/Maps/ThirdPersonExample
+[2017.06.15-17.30.19:199][985]LogLoad: LoadMap: /Game/ThirdPersonBP/Maps/ThirdPersonExample
+[2017.06.15-17.30.19:223][985]LogMemory: Platform Memory Stats for Windows
+[2017.06.15-17.30.19:223][985]LogMemory: Process Physical Memory: 744.99 MB used, 828.09 MB peak
+[2017.06.15-17.30.19:223][985]LogMemory: Process Virtual Memory: 989.08 MB used, 1103.10 MB peak
+[2017.06.15-17.30.19:223][985]LogMemory: Physical Memory: 7383.87 MB used,  8827.91 MB free, 16211.78 MB total
+[2017.06.15-17.30.19:223][985]LogMemory: Virtual Memory: 1674.88 MB used,  8827.91 MB free, 134217728.00 MB total
+[2017.06.15-17.30.19:223][985]LogMemory: 
+[2017.06.15-17.30.19:223][985]Allocator Stats for TBB: (not implemented)
+[2017.06.15-17.30.19:223][985]LogLinker:Warning: No puede encontrar el archivo '/Game/ThirdPersonBP/Maps/ThirdPersonExample'
+[2017.06.15-17.30.19:223][985]LogUObjectGlobals:Warning: Error al cargar '/Game/ThirdPersonBP/Maps/ThirdPersonExample': No puede encontrar el archivo '/Game/ThirdPersonBP/Maps/ThirdPersonExample'
+[2017.06.15-17.30.19:223][985]LogNet: Browse: /Game/Maps/MainMenu?Name=Player
+[2017.06.15-17.30.19:223][985]LogLoad: LoadMap: /Game/Maps/MainMenu?Name=Player
+[2017.06.15-17.30.19:240][985]LogMemory: Platform Memory Stats for Windows
+[2017.06.15-17.30.19:240][985]LogMemory: Process Physical Memory: 744.99 MB used, 828.09 MB peak
+[2017.06.15-17.30.19:240][985]LogMemory: Process Virtual Memory: 989.08 MB used, 1103.10 MB peak
+[2017.06.15-17.30.19:240][985]LogMemory: Physical Memory: 7383.87 MB used,  8827.91 MB free, 16211.78 MB total
+[2017.06.15-17.30.19:240][985]LogMemory: Virtual Memory: 1674.88 MB used,  8827.91 MB free, 134217728.00 MB total
+[2017.06.15-17.30.19:240][985]LogMemory: 
+[2017.06.15-17.30.19:240][985]Allocator Stats for TBB: (not implemented)
+[2017.06.15-17.30.19:249][985]LogAIModule: Creating AISystem for world MainMenu
+[2017.06.15-17.30.19:395][985]LogLinker:Warning: No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst'
+[2017.06.15-17.30.19:395][985]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Stone_Path_Inst.M_Stone_Path_Inst Referenciado por SM_Stone_Path_B
+[2017.06.15-17.30.19:395][985]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Stone_Path_Inst': No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst'
+[2017.06.15-17.30.19:395][985]LogLinker:Warning: No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst' mientras carga NULL.
+[2017.06.15-17.30.19:395][985]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Stone_Path_Inst.M_Stone_Path_Inst Referenciado por SM_Stone_Path_B
+[2017.06.15-17.30.19:395][985]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Stone_Path_Inst': No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst' mientras carga NULL.
+[2017.06.15-17.30.19:406][985]LogLinker:Warning: No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst'
+[2017.06.15-17.30.19:406][985]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Mushroom_A_Inst.M_Mushroom_A_Inst Referenciado por SM_Mushroom_A
+[2017.06.15-17.30.19:406][985]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst': No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst'
+[2017.06.15-17.30.19:406][985]LogLinker:Warning: No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst' mientras carga NULL.
+[2017.06.15-17.30.19:406][985]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Mushroom_A_Inst.M_Mushroom_A_Inst Referenciado por SM_Mushroom_A
+[2017.06.15-17.30.19:406][985]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst': No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst' mientras carga NULL.
+[2017.06.15-17.30.19:478][985]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2017.06.15-17.30.19:479][985]LogWorld: Bringing World /Game/Maps/MainMenu.MainMenu up for play (max tick rate 0) at 2017.06.15-12.30.19
+[2017.06.15-17.30.19:479][985]LogWorld: Bringing up level for play took: 0.000485
+[2017.06.15-17.30.19:480][985]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2017.06.15-17.30.19:480][985]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.15-17.30.19:480][985]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.15-17.30.19:480][985]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.06.15-17.30.19:482][985]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.06.15-17.30.19:482][985]LogLoad: Took 0.258788 seconds to LoadMap(/Game/Maps/MainMenu)
+[2017.06.15-17.30.19:482][985]LogNet:Warning: Travel Failure: [ClientTravelFailure]: Failed to load package '/Game/ThirdPersonBP/Maps/ThirdPersonExample'
+[2017.06.15-17.30.19:482][985]LogNet: TravelFailure: ClientTravelFailure, Reason for Failure: 'Failed to load package '/Game/ThirdPersonBP/Maps/ThirdPersonExample''
+[2017.06.15-17.30.19:482][985]LogGameMode:Display: Match State Changed from InProgress to Aborted
+[2017.06.15-17.30.19:482][985]LogGameState: Match State Changed from InProgress to Aborted
+[2017.06.15-17.30.19:484][986]LogGameMode:Display: Match State Changed from Aborted to LeavingMap
+[2017.06.15-17.30.19:484][986]LogGameState: Match State Changed from Aborted to LeavingMap
+[2017.06.15-17.30.19:484][986]LogNet: Browse: /Game/Maps/MainMenu?closed
+[2017.06.15-17.30.19:484][986]LogNet: Failed; returning to Entry
+[2017.06.15-17.30.19:485][986]LogLoad: LoadMap: /Game/Maps/MainMenu?closed
+[2017.06.15-17.30.19:603][986]LogMemory: Platform Memory Stats for Windows
+[2017.06.15-17.30.19:603][986]LogMemory: Process Physical Memory: 759.53 MB used, 828.09 MB peak
+[2017.06.15-17.30.19:603][986]LogMemory: Process Virtual Memory: 1066.67 MB used, 1103.10 MB peak
+[2017.06.15-17.30.19:603][986]LogMemory: Physical Memory: 7395.75 MB used,  8816.04 MB free, 16211.78 MB total
+[2017.06.15-17.30.19:603][986]LogMemory: Virtual Memory: 1713.81 MB used,  8816.04 MB free, 134217728.00 MB total
+[2017.06.15-17.30.19:603][986]LogMemory: 
+[2017.06.15-17.30.19:603][986]Allocator Stats for TBB: (not implemented)
+[2017.06.15-17.30.19:612][986]LogAIModule: Creating AISystem for world MainMenu
+[2017.06.15-17.30.19:758][986]LogLinker:Warning: No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst'
+[2017.06.15-17.30.19:758][986]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Stone_Path_Inst.M_Stone_Path_Inst Referenciado por SM_Stone_Path_B
+[2017.06.15-17.30.19:758][986]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Stone_Path_Inst': No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst'
+[2017.06.15-17.30.19:759][986]LogLinker:Warning: No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst' mientras carga NULL.
+[2017.06.15-17.30.19:759][986]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Stone_Path_Inst.M_Stone_Path_Inst Referenciado por SM_Stone_Path_B
+[2017.06.15-17.30.19:759][986]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Stone_Path_Inst': No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst' mientras carga NULL.
+[2017.06.15-17.30.19:771][986]LogLinker:Warning: No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst'
+[2017.06.15-17.30.19:771][986]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Mushroom_A_Inst.M_Mushroom_A_Inst Referenciado por SM_Mushroom_A
+[2017.06.15-17.30.19:771][986]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst': No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst'
+[2017.06.15-17.30.19:772][986]LogLinker:Warning: No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst' mientras carga NULL.
+[2017.06.15-17.30.19:772][986]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Mushroom_A_Inst.M_Mushroom_A_Inst Referenciado por SM_Mushroom_A
+[2017.06.15-17.30.19:772][986]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst': No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst' mientras carga NULL.
+[2017.06.15-17.30.19:835][986]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2017.06.15-17.30.19:838][986]LogWorld: Bringing World /Game/Maps/MainMenu.MainMenu up for play (max tick rate 0) at 2017.06.15-12.30.19
+[2017.06.15-17.30.19:838][986]LogWorld: Bringing up level for play took: 0.000579
+[2017.06.15-17.30.19:838][986]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2017.06.15-17.30.19:838][986]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.15-17.30.19:838][986]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.15-17.30.19:838][986]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.06.15-17.30.19:840][986]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.06.15-17.30.19:841][986]LogLoad: Took 0.355873 seconds to LoadMap(/Game/Maps/MainMenu)
+[2017.06.15-17.30.20:696][ 28]LogLevel:Warning: WARNING: The map '/Game/ThirdPersonBP/Maps/ThirdPersonExample' does not exist.
+[2017.06.15-17.30.20:696][ 28]LogGameMode:Display: Match State Changed from InProgress to LeavingMap
+[2017.06.15-17.30.20:696][ 28]LogGameState: Match State Changed from InProgress to LeavingMap
+[2017.06.15-17.30.20:696][ 28]LogNet: Browse: /Game/ThirdPersonBP/Maps/ThirdPersonExample
+[2017.06.15-17.30.20:696][ 28]LogLoad: LoadMap: /Game/ThirdPersonBP/Maps/ThirdPersonExample
+[2017.06.15-17.30.20:719][ 28]LogMemory: Platform Memory Stats for Windows
+[2017.06.15-17.30.20:719][ 28]LogMemory: Process Physical Memory: 759.55 MB used, 828.09 MB peak
+[2017.06.15-17.30.20:719][ 28]LogMemory: Process Virtual Memory: 1066.91 MB used, 1103.10 MB peak
+[2017.06.15-17.30.20:719][ 28]LogMemory: Physical Memory: 7392.34 MB used,  8819.44 MB free, 16211.78 MB total
+[2017.06.15-17.30.20:719][ 28]LogMemory: Virtual Memory: 1713.81 MB used,  8819.44 MB free, 134217728.00 MB total
+[2017.06.15-17.30.20:719][ 28]LogMemory: 
+[2017.06.15-17.30.20:719][ 28]Allocator Stats for TBB: (not implemented)
+[2017.06.15-17.30.20:720][ 28]LogLinker:Warning: No puede encontrar el archivo '/Game/ThirdPersonBP/Maps/ThirdPersonExample'
+[2017.06.15-17.30.20:720][ 28]LogUObjectGlobals:Warning: Error al cargar '/Game/ThirdPersonBP/Maps/ThirdPersonExample': No puede encontrar el archivo '/Game/ThirdPersonBP/Maps/ThirdPersonExample'
+[2017.06.15-17.30.20:720][ 28]LogNet: Browse: /Game/Maps/MainMenu?Name=Player
+[2017.06.15-17.30.20:720][ 28]LogLoad: LoadMap: /Game/Maps/MainMenu?Name=Player
+[2017.06.15-17.30.20:735][ 28]LogMemory: Platform Memory Stats for Windows
+[2017.06.15-17.30.20:735][ 28]LogMemory: Process Physical Memory: 759.55 MB used, 828.09 MB peak
+[2017.06.15-17.30.20:735][ 28]LogMemory: Process Virtual Memory: 1066.91 MB used, 1103.10 MB peak
+[2017.06.15-17.30.20:735][ 28]LogMemory: Physical Memory: 7392.34 MB used,  8819.44 MB free, 16211.78 MB total
+[2017.06.15-17.30.20:735][ 28]LogMemory: Virtual Memory: 1713.81 MB used,  8819.44 MB free, 134217728.00 MB total
+[2017.06.15-17.30.20:735][ 28]LogMemory: 
+[2017.06.15-17.30.20:735][ 28]Allocator Stats for TBB: (not implemented)
+[2017.06.15-17.30.20:744][ 28]LogAIModule: Creating AISystem for world MainMenu
+[2017.06.15-17.30.20:900][ 28]LogLinker:Warning: No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst'
+[2017.06.15-17.30.20:900][ 28]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Mushroom_A_Inst.M_Mushroom_A_Inst Referenciado por SM_Mushroom_A
+[2017.06.15-17.30.20:900][ 28]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst': No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst'
+[2017.06.15-17.30.20:900][ 28]LogLinker:Warning: No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst' mientras carga NULL.
+[2017.06.15-17.30.20:900][ 28]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Mushroom_A_Inst.M_Mushroom_A_Inst Referenciado por SM_Mushroom_A
+[2017.06.15-17.30.20:900][ 28]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst': No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst' mientras carga NULL.
+[2017.06.15-17.30.20:911][ 28]LogLinker:Warning: No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst'
+[2017.06.15-17.30.20:911][ 28]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Stone_Path_Inst.M_Stone_Path_Inst Referenciado por SM_Stone_Path_B
+[2017.06.15-17.30.20:911][ 28]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Stone_Path_Inst': No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst'
+[2017.06.15-17.30.20:911][ 28]LogLinker:Warning: No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst' mientras carga NULL.
+[2017.06.15-17.30.20:911][ 28]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Stone_Path_Inst.M_Stone_Path_Inst Referenciado por SM_Stone_Path_B
+[2017.06.15-17.30.20:911][ 28]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Stone_Path_Inst': No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst' mientras carga NULL.
+[2017.06.15-17.30.20:981][ 28]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2017.06.15-17.30.20:984][ 28]LogWorld: Bringing World /Game/Maps/MainMenu.MainMenu up for play (max tick rate 0) at 2017.06.15-12.30.20
+[2017.06.15-17.30.20:984][ 28]LogWorld: Bringing up level for play took: 0.000589
+[2017.06.15-17.30.20:984][ 28]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2017.06.15-17.30.20:985][ 28]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.15-17.30.20:985][ 28]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.15-17.30.20:985][ 28]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.06.15-17.30.20:987][ 28]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.06.15-17.30.20:987][ 28]LogLoad: Took 0.267722 seconds to LoadMap(/Game/Maps/MainMenu)
+[2017.06.15-17.30.20:987][ 28]LogNet:Warning: Travel Failure: [ClientTravelFailure]: Failed to load package '/Game/ThirdPersonBP/Maps/ThirdPersonExample'
+[2017.06.15-17.30.20:987][ 28]LogNet: TravelFailure: ClientTravelFailure, Reason for Failure: 'Failed to load package '/Game/ThirdPersonBP/Maps/ThirdPersonExample''
+[2017.06.15-17.30.20:988][ 28]LogGameMode:Display: Match State Changed from InProgress to Aborted
+[2017.06.15-17.30.20:988][ 28]LogGameState: Match State Changed from InProgress to Aborted
+[2017.06.15-17.30.20:990][ 29]LogGameMode:Display: Match State Changed from Aborted to LeavingMap
+[2017.06.15-17.30.20:990][ 29]LogGameState: Match State Changed from Aborted to LeavingMap
+[2017.06.15-17.30.20:990][ 29]LogNet: Browse: /Game/Maps/MainMenu?closed
+[2017.06.15-17.30.20:990][ 29]LogNet: Failed; returning to Entry
+[2017.06.15-17.30.20:990][ 29]LogLoad: LoadMap: /Game/Maps/MainMenu?closed
+[2017.06.15-17.30.21:107][ 29]LogMemory: Platform Memory Stats for Windows
+[2017.06.15-17.30.21:107][ 29]LogMemory: Process Physical Memory: 808.79 MB used, 828.09 MB peak
+[2017.06.15-17.30.21:107][ 29]LogMemory: Process Virtual Memory: 1068.16 MB used, 1103.10 MB peak
+[2017.06.15-17.30.21:107][ 29]LogMemory: Physical Memory: 7446.55 MB used,  8765.23 MB free, 16211.78 MB total
+[2017.06.15-17.30.21:107][ 29]LogMemory: Virtual Memory: 1713.81 MB used,  8765.23 MB free, 134217728.00 MB total
+[2017.06.15-17.30.21:107][ 29]LogMemory: 
+[2017.06.15-17.30.21:107][ 29]Allocator Stats for TBB: (not implemented)
+[2017.06.15-17.30.21:116][ 29]LogAIModule: Creating AISystem for world MainMenu
+[2017.06.15-17.30.21:270][ 29]LogLinker:Warning: No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst'
+[2017.06.15-17.30.21:270][ 29]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Stone_Path_Inst.M_Stone_Path_Inst Referenciado por SM_Stone_Path_B
+[2017.06.15-17.30.21:270][ 29]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Stone_Path_Inst': No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst'
+[2017.06.15-17.30.21:270][ 29]LogLinker:Warning: No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst' mientras carga NULL.
+[2017.06.15-17.30.21:270][ 29]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Stone_Path_Inst.M_Stone_Path_Inst Referenciado por SM_Stone_Path_B
+[2017.06.15-17.30.21:270][ 29]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Stone_Path_Inst': No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst' mientras carga NULL.
+[2017.06.15-17.30.21:271][ 29]LogLinker:Warning: No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst'
+[2017.06.15-17.30.21:271][ 29]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Mushroom_A_Inst.M_Mushroom_A_Inst Referenciado por SM_Mushroom_A
+[2017.06.15-17.30.21:271][ 29]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst': No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst'
+[2017.06.15-17.30.21:271][ 29]LogLinker:Warning: No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst' mientras carga NULL.
+[2017.06.15-17.30.21:271][ 29]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Mushroom_A_Inst.M_Mushroom_A_Inst Referenciado por SM_Mushroom_A
+[2017.06.15-17.30.21:271][ 29]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst': No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst' mientras carga NULL.
+[2017.06.15-17.30.21:344][ 29]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2017.06.15-17.30.21:347][ 29]LogWorld: Bringing World /Game/Maps/MainMenu.MainMenu up for play (max tick rate 0) at 2017.06.15-12.30.21
+[2017.06.15-17.30.21:347][ 29]LogWorld: Bringing up level for play took: 0.001188
+[2017.06.15-17.30.21:347][ 29]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2017.06.15-17.30.21:348][ 29]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.15-17.30.21:348][ 29]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.15-17.30.21:348][ 29]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.06.15-17.30.21:350][ 29]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.06.15-17.30.21:350][ 29]LogLoad: Took 0.359747 seconds to LoadMap(/Game/Maps/MainMenu)
+[2017.06.15-17.30.21:943][ 55]LogLevel:Warning: WARNING: The map '/Game/ThirdPersonBP/Maps/ThirdPersonExample' does not exist.
+[2017.06.15-17.30.21:944][ 55]LogGameMode:Display: Match State Changed from InProgress to LeavingMap
+[2017.06.15-17.30.21:944][ 55]LogGameState: Match State Changed from InProgress to LeavingMap
+[2017.06.15-17.30.21:944][ 55]LogNet: Browse: /Game/ThirdPersonBP/Maps/ThirdPersonExample
+[2017.06.15-17.30.21:944][ 55]LogLoad: LoadMap: /Game/ThirdPersonBP/Maps/ThirdPersonExample
+[2017.06.15-17.30.21:966][ 55]LogMemory: Platform Memory Stats for Windows
+[2017.06.15-17.30.21:966][ 55]LogMemory: Process Physical Memory: 813.57 MB used, 828.09 MB peak
+[2017.06.15-17.30.21:966][ 55]LogMemory: Process Virtual Memory: 1070.17 MB used, 1103.10 MB peak
+[2017.06.15-17.30.21:966][ 55]LogMemory: Physical Memory: 7451.46 MB used,  8760.32 MB free, 16211.78 MB total
+[2017.06.15-17.30.21:966][ 55]LogMemory: Virtual Memory: 1713.81 MB used,  8760.32 MB free, 134217728.00 MB total
+[2017.06.15-17.30.21:966][ 55]LogMemory: 
+[2017.06.15-17.30.21:966][ 55]Allocator Stats for TBB: (not implemented)
+[2017.06.15-17.30.21:967][ 55]LogLinker:Warning: No puede encontrar el archivo '/Game/ThirdPersonBP/Maps/ThirdPersonExample'
+[2017.06.15-17.30.21:967][ 55]LogUObjectGlobals:Warning: Error al cargar '/Game/ThirdPersonBP/Maps/ThirdPersonExample': No puede encontrar el archivo '/Game/ThirdPersonBP/Maps/ThirdPersonExample'
+[2017.06.15-17.30.21:967][ 55]LogNet: Browse: /Game/Maps/MainMenu?Name=Player
+[2017.06.15-17.30.21:967][ 55]LogLoad: LoadMap: /Game/Maps/MainMenu?Name=Player
+[2017.06.15-17.30.21:982][ 55]LogMemory: Platform Memory Stats for Windows
+[2017.06.15-17.30.21:982][ 55]LogMemory: Process Physical Memory: 813.57 MB used, 828.09 MB peak
+[2017.06.15-17.30.21:982][ 55]LogMemory: Process Virtual Memory: 1070.17 MB used, 1103.10 MB peak
+[2017.06.15-17.30.21:982][ 55]LogMemory: Physical Memory: 7451.46 MB used,  8760.32 MB free, 16211.78 MB total
+[2017.06.15-17.30.21:982][ 55]LogMemory: Virtual Memory: 1713.81 MB used,  8760.32 MB free, 134217728.00 MB total
+[2017.06.15-17.30.21:982][ 55]LogMemory: 
+[2017.06.15-17.30.21:982][ 55]Allocator Stats for TBB: (not implemented)
+[2017.06.15-17.30.21:992][ 55]LogAIModule: Creating AISystem for world MainMenu
+[2017.06.15-17.30.22:140][ 55]LogLinker:Warning: No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst'
+[2017.06.15-17.30.22:140][ 55]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Stone_Path_Inst.M_Stone_Path_Inst Referenciado por SM_Stone_Path_B
+[2017.06.15-17.30.22:140][ 55]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Stone_Path_Inst': No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst'
+[2017.06.15-17.30.22:140][ 55]LogLinker:Warning: No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst' mientras carga NULL.
+[2017.06.15-17.30.22:140][ 55]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Stone_Path_Inst.M_Stone_Path_Inst Referenciado por SM_Stone_Path_B
+[2017.06.15-17.30.22:140][ 55]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Stone_Path_Inst': No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst' mientras carga NULL.
+[2017.06.15-17.30.22:153][ 55]LogLinker:Warning: No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst'
+[2017.06.15-17.30.22:153][ 55]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Mushroom_A_Inst.M_Mushroom_A_Inst Referenciado por SM_Mushroom_A
+[2017.06.15-17.30.22:153][ 55]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst': No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst'
+[2017.06.15-17.30.22:153][ 55]LogLinker:Warning: No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst' mientras carga NULL.
+[2017.06.15-17.30.22:153][ 55]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Mushroom_A_Inst.M_Mushroom_A_Inst Referenciado por SM_Mushroom_A
+[2017.06.15-17.30.22:153][ 55]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst': No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst' mientras carga NULL.
+[2017.06.15-17.30.22:220][ 55]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2017.06.15-17.30.22:222][ 55]LogWorld: Bringing World /Game/Maps/MainMenu.MainMenu up for play (max tick rate 0) at 2017.06.15-12.30.22
+[2017.06.15-17.30.22:222][ 55]LogWorld: Bringing up level for play took: 0.000480
+[2017.06.15-17.30.22:223][ 55]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2017.06.15-17.30.22:223][ 55]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.15-17.30.22:223][ 55]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.15-17.30.22:223][ 55]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.06.15-17.30.22:225][ 55]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.06.15-17.30.22:225][ 55]LogLoad: Took 0.257811 seconds to LoadMap(/Game/Maps/MainMenu)
+[2017.06.15-17.30.22:225][ 55]LogNet:Warning: Travel Failure: [ClientTravelFailure]: Failed to load package '/Game/ThirdPersonBP/Maps/ThirdPersonExample'
+[2017.06.15-17.30.22:225][ 55]LogNet: TravelFailure: ClientTravelFailure, Reason for Failure: 'Failed to load package '/Game/ThirdPersonBP/Maps/ThirdPersonExample''
+[2017.06.15-17.30.22:225][ 55]LogGameMode:Display: Match State Changed from InProgress to Aborted
+[2017.06.15-17.30.22:225][ 55]LogGameState: Match State Changed from InProgress to Aborted
+[2017.06.15-17.30.22:227][ 56]LogGameMode:Display: Match State Changed from Aborted to LeavingMap
+[2017.06.15-17.30.22:227][ 56]LogGameState: Match State Changed from Aborted to LeavingMap
+[2017.06.15-17.30.22:227][ 56]LogNet: Browse: /Game/Maps/MainMenu?closed
+[2017.06.15-17.30.22:227][ 56]LogNet: Failed; returning to Entry
+[2017.06.15-17.30.22:228][ 56]LogLoad: LoadMap: /Game/Maps/MainMenu?closed
+[2017.06.15-17.30.22:342][ 56]LogMemory: Platform Memory Stats for Windows
+[2017.06.15-17.30.22:342][ 56]LogMemory: Process Physical Memory: 814.43 MB used, 828.09 MB peak
+[2017.06.15-17.30.22:342][ 56]LogMemory: Process Virtual Memory: 1070.86 MB used, 1103.10 MB peak
+[2017.06.15-17.30.22:342][ 56]LogMemory: Physical Memory: 7454.17 MB used,  8757.61 MB free, 16211.78 MB total
+[2017.06.15-17.30.22:342][ 56]LogMemory: Virtual Memory: 1713.81 MB used,  8757.61 MB free, 134217728.00 MB total
+[2017.06.15-17.30.22:342][ 56]LogMemory: 
+[2017.06.15-17.30.22:342][ 56]Allocator Stats for TBB: (not implemented)
+[2017.06.15-17.30.22:352][ 56]LogAIModule: Creating AISystem for world MainMenu
+[2017.06.15-17.30.22:512][ 56]LogLinker:Warning: No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst'
+[2017.06.15-17.30.22:512][ 56]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Mushroom_A_Inst.M_Mushroom_A_Inst Referenciado por SM_Mushroom_A
+[2017.06.15-17.30.22:512][ 56]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst': No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst'
+[2017.06.15-17.30.22:512][ 56]LogLinker:Warning: No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst' mientras carga NULL.
+[2017.06.15-17.30.22:512][ 56]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Mushroom_A_Inst.M_Mushroom_A_Inst Referenciado por SM_Mushroom_A
+[2017.06.15-17.30.22:512][ 56]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst': No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Mushroom_A_Inst' mientras carga NULL.
+[2017.06.15-17.30.22:514][ 56]LogLinker:Warning: No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst'
+[2017.06.15-17.30.22:514][ 56]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Stone_Path_Inst.M_Stone_Path_Inst Referenciado por SM_Stone_Path_B
+[2017.06.15-17.30.22:514][ 56]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Stone_Path_Inst': No puede encontrar el archivo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst'
+[2017.06.15-17.30.22:514][ 56]LogLinker:Warning: No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst' mientras carga NULL.
+[2017.06.15-17.30.22:514][ 56]LoadErrors: Información Error al cargar /Game/Assets/Environment/Materials/M_Stone_Path_Inst.M_Stone_Path_Inst Referenciado por SM_Stone_Path_B
+[2017.06.15-17.30.22:514][ 56]LogUObjectGlobals:Warning: Error al cargar '/Game/Assets/Environment/Materials/M_Stone_Path_Inst': No puede encontrar el archivo para el activo '/Game/Assets/Environment/Materials/M_Stone_Path_Inst' mientras carga NULL.
+[2017.06.15-17.30.22:580][ 56]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2017.06.15-17.30.22:582][ 56]LogWorld: Bringing World /Game/Maps/MainMenu.MainMenu up for play (max tick rate 0) at 2017.06.15-12.30.22
+[2017.06.15-17.30.22:583][ 56]LogWorld: Bringing up level for play took: 0.000520
+[2017.06.15-17.30.22:583][ 56]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2017.06.15-17.30.22:583][ 56]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.15-17.30.22:583][ 56]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.15-17.30.22:583][ 56]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.06.15-17.30.22:585][ 56]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.06.15-17.30.22:585][ 56]LogLoad: Took 0.357580 seconds to LoadMap(/Game/Maps/MainMenu)
+[2017.06.15-17.30.24:506][156]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.06.15-17.30.24:506][156]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.06.15-17.30.24:511][156]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.06.15-17.30.24:511][156]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.06.15-17.30.24:512][156]LogEngine: All Windows Closed
+[2017.06.15-17.30.24:512][156]LogWindows: FPlatformMisc::RequestExit(0)
+[2017.06.15-17.30.24:512][157]LogMoviePlayer: Shutting down movie player
+[2017.06.15-17.30.24:848][157]LogExit: Preparing to exit.
+[2017.06.15-17.30.25:982][157]LogExit: Game engine shut down
+[2017.06.15-17.30.26:027][157]LogObj: Freed 0b from 0 cluster array pools.
+[2017.06.15-17.30.26:027][157]LogExit: Object subsystem successfully closed.
+[2017.06.15-17.30.26:044][157]LogD3D11RHI: Shutdown
+[2017.06.15-17.30.26:044][157]LogD3D11RHI: CleanupD3DDevice
+[2017.06.15-17.30.26:108][157]LogD3D11RHI: ~FD3D11DynamicRHI
+[2017.06.15-17.30.26:115][157]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (267)
+[2017.06.15-17.30.26:115][157]LogModuleManager: Shutting down and abandoning module SequenceRecorder (265)
+[2017.06.15-17.30.26:115][157]LogModuleManager: Shutting down and abandoning module AutomationController (263)
+[2017.06.15-17.30.26:115][157]LogModuleManager: Shutting down and abandoning module AutomationWorker (261)
+[2017.06.15-17.30.26:115][157]LogModuleManager: Shutting down and abandoning module Voice (259)
+[2017.06.15-17.30.26:115][157]LogModuleManager: Shutting down and abandoning module AIModule (257)
+[2017.06.15-17.30.26:115][157]LogModuleManager: Shutting down and abandoning module GameplayDebugger (256)
+[2017.06.15-17.30.26:115][157]LogModuleManager: Shutting down and abandoning module AITestSuite (254)
+[2017.06.15-17.30.26:115][157]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (251)
+[2017.06.15-17.30.26:115][157]LogModuleManager: Shutting down and abandoning module MfMediaFactory (249)
+[2017.06.15-17.30.26:115][157]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (247)
+[2017.06.15-17.30.26:115][157]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (245)
+[2017.06.15-17.30.26:115][157]LogModuleManager: Shutting down and abandoning module Media (244)
+[2017.06.15-17.30.26:115][157]LogModuleManager: Shutting down and abandoning module CharacterAI (241)
+[2017.06.15-17.30.26:115][157]LogModuleManager: Shutting down and abandoning module SessionServices (239)
+[2017.06.15-17.30.26:115][157]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (237)
+[2017.06.15-17.30.26:115][157]LogModuleManager: Shutting down and abandoning module GeometryCache (235)
+[2017.06.15-17.30.26:115][157]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (234)
+[2017.06.15-17.30.26:115][157]LogModuleManager: Shutting down and abandoning module Niagara (231)
+[2017.06.15-17.30.26:115][157]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (229)
+[2017.06.15-17.30.26:115][157]LogModuleManager: Shutting down and abandoning module PortalServices (227)
+[2017.06.15-17.30.26:115][157]LogModuleManager: Shutting down and abandoning module PortalRpc (225)
+[2017.06.15-17.30.26:115][157]LogModuleManager: Shutting down and abandoning module MessagingRpc (223)
+[2017.06.15-17.30.26:115][157]LogModuleManager: Shutting down and abandoning module ProfilerService (221)
+[2017.06.15-17.30.26:339][157]LogModuleManager: Shutting down and abandoning module TaskGraph (219)
+[2017.06.15-17.30.26:339][157]LogModuleManager: Shutting down and abandoning module SteamVRController (217)
+[2017.06.15-17.30.26:339][157]LogModuleManager: Shutting down and abandoning module SteamVR (215)
+[2017.06.15-17.30.26:339][157]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (213)
+[2017.06.15-17.30.26:339][157]LogModuleManager: Shutting down and abandoning module OculusLibrary (211)
+[2017.06.15-17.30.26:339][157]LogModuleManager: Shutting down and abandoning module OculusInput (209)
+[2017.06.15-17.30.26:339][157]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (207)
+[2017.06.15-17.30.26:339][157]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (205)
+[2017.06.15-17.30.26:339][157]LogModuleManager: Shutting down and abandoning module CableComponent (203)
+[2017.06.15-17.30.26:339][157]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (201)
+[2017.06.15-17.30.26:339][157]LogModuleManager: Shutting down and abandoning module HTML5Networking (199)
+[2017.06.15-17.30.26:339][157]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (197)
+[2017.06.15-17.30.26:339][157]LogModuleManager: Shutting down and abandoning module DesktopPlatform (196)
+[2017.06.15-17.30.26:339][157]LogModuleManager: Shutting down and abandoning module HotReload (194)
+[2017.06.15-17.30.26:339][157]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (193)
+[2017.06.15-17.30.26:339][157]LogModuleManager: Shutting down and abandoning module UObjectPlugin (189)
+[2017.06.15-17.30.26:339][157]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (187)
+[2017.06.15-17.30.26:339][157]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (185)
+[2017.06.15-17.30.26:339][157]LogModuleManager: Shutting down and abandoning module SourceControl (184)
+[2017.06.15-17.30.26:339][157]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (181)
+[2017.06.15-17.30.26:339][157]LogModuleManager: Shutting down and abandoning module PhysXVehicles (179)
+[2017.06.15-17.30.26:339][157]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (177)
+[2017.06.15-17.30.26:339][157]LogModuleManager: Shutting down and abandoning module UdpMessaging (175)
+[2017.06.15-17.30.26:440][157]LogModuleManager: Shutting down and abandoning module TcpMessaging (173)
+[2017.06.15-17.30.26:811][157]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (171)
+[2017.06.15-17.30.26:811][157]LogModuleManager: Shutting down and abandoning module FacialAnimation (169)
+[2017.06.15-17.30.26:811][157]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (167)
+[2017.06.15-17.30.26:811][157]LogModuleManager: Shutting down and abandoning module Paper2D (165)
+[2017.06.15-17.30.26:811][157]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (163)
+[2017.06.15-17.30.26:811][157]LogModuleManager: Shutting down and abandoning module WmfMedia (161)
+[2017.06.15-17.30.26:811][157]LogModuleManager: Shutting down and abandoning module MfMedia (159)
+[2017.06.15-17.30.26:811][157]LogModuleManager: Shutting down and abandoning module MediaAssets (157)
+[2017.06.15-17.30.26:811][157]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (155)
+[2017.06.15-17.30.26:811][157]LogModuleManager: Shutting down and abandoning module VREditor (153)
+[2017.06.15-17.30.26:811][157]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (151)
+[2017.06.15-17.30.26:811][157]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (149)
+[2017.06.15-17.30.26:811][157]LogModuleManager: Shutting down and abandoning module FunctionalTesting (147)
+[2017.06.15-17.30.26:811][157]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (145)
+[2017.06.15-17.30.26:811][157]LogModuleManager: Shutting down and abandoning module UMG (143)
+[2017.06.15-17.30.26:811][157]LogModuleManager: Shutting down and abandoning module UMGEditor (142)
+[2017.06.15-17.30.26:811][157]LogModuleManager: Shutting down and abandoning module Sequencer (141)
+[2017.06.15-17.30.26:811][157]LogModuleManager: Shutting down and abandoning module AssetTools (139)
+[2017.06.15-17.30.26:811][157]LogModuleManager: Shutting down and abandoning module MessageLog (138)
+[2017.06.15-17.30.26:811][157]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (137)
+[2017.06.15-17.30.26:811][157]LogModuleManager: Shutting down and abandoning module SlateReflector (131)
+[2017.06.15-17.30.26:811][157]LogModuleManager: Shutting down and abandoning module Slate (129)
+[2017.06.15-17.30.26:811][157]LogModuleManager: Shutting down and abandoning module EditorStyle (127)
+[2017.06.15-17.30.26:814][157]LogModuleManager: Shutting down and abandoning module Messaging (125)
+[2017.06.15-17.30.26:814][157]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (123)
+[2017.06.15-17.30.26:814][157]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (121)
+[2017.06.15-17.30.26:814][157]LogModuleManager: Shutting down and abandoning module XAudio2 (119)
+[2017.06.15-17.30.26:814][157]LogModuleManager: Shutting down and abandoning module Networking (117)
+[2017.06.15-17.30.26:814][157]LogModuleManager: Shutting down and abandoning module Core (115)
+[2017.06.15-17.30.26:814][157]LogModuleManager: Shutting down and abandoning module KismetCompiler (113)
+[2017.06.15-17.30.26:814][157]LogModuleManager: Shutting down and abandoning module PhysXFormats (111)
+[2017.06.15-17.30.26:814][157]LogModuleManager: Shutting down and abandoning module MeshUtilities (109)
+[2017.06.15-17.30.26:814][157]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (108)
+[2017.06.15-17.30.26:814][157]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (106)
+[2017.06.15-17.30.26:814][157]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (104)
+[2017.06.15-17.30.26:814][157]LogModuleManager: Shutting down and abandoning module PropertyEditor (102)
+[2017.06.15-17.30.26:814][157]LogModuleManager: Shutting down and abandoning module AssetRegistry (99)
+[2017.06.15-17.30.26:814][157]LogModuleManager: Shutting down and abandoning module DerivedDataCache (97)
+[2017.06.15-17.30.27:079][157]LogDerivedDataCache: Shutdown
+[2017.06.15-17.30.27:079][157]LogModuleManager: Shutting down and abandoning module TargetPlatform (95)
+[2017.06.15-17.30.27:079][157]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (94)
+[2017.06.15-17.30.27:079][157]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (92)
+[2017.06.15-17.30.27:079][157]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (90)
+[2017.06.15-17.30.27:079][157]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (88)
+[2017.06.15-17.30.27:079][157]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (86)
+[2017.06.15-17.30.27:079][157]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (84)
+[2017.06.15-17.30.27:079][157]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (82)
+[2017.06.15-17.30.27:079][157]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (80)
+[2017.06.15-17.30.27:079][157]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (78)
+[2017.06.15-17.30.27:079][157]LogModuleManager: Shutting down and abandoning module ImageWrapper (77)
+[2017.06.15-17.30.27:079][157]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (74)
+[2017.06.15-17.30.27:079][157]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (72)
+[2017.06.15-17.30.27:079][157]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (70)
+[2017.06.15-17.30.27:079][157]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (68)
+[2017.06.15-17.30.27:079][157]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (66)
+[2017.06.15-17.30.27:079][157]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (64)
+[2017.06.15-17.30.27:079][157]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (62)
+[2017.06.15-17.30.27:079][157]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (60)
+[2017.06.15-17.30.27:079][157]LogModuleManager: Shutting down and abandoning module InputCore (57)
+[2017.06.15-17.30.27:079][157]LogModuleManager: Shutting down and abandoning module Settings (55)
+[2017.06.15-17.30.27:079][157]LogModuleManager: Shutting down and abandoning module OculusRift (53)
+[2017.06.15-17.30.27:079][157]LogModuleManager: Shutting down and abandoning module GearVR (51)
+[2017.06.15-17.30.27:079][157]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (49)
+[2017.06.15-17.30.27:079][157]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (47)
+[2017.06.15-17.30.27:079][157]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (43)
+[2017.06.15-17.30.27:079][157]LogOnline:Display: OSS: FOnlineSubsystemNull::Shutdown()
+[2017.06.15-17.30.27:080][157]LogOnline:Display: Unloading online subsystem: NULL
+[2017.06.15-17.30.27:080][157]LogModuleManager: Shutting down and abandoning module XMPP (37)
+[2017.06.15-17.30.27:080][157]LogModuleManager: Shutting down and abandoning module HTTP (35)
+[2017.06.15-17.30.27:083][157]LogModuleManager: Shutting down and abandoning module SSL (34)
+[2017.06.15-17.30.27:085][157]LogModuleManager: Shutting down and abandoning module AudioEditor (30)
+[2017.06.15-17.30.27:085][157]LogModuleManager: Shutting down and abandoning module TextureCompressor (28)
+[2017.06.15-17.30.27:085][157]LogModuleManager: Shutting down and abandoning module ShaderCore (26)
+[2017.06.15-17.30.27:085][157]LogModuleManager: Shutting down and abandoning module Landscape (24)
+[2017.06.15-17.30.27:085][157]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (22)
+[2017.06.15-17.30.27:085][157]LogModuleManager: Shutting down and abandoning module OpenGLDrv (20)
+[2017.06.15-17.30.27:085][157]LogModuleManager: Shutting down and abandoning module D3D11RHI (18)
+[2017.06.15-17.30.27:085][157]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (16)
+[2017.06.15-17.30.27:085][157]LogModuleManager: Shutting down and abandoning module Renderer (14)
+[2017.06.15-17.30.27:085][157]LogModuleManager: Shutting down and abandoning module Engine (12)
+[2017.06.15-17.30.27:085][157]LogModuleManager: Shutting down and abandoning module CoreUObject (10)
+[2017.06.15-17.30.27:085][157]LogModuleManager: Shutting down and abandoning module NetworkFile (8)
+[2017.06.15-17.30.27:085][157]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2017.06.15-17.30.27:085][157]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2017.06.15-17.30.27:085][157]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2017.06.15-17.30.27:087][157]LogExit: Exiting.
+[2017.06.15-17.30.27:088][157]Log file closed, 06/15/17 12:30:27
