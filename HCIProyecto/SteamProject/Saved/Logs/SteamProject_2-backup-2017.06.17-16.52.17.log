@@ -1,0 +1,281 @@
+﻿Log file open, 06/17/17 16:27:16
+LogInit:Display: Running engine for game: SteamProject
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(1211762583) SRandInit(1211762583).
+LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.160244
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogModuleManager:Warning: No filename provided for module OnlineSubsystemSteam
+LogModuleManager:Warning: ModuleManager: Unable to load module 'OnlineSubsystemSteam' because the file 'C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/Win64/' was not found.
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogInit: Build: ++UE4+Release-4.15-CL-3450819
+LogInit: Engine Version: 4.15.3-3450819+++UE4+Release-4.15
+LogInit: Compatible Engine Version: 4.15.0-3299760+++UE4+Release-4.15
+LogInit: Net CL: 3299760
+LogDevObjectVersion: Number of dev versions registered: 14
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 8
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 14
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 22
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 12
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 3
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogInit: Compiled (64-bit): May 21 2017 11:02:34
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.15
+LogInit: Command line:  
+LogInit: Base directory: C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.06.17-21.27.19:362][  0]LogInit: Selected Device Profile: [Windows]
+[2017.06.17-21.27.19:362][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.06.17-21.27.19:405][  0]LogInit: Computer: LAPTOP-RAOCS8F3
+[2017.06.17-21.27.19:405][  0]LogInit: User: koru
+[2017.06.17-21.27.19:405][  0]LogInit: CPU Page size=65536, Cores=4
+[2017.06.17-21.27.19:405][  0]LogInit: High frequency timer resolution =2.531246 MHz
+[2017.06.17-21.27.19:406][  0]LogMemory: Memory total: Physical=15.8GB (16GB approx)
+[2017.06.17-21.27.19:406][  0]LogMemory: Platform Memory Stats for Windows
+[2017.06.17-21.27.19:406][  0]LogMemory: Process Physical Memory: 265.01 MB used, 265.01 MB peak
+[2017.06.17-21.27.19:406][  0]LogMemory: Process Virtual Memory: 262.85 MB used, 262.85 MB peak
+[2017.06.17-21.27.19:406][  0]LogMemory: Physical Memory: 3742.81 MB used,  12468.97 MB free, 16211.78 MB total
+[2017.06.17-21.27.19:406][  0]LogMemory: Virtual Memory: 647.25 MB used,  12468.97 MB free, 134217728.00 MB total
+[2017.06.17-21.27.20:002][  0]LogTextLocalizationManager: No specific translations for ('es-PE') exist, so ('es') translations will be used.
+[2017.06.17-21.27.21:553][  0]LogD3D11RHI: D3D11 adapters:
+[2017.06.17-21.27.23:815][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 960M' (Feature Level 11_0)
+[2017.06.17-21.27.23:815][  0]LogD3D11RHI:       4064/0/8105 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2017.06.17-21.27.23:834][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 530' (Feature Level 11_0)
+[2017.06.17-21.27.23:834][  0]LogD3D11RHI:       128/0/8105 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2017.06.17-21.27.23:838][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.06.17-21.27.23:838][  0]LogD3D11RHI:       0/0/8105 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.06.17-21.27.23:838][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.06.17-21.27.23:852][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.06.17-21.27.23:852][  0]LogD3D11RHI:     GPU DeviceId: 0x139b (for the marketing name, search the web for "GPU Device Id")
+[2017.06.17-21.27.23:852][  0]LogWindows: EnumDisplayDevices:
+[2017.06.17-21.27.23:852][  0]LogWindows:    0. 'Intel(R) HD Graphics 530' (P:1 D:1)
+[2017.06.17-21.27.23:853][  0]LogWindows:    1. 'Intel(R) HD Graphics 530' (P:0 D:0)
+[2017.06.17-21.27.23:853][  0]LogWindows:    2. 'Intel(R) HD Graphics 530' (P:0 D:0)
+[2017.06.17-21.27.23:854][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2017.06.17-21.27.23:854][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 960M
+[2017.06.17-21.27.23:854][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2017.06.17-21.27.23:854][  0]LogD3D11RHI:      Driver Date: Unknown
+[2017.06.17-21.27.23:854][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.06.17-21.27.25:942][  0]LogD3D11RHI: Async texture creation enabled
+[2017.06.17-21.27.26:122][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2017.06.17-21.27.26:124][  0]LogShaderCompilers: Guid format shader working directory is -20 characters bigger than the processId version (../../../../../../Users/koru/Desktop/IHC/HCIProyecto/SteamProject/Intermediate/Shaders/WorkingDirectory/5900/).
+[2017.06.17-21.27.26:125][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/koru/AppData/Local/Temp/UnrealShaderWorkingDir/92CD419F4677A94237F3F08656A1FD8E/'.
+[2017.06.17-21.27.26:125][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.06.17-21.27.30:315][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.06.17-21.27.30:529][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.06.17-21.27.30:748][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.06.17-21.27.30:974][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.06.17-21.27.31:191][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.06.17-21.27.31:412][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.06.17-21.27.31:638][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.06.17-21.27.31:863][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.06.17-21.27.32:042][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.06.17-21.27.32:251][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.06.17-21.27.32:467][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.06.17-21.27.32:687][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.06.17-21.27.32:899][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.06.17-21.27.33:115][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.06.17-21.27.33:330][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.06.17-21.27.33:764][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.06.17-21.27.33:764][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.06.17-21.27.33:912][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.06.17-21.27.34:232][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.06.17-21.27.34:376][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.06.17-21.27.34:589][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.06.17-21.27.34:810][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.06.17-21.27.35:032][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.06.17-21.27.35:256][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.06.17-21.27.35:256][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.06.17-21.27.37:188][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.06.17-21.27.37:561][  0]LogDerivedDataCache: Loaded boot cache 0.37s 50MB C:/Users/koru/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.06.17-21.27.37:561][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/koru/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc
+[2017.06.17-21.27.37:561][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/koru/Desktop/IHC/HCIProyecto/SteamProject/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.06.17-21.27.37:561][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.06.17-21.27.37:562][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/koru/Desktop/IHC/HCIProyecto/SteamProject/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.06.17-21.27.37:562][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.06.17-21.27.37:661][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.06.17-21.27.37:677][  0]LogDerivedDataCache: Using Local data cache path C:/Users/koru/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.06.17-21.27.37:733][  0]LogSlate: Using Freetype 2.6.0
+[2017.06.17-21.27.37:757][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.06.17-21.27.37:757][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.06.17-21.27.41:008][  0]LogInit: Selected Device Profile: [Windows]
+[2017.06.17-21.27.41:025][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.06.17-21.27.41:996][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.06.17-21.27.42:172][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.06.17-21.27.42:368][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.06.17-21.27.42:368][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.06.17-21.27.42:368][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.06.17-21.27.46:698][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3299760, ProjectName: steamproject, ProjectVersion: , EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 3119142434
+[2017.06.17-21.27.46:837][  0]LogAssetRegistry: FAssetRegistry took 0.0258 seconds to start up
+[2017.06.17-21.27.46:988][  0]LogAssetRegistry:Error: Failed to open file for write ../../../../../../Users/koru/Desktop/IHC/HCIProyecto/SteamProject/Intermediate/AssetRegistryCache/4a1ee9ad.bin
+[2017.06.17-21.27.47:006][  0]LogFileManager:Warning: MoveFile was unable to move '../../../../../../Users/koru/Desktop/IHC/HCIProyecto/SteamProject/Intermediate/AssetRegistryCache/da466883.bin.tmp' to '../../../../../../Users/koru/Desktop/IHC/HCIProyecto/SteamProject/Intermediate/AssetRegistryCache/da466883.bin', retrying in .5s...
+[2017.06.17-21.27.47:506][  0]LogFileManager:Warning: MoveFile was unable to move '../../../../../../Users/koru/Desktop/IHC/HCIProyecto/SteamProject/Intermediate/AssetRegistryCache/da466883.bin.tmp' to '../../../../../../Users/koru/Desktop/IHC/HCIProyecto/SteamProject/Intermediate/AssetRegistryCache/da466883.bin', retrying in .5s...
+[2017.06.17-21.27.48:007][  0]LogAssetRegistry:Error: Failed to open file for write ../../../../../../Users/koru/Desktop/IHC/HCIProyecto/SteamProject/Intermediate/CachedAssetRegistry.bin
+[2017.06.17-21.27.48:007][  0]LogFileManager:Warning: MoveFile was unable to move '../../../../../../Users/koru/Desktop/IHC/HCIProyecto/SteamProject/Intermediate/AssetRegistryCache/da466883.bin.tmp' to '../../../../../../Users/koru/Desktop/IHC/HCIProyecto/SteamProject/Intermediate/AssetRegistryCache/da466883.bin', retrying in .5s...
+[2017.06.17-21.27.48:509][  0]LogFileManager:Warning: MoveFile was unable to move '../../../../../../Users/koru/Desktop/IHC/HCIProyecto/SteamProject/Intermediate/AssetRegistryCache/da466883.bin.tmp' to '../../../../../../Users/koru/Desktop/IHC/HCIProyecto/SteamProject/Intermediate/AssetRegistryCache/da466883.bin', retrying in .5s...
+[2017.06.17-21.27.49:009][  0]LogFileManager:Warning: MoveFile was unable to move '../../../../../../Users/koru/Desktop/IHC/HCIProyecto/SteamProject/Intermediate/AssetRegistryCache/da466883.bin.tmp' to '../../../../../../Users/koru/Desktop/IHC/HCIProyecto/SteamProject/Intermediate/AssetRegistryCache/da466883.bin', retrying in .5s...
+[2017.06.17-21.27.49:511][  0]LogFileManager:Warning: MoveFile was unable to move '../../../../../../Users/koru/Desktop/IHC/HCIProyecto/SteamProject/Intermediate/AssetRegistryCache/da466883.bin.tmp' to '../../../../../../Users/koru/Desktop/IHC/HCIProyecto/SteamProject/Intermediate/AssetRegistryCache/da466883.bin', retrying in .5s...
+[2017.06.17-21.27.50:012][  0]LogFileManager:Warning: MoveFile was unable to move '../../../../../../Users/koru/Desktop/IHC/HCIProyecto/SteamProject/Intermediate/AssetRegistryCache/da466883.bin.tmp' to '../../../../../../Users/koru/Desktop/IHC/HCIProyecto/SteamProject/Intermediate/AssetRegistryCache/da466883.bin', retrying in .5s...
+[2017.06.17-21.27.50:513][  0]LogFileManager:Warning: MoveFile was unable to move '../../../../../../Users/koru/Desktop/IHC/HCIProyecto/SteamProject/Intermediate/AssetRegistryCache/da466883.bin.tmp' to '../../../../../../Users/koru/Desktop/IHC/HCIProyecto/SteamProject/Intermediate/AssetRegistryCache/da466883.bin', retrying in .5s...
+[2017.06.17-21.27.51:013][  0]LogFileManager:Warning: MoveFile was unable to move '../../../../../../Users/koru/Desktop/IHC/HCIProyecto/SteamProject/Intermediate/AssetRegistryCache/da466883.bin.tmp' to '../../../../../../Users/koru/Desktop/IHC/HCIProyecto/SteamProject/Intermediate/AssetRegistryCache/da466883.bin', retrying in .5s...
+[2017.06.17-21.27.51:515][  0]LogFileManager:Warning: MoveFile was unable to move '../../../../../../Users/koru/Desktop/IHC/HCIProyecto/SteamProject/Intermediate/AssetRegistryCache/da466883.bin.tmp' to '../../../../../../Users/koru/Desktop/IHC/HCIProyecto/SteamProject/Intermediate/AssetRegistryCache/da466883.bin', retrying in .5s...
+[2017.06.17-21.27.52:016][  0]LogFileManager:Error: Error moving file '../../../../../../Users/koru/Desktop/IHC/HCIProyecto/SteamProject/Intermediate/AssetRegistryCache/da466883.bin.tmp' to '../../../../../../Users/koru/Desktop/IHC/HCIProyecto/SteamProject/Intermediate/AssetRegistryCache/da466883.bin'.
+[2017.06.17-21.27.52:077][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 5.096608 seconds
+[2017.06.17-21.27.52:093][  0]LogUObjectArray: 32493 objects as part of root set at end of initial load.
+[2017.06.17-21.27.52:093][  0]LogUObjectAllocator: 7077032 out of 0 bytes used by permanent object pool.
+[2017.06.17-21.27.52:093][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.06.17-21.27.58:551][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.06.17-21.27.58:686][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.06.17-21.28.00:775][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.06.17-21.28.02:616][  0]SourceControl: Información El control de código fuente está desactivado
+[2017.06.17-21.28.02:915][  0]SourceControl: Información El control de código fuente está desactivado
+[2017.06.17-21.28.03:117][  0]SourceControl: Información El control de código fuente está desactivado
+[2017.06.17-21.28.03:313][  0]SourceControl: Información El control de código fuente está desactivado
+[2017.06.17-21.28.08:596][  0]LogEngine: Initializing Engine...
+[2017.06.17-21.28.08:599][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.06.17-21.28.09:411][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.06.17-21.28.09:412][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.06.17-21.28.09:962][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.06.17-21.28.10:008][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.06.17-21.28.10:101][  0]LogInit: FAudioDevice initialized.
+[2017.06.17-21.28.10:175][  0]LogDerivedDataCache: Saved boot cache 0.07s 50MB C:/Users/koru/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.06.17-21.28.10:203][  0]LogInit: Texture streaming: Enabled
+[2017.06.17-21.28.10:609][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.06.17-21.28.10:996][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.06.17-21.28.10:996][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.06.17-21.28.11:120][  0]LogInit: Transaction tracking system initialized
+[2017.06.17-21.28.12:850][  0]BlueprintLog: New page: Cargar el editor
+[2017.06.17-21.28.17:483][  0]LocalizationService: Información Localization service is disabled
+[2017.06.17-21.28.21:411][  0]LogConsoleResponse:Display: 
+[2017.06.17-21.28.22:790][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.06.17-21.28.22:791][  0]LogCook:Display: Mobile HDR setting 1
+[2017.06.17-21.28.23:589][  0]LogFileCache: Scanning file cache for directory 'C:/Users/koru/Desktop/IHC/HCIProyecto/SteamProject/Content/' took 0.07s
+[2017.06.17-21.28.28:659][  0]SourceControl: Información El control de código fuente está desactivado
+[2017.06.17-21.28.28:662][  0]Cmd: MAP LOAD FILE="../../../../../../Users/koru/Desktop/IHC/HCIProyecto/SteamProject/Content/Maps/MainMenu.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.06.17-21.28.28:665][  0]LightingResults: New page: Diseñar la iluminación
+[2017.06.17-21.28.28:868][  0]MapCheck: New page: Revisión del mapa
+[2017.06.17-21.28.28:868][  0]LightingResults: New page: Diseñar la iluminación
+[2017.06.17-21.28.32:486][  0]LogAIModule: Creating AISystem for world MainMenu
+[2017.06.17-21.28.32:577][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.06.17-21.28.32:581][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.06.17-21.28.32:815][  0]MapCheck: Información Map check complete: 0 Error(s), 0 Warning(s), took 233.769ms to complete.
+[2017.06.17-21.28.32:815][  0]LogFileHelpers: Loading map 'MainMenu' took 4.155
+[2017.06.17-21.28.33:632][  0]LogCollectionManager: Loaded 0 collections in 0.007328 seconds
+[2017.06.17-21.28.33:889][  0]LogFileCache: Scanning file cache for directory 'C:/Users/koru/Desktop/IHC/HCIProyecto/SteamProject/Saved/Collections/' took 0.01s
+[2017.06.17-21.28.33:889][  0]LogFileCache: Scanning file cache for directory 'C:/Users/koru/Desktop/IHC/HCIProyecto/SteamProject/Content/Developers/koru/Collections/' took 0.01s
+[2017.06.17-21.28.33:889][  0]LogFileCache: Scanning file cache for directory 'C:/Users/koru/Desktop/IHC/HCIProyecto/SteamProject/Content/Collections/' took 0.01s
+[2017.06.17-21.28.33:889][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000004 seconds
+[2017.06.17-21.28.33:926][  0]LogContentBrowser: Native class hierarchy populated in 0.0328 seconds. Added 2245 classes and 453 folders.
+[2017.06.17-21.28.34:214][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0021 seconds. Added 0 classes and 0 folders.
+[2017.06.17-21.28.35:513][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0017 seconds. Added 0 classes and 0 folders.
+[2017.06.17-21.28.35:704][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0020 seconds. Added 1 classes and 2 folders.
+[2017.06.17-21.28.35:968][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.06.17-21.28.36:011][  0]LogUObjectGlobals:Warning: Error al encontrar el objeto 'Class Ninguno.'
+[2017.06.17-21.28.36:238][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0018 seconds. Added 1 classes and 2 folders.
+[2017.06.17-21.28.36:238][  0]LogLoad: (Engine Initialization) Total time: 82.75 seconds
+[2017.06.17-21.28.36:238][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 1.92 seconds
+[2017.06.17-21.28.36:238][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2017.06.17-21.28.36:238][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2017.06.17-21.28.36:252][  0]LogOcInput: OculusInput pre-init called
+[2017.06.17-21.28.36:308][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.06.17-21.28.36:328][  0]LogSlate: Took 0.013433 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.06.17-21.28.36:356][  0]LogSlate: Took 0.014505 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.06.17-21.28.36:396][  0]LogSlate: Took 0.016354 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.06.17-21.28.37:006][  0]LogSlate: Took 0.015546 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.06.17-21.28.37:198][  0]LogRenderer: Reallocating scene render targets to support 964x324 NumSamples 1 (Frame:2).
+[2017.06.17-21.28.37:407][  1]LogFileCache: Retrieving MD5 hashes for directory 'C:/Users/koru/Desktop/IHC/HCIProyecto/SteamProject/Content/' took 1.14s
+[2017.06.17-21.28.37:663][  2]LogSlate: Took 0.000956 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.06.17-21.28.38:027][  6]LogAssetRegistry: Asset discovery search completed in 51.2129 seconds
+[2017.06.17-21.28.38:027][  6]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000019 seconds (found 0 objects)
+[2017.06.17-21.28.38:027][  6]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000095 seconds (updated 0 objects)
+[2017.06.17-21.28.45:526][117]LogSlate: Took 0.000657 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.06.17-21.28.46:644][117]LogSlate: Took 0.000705 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.06.17-21.28.47:781][117]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0030 seconds. Added 112 classes and 0 folders.
+[2017.06.17-21.28.50:806][117]LogSlate: Took 0.011819 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2017.06.17-21.29.20:768][708]LogSlate: Took 0.011709 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2017.06.17-21.29.32:196][857]LogEditorTransaction: Undo Mover Widget
+[2017.06.17-21.29.42:900][935]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UI/MainMenu/ProfesorMenu" FILE="../../../../../../Users/koru/Desktop/IHC/HCIProyecto/SteamProject/Content/UI/MainMenu/ProfesorMenu.uasset" SILENT=true
+[2017.06.17-21.29.43:080][935]LogSavePackage: Save=106.36ms
+[2017.06.17-21.29.43:080][935]LogSavePackage: Moving '../../../../../../Users/koru/Desktop/IHC/HCIProyecto/SteamProject/Saved/ProfesorMenu36905EC14CF2198D7B4817A735F22A49.tmp' to '../../../../../../Users/koru/Desktop/IHC/HCIProyecto/SteamProject/Content/UI/MainMenu/ProfesorMenu.uasset'
+[2017.06.17-21.29.43:103][935]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/koru/Desktop/IHC/HCIProyecto/SteamProject/Content/UI/MainMenu/ProfesorMenu.uasset
+[2017.06.17-21.29.43:131][935]Cmd: MAP LOAD FILE="../../../../../../Users/koru/Desktop/IHC/HCIProyecto/SteamProject/Content/Maps/MainMenu.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.06.17-21.29.43:132][935]LightingResults: New page: Diseñar la iluminación
+[2017.06.17-21.29.43:137][935]LoadErrors: New page: Cargando mapa: MainMenu.umap
+[2017.06.17-21.29.43:138][935]MapCheck: New page: Revisión del mapa
+[2017.06.17-21.29.43:138][935]LightingResults: New page: Diseñar la iluminación
+[2017.06.17-21.29.43:252][935]LogAIModule: Creating AISystem for world MainMenu
+[2017.06.17-21.29.43:258][935]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.06.17-21.29.43:403][935]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.06.17-21.29.43:575][935]MapCheck: Información Map check complete: 0 Error(s), 0 Warning(s), took 171.054ms to complete.
+[2017.06.17-21.29.43:578][935]LogFileHelpers: Loading map 'MainMenu' took 0.448
+[2017.06.17-21.29.45:377][959]LogTemp: Repeting last play command: Standalone Game
+[2017.06.17-21.29.46:268][959]LogSavePackage: Save=378.62ms
+[2017.06.17-21.29.46:268][959]LogSavePackage: Moving '../../../../../../Users/koru/Desktop/IHC/HCIProyecto/SteamProject/Saved/UEDPCMainMenuEB7640BA4459CCBC88FA2597A2D7058E.tmp' to '../../../../../../Users/koru/Desktop/IHC/HCIProyecto/SteamProject/Saved/Autosaves/Game/Maps/UEDPCMainMenu.umap'
+[2017.06.17-21.29.46:273][959]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/koru/Desktop/IHC/HCIProyecto/SteamProject/Saved/Autosaves/Game/Maps/UEDPCMainMenu.umap
+[2017.06.17-21.29.46:296][959]LogEditorTransaction: Undo Spawn Play From Here Start
+[2017.06.17-21.31.07:749][295]LogHttp:Warning: 0000013A0F813A00: request failed, libcurl error: 52 (Server returned nothing (no headers, no data))
+[2017.06.17-21.31.07:750][295]LogHttp:Warning: 0000013A0F813A00: libcurl info message cache 0 (  Trying 54.164.193.73...)
+[2017.06.17-21.31.07:750][295]LogHttp:Warning: 0000013A0F813A00: libcurl info message cache 1 (Connected to datarouter.ol.epicgames.com (54.164.193.73) port 443 (#1))
+[2017.06.17-21.31.07:750][295]LogHttp:Warning: 0000013A0F813A00: libcurl info message cache 2 (ALPN, offering http/1.1)
+[2017.06.17-21.31.07:750][295]LogHttp:Warning: 0000013A0F813A00: libcurl info message cache 3 (Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH)
+[2017.06.17-21.31.07:750][295]LogHttp:Warning: 0000013A0F813A00: libcurl info message cache 4 (TLSv1.2 (OUT), TLS header, Certificate Status (22):)
+[2017.06.17-21.31.07:750][295]LogHttp:Warning: 0000013A0F813A00: libcurl info message cache 5 (TLSv1.2 (OUT), TLS handshake, Client hello (1):)
+[2017.06.17-21.31.07:750][295]LogHttp:Warning: 0000013A0F813A00: libcurl info message cache 6 (TLSv1.2 (IN), TLS handshake, Server hello (2):)
+[2017.06.17-21.31.07:750][295]LogHttp:Warning: 0000013A0F813A00: libcurl info message cache 7 (TLSv1.2 (IN), TLS handshake, Certificate (11):)
+[2017.06.17-21.31.07:750][295]LogHttp:Warning: 0000013A0F813A00: libcurl info message cache 8 (TLSv1.2 (IN), TLS handshake, Server key exchange (12):)
+[2017.06.17-21.31.07:750][295]LogHttp:Warning: 0000013A0F813A00: libcurl info message cache 9 (TLSv1.2 (IN), TLS handshake, Server finished (14):)
+[2017.06.17-21.31.07:750][295]LogHttp:Warning: 0000013A0F813A00: libcurl info message cache 10 (TLSv1.2 (OUT), TLS handshake, Client key exchange (16):)
+[2017.06.17-21.31.07:750][295]LogHttp:Warning: 0000013A0F813A00: libcurl info message cache 11 (TLSv1.2 (OUT), TLS change cipher, Client hello (1):)
+[2017.06.17-21.31.07:750][295]LogHttp:Warning: 0000013A0F813A00: libcurl info message cache 12 (TLSv1.2 (OUT), TLS handshake, Finished (20):)
+[2017.06.17-21.31.07:750][295]LogHttp:Warning: 0000013A0F813A00: libcurl info message cache 13 (TLSv1.2 (IN), TLS change cipher, Client hello (1):)
+[2017.06.17-21.31.07:750][295]LogHttp:Warning: 0000013A0F813A00: libcurl info message cache 14 (TLSv1.2 (IN), TLS handshake, Finished (20):)
+[2017.06.17-21.31.07:750][295]LogHttp:Warning: 0000013A0F813A00: libcurl info message cache 15 (SSL connection using TLSv1.2 / ECDHE-RSA-AES128-GCM-SHA256)
+[2017.06.17-21.31.07:750][295]LogHttp:Warning: 0000013A0F813A00: libcurl info message cache 16 (ALPN, server did not agree to a protocol)
+[2017.06.17-21.31.07:750][295]LogHttp:Warning: 0000013A0F813A00: libcurl info message cache 17 (Server certificate:)
+[2017.06.17-21.31.07:750][295]LogHttp:Warning: 0000013A0F813A00: libcurl info message cache 18 (	 subject: CN=*.ol.epicgames.com)
+[2017.06.17-21.31.07:750][295]LogHttp:Warning: 0000013A0F813A00: libcurl info message cache 19 (	 start date: Mar 23 00:00:00 2017 GMT)
+[2017.06.17-21.31.07:750][295]LogHttp:Warning: 0000013A0F813A00: libcurl info message cache 20 (	 expire date: Apr 23 12:00:00 2018 GMT)
+[2017.06.17-21.31.07:751][295]LogHttp:Warning: 0000013A0F813A00: libcurl info message cache 21 (	 subjectAltName: datarouter.ol.epicgames.com matched)
+[2017.06.17-21.31.07:751][295]LogHttp:Warning: 0000013A0F813A00: libcurl info message cache 22 (	 issuer: C=US; O=Amazon; OU=Server CA 1B; CN=Amazon)
+[2017.06.17-21.31.07:751][295]LogHttp:Warning: 0000013A0F813A00: libcurl info message cache 23 (	 SSL certificate verify ok.)
+[2017.06.17-21.31.07:751][295]LogHttp:Warning: 0000013A0F813A00: libcurl info message cache 24 (upload completely sent off: 2848 out of 2848 bytes)
+[2017.06.17-21.31.07:751][295]LogHttp:Warning: 0000013A0F813A00: libcurl info message cache 25 (TLSv1.2 (IN), TLS alert, Client hello (1):)
+[2017.06.17-21.31.07:751][295]LogHttp:Warning: 0000013A0F813A00: libcurl info message cache 26 (Empty reply from server)
+[2017.06.17-21.31.07:751][295]LogHttp:Warning: 0000013A0F813A00: libcurl info message cache 27 (Connection #1 to host datarouter.ol.epicgames.com left intact)
+[2017.06.17-21.32.52:274][381]LogTexture:Display: Building textures: CastleTower_preview (AutoDXT, 1920X1080) - 80 MB total VRAM
+[2017.06.17-21.34.26:333][590]LogUObjectHash:Warning: Ambiguous search, could be ScrollBox /Game/UI/MainMenu/EscenariosProfesorMenu.EscenariosProfesorMenu:WidgetTree.ScrollBox_23 or ScrollBox /Engine/Transient.World_5:EscenariosProfesorMenu_C_3.WidgetTree.ScrollBox_23
+[2017.06.17-21.34.26:333][590]LogUObjectHash:Warning: Ambiguous search, could be ScrollBox /Game/UI/MainMenu/EscenariosProfesorMenu.EscenariosProfesorMenu:WidgetTree.ScrollBox_23 or ScrollBox /Engine/Transient.World_5:EscenariosProfesorMenu_C_4.WidgetTree.ScrollBox_23
+[2017.06.17-21.34.26:333][590]LogUObjectHash:Warning: Ambiguous search, could be ScrollBox /Game/UI/MainMenu/EscenariosProfesorMenu.EscenariosProfesorMenu:WidgetTree.ScrollBox_23 or ScrollBox /Engine/Transient.World_5:EscenariosProfesorMenu_C_5.WidgetTree.ScrollBox_23
+[2017.06.17-21.34.26:333][590]LogUObjectHash:Warning: Ambiguous search, could be ScrollBox /Game/UI/MainMenu/EscenariosProfesorMenu.EscenariosProfesorMenu:WidgetTree.ScrollBox_23 or ScrollBox /Engine/Transient.World_5:EscenariosProfesorMenu_C_6.WidgetTree.ScrollBox_23
+[2017.06.17-21.34.26:333][590]LogUObjectHash:Warning: Ambiguous search, could be ScrollBox /Game/UI/MainMenu/EscenariosProfesorMenu.EscenariosProfesorMenu:WidgetTree.ScrollBox_23 or ScrollBox /Engine/Transient.World_5:EscenariosProfesorMenu_C_7.WidgetTree.ScrollBox_23
+[2017.06.17-21.34.26:333][590]LogUObjectHash:Warning: Ambiguous search, could be ScrollBox /Game/UI/MainMenu/EscenariosProfesorMenu.EscenariosProfesorMenu:WidgetTree.ScrollBox_23 or ScrollBox /Engine/Transient.World_5:EscenariosProfesorMenu_C_8.WidgetTree.ScrollBox_23
+[2017.06.17-21.34.26:333][590]LogProperty:Warning: Illegal TEXT reference to a private object in external package (ScrollBoxSlot /Game/UI/MainMenu/EscenariosProfesorMenu.EscenariosProfesorMenu:WidgetTree.ScrollBox_23.ScrollBoxSlot_1) from referencer (Button /Engine/UMG/Editor/Transient.Button_40).  Import failed...
+[2017.06.17-21.34.26:333][590]LogProperty:Warning: ObjectProperty /Script/UMG.Widget:Slot: unresolved reference to 'ScrollBoxSlot'ScrollBox_23.ScrollBoxSlot_1''
+[2017.06.17-21.34.38:856][693]LogTexture:Display: Building textures: Char_M_Cardboard_N (BC5, 2048X2048) - 81 MB total VRAM
